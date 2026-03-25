@@ -1,19 +1,22 @@
 import pandas as pd
+import os
 from openai import OpenAI
-import time
+from dotenv import load_dotenv
 
-# 1. Setup NVIDIA Client
-# Replace 'YOUR_NVIDIA_API_KEY' with your actual key
+# 1. Load environment variables from .env file
+load_dotenv()
+api_key = os.getenv("NVIDIA_API_KEY")
+
+# 2. Setup NVIDIA Client
 client = OpenAI(
     base_url="https://integrate.api.nvidia.com/v1",
-    api_key="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"
+    api_key=api_key
 )
 
 def generate_cot(row):
     """
     Constructs a prompt and fetches the Chain of Thought from the NVIDIA model.
     """
-    # Constructing the prompt using available columns
     prompt = f"""
     As an expert Physics tutor, provide a step-by-step 'Chain of Thought' derivation for this JEE Mains question.
     
@@ -32,7 +35,7 @@ def generate_cot(row):
 
     try:
         response = client.chat.completions.create(
-            model="meta/llama-3.1-70b-instruct", # You can change this to your preferred NVIDIA NIM model
+            model="meta/llama-3.1-70b-instruct",
             messages=[{"role": "user", "content": prompt}],
             temperature=0.2,
             top_p=0.7,
@@ -43,14 +46,20 @@ def generate_cot(row):
         print(f"Error processing row: {e}")
         return None
 
-# 2. Load your data
-df = pd.read_csv("physics_data.csv")
+# 3. Load your data
+# Using a try-block in case the file name changed or isn't found
+try:
+    df = pd.read_csv("physics_data.csv")
+    
+    # 4. Apply the function
+    print("Generating Chain of Thought... this may take a while.")
+    # Testing on first 5 rows to ensure everything works before running full file
+    # df = df.head(5) 
+    df['cot'] = df.apply(generate_cot, axis=1)
 
-# 3. Apply the function
-# Note: For large datasets, use df.head(10) first to test costs and speed.
-print("Generating Chain of Thought... this may take a while.")
-df['cot'] = df.apply(generate_cot, axis=1)
+    # 5. Save the updated dataset
+    df.to_csv("physics_with_cot.csv", index=False)
+    print("Done! Saved to physics_with_cot.csv")
 
-# 4. Save the updated dataset
-df.to_csv("physics_with_cot.csv", index=False)
-print("Done! Saved to physics_with_cot.csv")
+except FileNotFoundError:
+    print("Error: 'physics_data.csv' not found. Please check the file path.")
