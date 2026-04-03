@@ -1,26 +1,48 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useAuth } from '../../hooks/useAuth'
+import { useNavigate } from 'react-router-dom'
+import useAuthStore from '../../store/authStore'
 import toast from 'react-hot-toast'
 
 export default function LoginPage() {
   const { signInWithEmail, signUpWithEmail } = useAuth()
+  const navigate = useNavigate()
+  const user = useAuthStore((s) => s.user)
+  
   const [mode, setMode] = useState('login') // 'login' | 'signup'
   const [form, setForm] = useState({ email: '', password: '', fullName: '' })
   const [loading, setLoading] = useState(false)
+  const [successMsg, setSuccessMsg] = useState('')
+
+  // Redirect to dashboard if session exists
+  useEffect(() => {
+    if (user) {
+      navigate('/dashboard', { replace: true })
+    }
+  }, [user, navigate])
 
   const handleSubmit = async (e) => {
     e.preventDefault()
     setLoading(true)
+    setSuccessMsg('')
+    
     try {
       if (mode === 'login') {
         const { error } = await signInWithEmail(form.email, form.password)
         if (error) throw error
         toast.success('Welcome back!')
+        // navigate('/dashboard') // Redundant if useEffect is active, but safe
       } else {
         const { error } = await signUpWithEmail(form.email, form.password, form.fullName)
         if (error) throw error
-        toast.success('Account created! Check your email to confirm.')
+        
+        setSuccessMsg('✅ Account created! Please check your email for a confirmation link.')
+        toast.success('Check your email to confirm signup!')
+        
+        // Auto-switch to login mode so they can sign in after confirming
+        setMode('login')
+        setForm({ ...form, password: '' }) // Clear password for security
       }
     } catch (err) {
       toast.error(err.message || 'Authentication failed')
@@ -59,12 +81,30 @@ export default function LoginPage() {
 
         {/* Card */}
         <div className="glass-card p-8">
+          {/* Success Notification */}
+          <AnimatePresence>
+            {successMsg && (
+              <motion.div
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: 'auto' }}
+                exit={{ opacity: 0, height: 0 }}
+                className="mb-6 p-4 bg-green-500/10 border border-green-500/20 rounded-xl text-green-300 text-xs leading-relaxed"
+              >
+                {successMsg}
+              </motion.div>
+            )}
+          </AnimatePresence>
+
           {/* Mode Toggle */}
           <div className="flex bg-surface-700/60 rounded-xl p-1 mb-6">
             {['login', 'signup'].map((m) => (
               <button
                 key={m}
-                onClick={() => setMode(m)}
+                type="button"
+                onClick={() => {
+                  setMode(m)
+                  setSuccessMsg('')
+                }}
                 className={`flex-1 py-2 text-sm font-semibold rounded-lg transition-all duration-200 capitalize ${
                   mode === m
                     ? 'bg-brand-500 text-white shadow-lg shadow-brand-500/20'
@@ -125,6 +165,7 @@ export default function LoginPage() {
             </div>
 
             <button
+              id="auth-submit-btn"
               type="submit"
               disabled={loading}
               className="btn-primary w-full mt-2 flex items-center justify-center gap-2"
