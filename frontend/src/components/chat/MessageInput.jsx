@@ -49,7 +49,7 @@ export default function MessageInput({ onSend, disabled }) {
   const canSend = (text.trim() || imageFile) && !disabled
 
   return (
-    <div className="border-t border-white/8 bg-surface-800/80 backdrop-blur-md p-4">
+    <div className="border-t border-white/10 bg-surface-800/80 backdrop-blur-md p-4">
       {/* Image preview */}
       <AnimatePresence>
         {imagePreview && (

@@ -5,7 +5,7 @@ export default function ConversationList({ conversations, activeId, onSelect, on
   return (
     <div className="flex flex-col h-full">
       {/* Header */}
-      <div className="p-4 border-b border-white/8">
+      <div className="p-4 border-b border-white/10">
         <button
           id="new-conversation-btn"
           onClick={onNew}

@@ -23,7 +23,7 @@ export default function ChatWindow({ messages, sending }) {
             'Explain Le Chatelier\'s principle',
             'Derive the lens formula',
           ].map((q) => (
-            <span key={q} className="text-xs bg-surface-700 border border-white/8 text-slate-400 px-3 py-1.5 rounded-lg cursor-default">
+            <span key={q} className="text-xs bg-surface-700 border border-white/10 text-slate-400 px-3 py-1.5 rounded-lg cursor-default">
               {q}
             </span>
           ))}
@@ -55,7 +55,7 @@ export default function ChatWindow({ messages, sending }) {
           <div className="w-8 h-8 rounded-full bg-brand-500/20 border border-brand-500/30 flex items-center justify-center text-sm flex-shrink-0">
             🤖
           </div>
-          <div className="bg-surface-700 border border-white/8 rounded-2xl rounded-bl-sm px-4 py-3">
+          <div className="bg-surface-700 border border-white/10 rounded-2xl rounded-bl-sm px-4 py-3">
             <div className="flex gap-1 items-center h-4">
               {[0, 1, 2].map((i) => (
                 <span

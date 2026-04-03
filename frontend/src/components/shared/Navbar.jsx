@@ -15,7 +15,7 @@ export default function Navbar() {
   const user = useAuthStore((s) => s.user)
 
   return (
-    <header className="h-16 bg-surface-800/90 backdrop-blur-md border-b border-white/8 flex items-center px-4 gap-4 z-50">
+    <header className="h-16 bg-surface-800/90 backdrop-blur-md border-b border-white/10 flex items-center px-4 gap-4 z-50">
       {/* Logo */}
       <Link to="/dashboard" className="flex items-center gap-2.5 flex-shrink-0">
         <span className="text-xl">🎓</span>

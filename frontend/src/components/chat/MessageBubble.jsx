@@ -41,7 +41,7 @@ export default function MessageBubble({ message }) {
             className={`px-4 py-3 rounded-2xl text-sm leading-relaxed ${
               isUser
                 ? 'bg-brand-500 text-white rounded-br-sm'
-                : 'bg-surface-700 border border-white/8 text-slate-200 rounded-bl-sm'
+                : 'bg-surface-700 border border-white/10 text-slate-200 rounded-bl-sm'
             }`}
           >
             {isUser ? (
@@ -56,7 +56,7 @@ export default function MessageBubble({ message }) {
                     inline ? (
                       <code className="bg-white/10 text-green-300 px-1.5 py-0.5 rounded text-xs font-mono">{children}</code>
                     ) : (
-                      <pre className="bg-surface-900 border border-white/8 rounded-lg p-3 my-2 overflow-x-auto text-xs font-mono text-slate-300">
+                      <pre className="bg-surface-900 border border-white/10 rounded-lg p-3 my-2 overflow-x-auto text-xs font-mono text-slate-300">
                         <code>{children}</code>
                       </pre>
                     ),

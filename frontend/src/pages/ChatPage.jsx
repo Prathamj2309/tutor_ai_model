@@ -59,7 +59,7 @@ export default function ChatPage() {
       {/* Main chat area */}
       <div className="flex-1 flex flex-col overflow-hidden">
         {/* Chat header */}
-        <div className="h-12 border-b border-white/8 bg-surface-800/60 flex items-center px-4 gap-3">
+        <div className="h-12 border-b border-white/10 bg-surface-800/60 flex items-center px-4 gap-3">
           <button
             id="toggle-sidebar-btn"
             onClick={() => setSidebarOpen((p) => !p)}

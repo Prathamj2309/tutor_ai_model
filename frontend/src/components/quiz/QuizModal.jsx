@@ -43,7 +43,7 @@ export default function QuizModal({ quiz, onSubmit, onClose, loading }) {
           className="glass-card w-full max-w-2xl max-h-[90vh] flex flex-col overflow-hidden"
         >
           {/* Header */}
-          <div className="flex items-center justify-between px-6 py-4 border-b border-white/8">
+          <div className="flex items-center justify-between px-6 py-4 border-b border-white/10">
             <div>
               <h2 className="text-lg font-bold text-white">
                 {submitted ? '📊 Quiz Results' : '📝 Mock Test'}
@@ -58,7 +58,7 @@ export default function QuizModal({ quiz, onSubmit, onClose, loading }) {
             <motion.div
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
-              className={`px-6 py-4 border-b border-white/8 flex items-center gap-4 ${
+              className={`px-6 py-4 border-b border-white/10 flex items-center gap-4 ${
                 result.score / result.total >= 0.6 ? 'bg-green-500/10' : 'bg-red-500/10'
               }`}
             >
@@ -131,7 +131,7 @@ export default function QuizModal({ quiz, onSubmit, onClose, loading }) {
                     <motion.div
                       initial={{ opacity: 0, height: 0 }}
                       animate={{ opacity: 1, height: 'auto' }}
-                      className="pl-10 bg-surface-700/40 border border-white/8 rounded-xl px-4 py-3 text-sm text-slate-300"
+                      className="pl-10 bg-surface-700/40 border border-white/10 rounded-xl px-4 py-3 text-sm text-slate-300"
                     >
                       <span className="font-semibold text-brand-300">Explanation: </span>
                       <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]} components={{ p: ({ children }) => <span>{children}</span> }}>
@@ -145,7 +145,7 @@ export default function QuizModal({ quiz, onSubmit, onClose, loading }) {
           </div>
 
           {/* Footer */}
-          <div className="px-6 py-4 border-t border-white/8 flex justify-end gap-3">
+          <div className="px-6 py-4 border-t border-white/10 flex justify-end gap-3">
             {!submitted ? (
               <button
                 id="submit-quiz-btn"

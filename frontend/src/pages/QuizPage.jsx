@@ -51,7 +51,7 @@ export default function QuizPage() {
                 className={`flex flex-col items-center gap-2 p-4 rounded-xl border transition-all duration-200 ${
                   selectedSubject === s
                     ? 'bg-brand-500/20 border-brand-500/50 text-white'
-                    : 'bg-surface-700/40 border-white/8 text-slate-400 hover:border-white/20 hover:text-white'
+                    : 'bg-surface-700/40 border-white/10 text-slate-400 hover:border-white/20 hover:text-white'
                 }`}
               >
                 <span className="text-2xl">{s === 'physics' ? '⚛️' : s === 'chemistry' ? '🧪' : '📐'}</span>
