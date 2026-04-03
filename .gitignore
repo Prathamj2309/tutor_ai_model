@@ -1,2 +1,15 @@
 .env
 *.zip
+node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+venv/
+.venv/
+env/
+.env.local
+models/*.gguf
+
