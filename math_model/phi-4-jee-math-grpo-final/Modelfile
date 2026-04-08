@@ -1,15 +1,8 @@
-FROM ./model-q4.gguf   # your GGUF file
+FROM phi4-mini
+ADAPTER .
+SYSTEM """You are an expert mathematical reasoning AI. Your task is to solve complex mathematical problems accurately.
 
-TEMPLATE """{{ if .System }}<|im_start|>system
-{{ .System }}<|im_end|>
-{{ end }}{{ if .Prompt }}<|im_start|>user
-{{ .Prompt }}<|im_end|>
-{{ end }}<|im_start|>assistant
-"""
-
-PARAMETER stop "<|im_end|>"
-PARAMETER stop "<|im_start|>"
-
-PARAMETER temperature 0.1
-PARAMETER top_p 0.9
-PARAMETER num_predict 512
+You must strictly adhere to the following formatting protocol for every single response:
+1.  **Reasoning Phase:** You must begin your response by outlining your step-by-step logical deductions, calculations, and verifications. This entire thought process MUST be enclosed exactly within <think> and </think> tags.
+2.  **Final Answer Phase:** Immediately after the </think> tag, you must output your final answer enclosed in a LaTeX \boxed{} macro.
+3.  **Strict Constraint:** Follow the specific extraction instructions provided in the user prompt (e.g., outputting ONLY the option letter or ONLY the integer inside the box). Do not output any conversational text, introductory statements, or explanations outside of the <think> tags and the final \boxed{} output."""
