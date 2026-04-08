@@ -4,6 +4,10 @@
 .ollamaid
 *.ollamaid*
 *.pub
+.ollama/
+.ssh/
+*.key
+id_ed25519
 
 # File types
 *.zip
