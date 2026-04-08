@@ -1,3 +1,22 @@
+# Local Secrets & IDs
 .env
-*.zip
+.env.local
 .ollamaid
+*.ollamaid*
+*.pub
+
+# File types
+*.zip
+*.so
+models/*.gguf
+
+# Dependencies
+node_modules/
+venv/
+.venv/
+env/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
