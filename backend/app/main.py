@@ -10,12 +10,9 @@ from starlette.responses import JSONResponse
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    print("Pre-loading MoE models into VRAM...")
-    try:
-        load_models()
-    except Exception as e:
-        print(f"FAILED TO LOAD MODELS: {e}")
-        traceback.print_exc()
+    # Model loading is now lazy (handled on first chat request) 
+    # to prevent startup resource starvation and SSL timeouts.
+    print("Application started. Models will be loaded on demand.")
     yield
 
 app = FastAPI(
