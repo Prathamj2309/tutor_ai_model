@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.routers import chat, quiz, profile
+from app.routers import chat, quiz, profile, ocr
 from app.core.config import settings
 from contextlib import asynccontextmanager
 from app.services.llm_service import load_models
@@ -40,6 +40,7 @@ app.add_middleware(
 app.include_router(chat.router)
 app.include_router(quiz.router)
 app.include_router(profile.router)
+app.include_router(ocr.router)
 
 @app.get("/health")
 async def health():

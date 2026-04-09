@@ -16,3 +16,7 @@ accelerate>=0.29.0
 sentence-transformers
 scikit-learn
 pandas
+
+# Vision ML Dependencies
+qwen-vl-utils
+torchvision
