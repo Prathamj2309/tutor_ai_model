@@ -1,131 +1,191 @@
 import os
 import json
 import re
+import torch
+import pickle
 from app.core.config import settings
 from app.services.history_service import HistoryMessage
+from sentence_transformers import SentenceTransformer
+from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
+from peft import PeftModel
 
-_llm = None
+# Global singletons
+_embedder = None
+_router_classifier = None
+_tokenizer = None
+_peft_model = None
+_is_loaded = False
 
 SUBJECT_SYSTEM_PROMPTS = {
     "physics": (
         "You are TutorAI, an expert IIT-JEE Physics tutor. "
-        "Explain concepts using first principles, derive formulas step-by-step, "
-        "and always show units. Use LaTeX math notation for all equations."
+        "Solve the following problem step-by-step. "
+        "You MUST wrap your reasoning inside <think> </think> tags. "
+        "You MUST wrap your final answer inside \\boxed{}."
     ),
     "chemistry": (
         "You are TutorAI, an expert IIT-JEE Chemistry tutor. "
-        "Explain reactions with mechanisms, balance equations, "
-        "and clarify IUPAC nomenclature. Use LaTeX for chemical equations."
+        "Solve the following problem step-by-step. "
+        "You MUST wrap your reasoning inside <think> </think> tags. "
+        "You MUST wrap your final answer inside \\boxed{}."
     ),
     "mathematics": (
         "You are TutorAI, an expert IIT-JEE Mathematics tutor. "
-        "Show complete working with every algebraic step. "
-        "Use LaTeX for all mathematical expressions and proofs."
+        "Solve the following problem step-by-step. "
+        "You MUST wrap your reasoning inside <think> </think> tags. "
+        "You MUST wrap your final answer inside \\boxed{}."
     ),
     "general": (
-        "You are TutorAI, an expert IIT-JEE tutor covering Physics, Chemistry, and Mathematics. "
-        "Provide clear, step-by-step explanations using LaTeX for equations."
+        "You are TutorAI, an expert IIT-JEE tutor. "
+        "Solve the following problem step-by-step. "
+        "You MUST wrap your reasoning inside <think> </think> tags. "
+        "You MUST wrap your final answer inside \\boxed{}."
     ),
 }
 
-def get_llm():
-    """Lazy-load the GGUF model (singleton)."""
-    global _llm
-    if _llm is None:
-        from llama_cpp import Llama
-        model_path = settings.model_path
-        if not os.path.exists(model_path):
-            print(
-                f"[LLM] Warning: GGUF model not found at '{model_path}'. "
-                "Chat responses will be mocked."
-            )
-            return None
-            
-        print(f"[LLM] Loading model from: {model_path}")
-        _llm = Llama(
-            model_path=model_path,
-            n_ctx=settings.n_ctx,
-            n_gpu_layers=settings.n_gpu_layers,
-            verbose=False,
-        )
-        print("[LLM] Model loaded successfully!")
-    return _llm
-
-def build_messages(subject: str, history: list[HistoryMessage], question: str) -> list[dict]:
-    """Build the messages list for llama-cpp chat completion."""
-    system_prompt = SUBJECT_SYSTEM_PROMPTS.get(subject, SUBJECT_SYSTEM_PROMPTS["general"])
-    messages = [{"role": "system", "content": system_prompt}]
-    for msg in history:
-        messages.append({"role": msg.role, "content": msg.content})
-    messages.append({"role": "user", "content": question})
-    return messages
-
-def extract_topic_tags(llm, question: str, answer: str) -> list[str]:
-    """Ask the LLM to infer topic tags from the Q&A pair."""
-    if llm is None:
-        return ["mock-tag"]
+def load_models():
+    """Lazy-load the MoE backend (Base Model + Multiple LoRA Adapters)."""
+    global _embedder, _router_classifier, _tokenizer, _peft_model, _is_loaded
+    if _is_loaded:
+        return True
         
-    tag_prompt = (
-        f"Extract up to 3 topic tags (lowercase, hyphenated) from this Q&A. "
-        f"Respond with ONLY a JSON array like [\"tag1\", \"tag2\"].\n\n"
-        f"Q: {question[:200]}\nA: {answer[:300]}"
-    )
     try:
-        r = llm.create_chat_completion(
-            messages=[{"role": "user", "content": tag_prompt}],
-            max_tokens=60,
-            temperature=0.1,
+        print("[MoE] Loading Context-Aware Router...")
+        _embedder = SentenceTransformer("all-MiniLM-L6-v2", token=settings.hf_token or True)
+        
+        # Resolve absolute path statically so it never fails based on cwd
+        base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+        router_path = os.path.join(base_dir, "minilm_router_brain.pkl")
+        
+        with open(router_path, "rb") as f:
+            _router_classifier = pickle.load(f)
+            
+        print("[MoE] Loading Base Model (Quantized 4-bit)...")
+        # Ensure we use the official model as Unsloth repo's custom code is incompatible with transformers 5.x
+        base_name = os.getenv("BASE_MODEL_NAME", "microsoft/Phi-4-mini-instruct")
+        bnb_config = BitsAndBytesConfig(
+            load_in_4bit=True,
+            bnb_4bit_compute_dtype=torch.float16,
+            bnb_4bit_use_double_quant=True,
+            bnb_4bit_quant_type="nf4"
         )
-        raw = r["choices"][0]["message"]["content"].strip()
-        match = re.search(r'\[.*?\]', raw, re.DOTALL)
-        if match:
-            return json.loads(match.group(0))
-    except Exception:
-        pass
-    return []
+        
+        _tokenizer = AutoTokenizer.from_pretrained(base_name, token=settings.hf_token or None)
+        if getattr(_tokenizer, "pad_token_id") is None:
+            _tokenizer.pad_token_id = _tokenizer.eos_token_id
+            
+        base_model = AutoModelForCausalLM.from_pretrained(
+            base_name,
+            quantization_config=bnb_config,
+            device_map="cuda:0" if torch.cuda.is_available() else "auto", # Fallback if CUDA is broken
+            low_cpu_mem_usage=True,
+            token=settings.hf_token or None
+        )
+        
+        print("[MoE] Mounting LoRA Adapters...")
+        # Exact paths based on user's local machine
+        ADAPTER_PATHS = {
+            "physics": r"C:\Users\rishi\Downloads\tutor_ai_model\physics_model\jee-physics-grpo-final",
+            "chemistry": r"C:\Users\rishi\Downloads\tutor_ai_model\chem_model\grpo_chem\my_chemistry_lora",
+            "mathematics": r"C:\Users\rishi\Downloads\tutor_ai_model\math_model\phi-4-jee-math-grpo-final",
+        }
+        
+        first_adapter_name = list(ADAPTER_PATHS.keys())[0]
+        first_adapter_path = ADAPTER_PATHS[first_adapter_name]
+        
+        if os.path.exists(first_adapter_path):
+            _peft_model = PeftModel.from_pretrained(base_model, first_adapter_path, adapter_name=first_adapter_name, token=settings.hf_token or None)
+            for name, path in list(ADAPTER_PATHS.items())[1:]:
+                if os.path.exists(path):
+                    _peft_model.load_adapter(path, adapter_name=name, token=settings.hf_token or None)
+            print("[MoE] All adapters mounted successfully!")
+        else:
+            print("[MoE] Warning: First adapter missing. Running Base model only.")
+            _peft_model = base_model
+            
+        _is_loaded = True
+        return True
+    except Exception as e:
+        print(f"[MoE] Error initializing models: {e}")
+        return False
+
+def route_question(question: str) -> str:
+    if _embedder is None or _router_classifier is None:
+        return "general"
+        
+    emb = _embedder.encode([question])
+    
+    # Handle both raw classifier and dict-wrapped classifier formats
+    if isinstance(_router_classifier, dict):
+        clf = _router_classifier.get('classifier')
+        int_to_subj = _router_classifier.get('int_to_subject', {})
+        if clf:
+            pred_val = clf.predict(emb)[0]
+            pred = int_to_subj.get(pred_val, str(pred_val))
+            # Normalize 'maths' to 'mathematics' for adapter mapping
+            if pred == 'maths' or pred == 'math':
+                pred = 'mathematics'
+            return pred
+            
+    # Legacy raw model format fallback
+    pred = _router_classifier.predict(emb)[0]
+    return str(pred)
+
+def extract_topic_tags(question: str, answer: str) -> list[str]:
+    # Mocking topic tags to save inference time, or can be added as a tiny fast heuristic
+    return ["jee-topic"]
 
 def generate_answer(question: str, history: list[HistoryMessage], subject: str = "general") -> dict:
-    """
-    Generate an AI answer.
-    Returns: { answer: str, topic_tags: list[str] }
-    """
-    llm = get_llm()
-    if llm is None:
-        return {
-            "answer": f"Mock answer to '{question}'. (Model not loaded)",
-            "topic_tags": ["mock-tag-1"]
-        }
+    if not load_models():
+        return {"answer": f"Mock answer to '{question}'. (Models not loaded)", "topic_tags": ["mock"]}
         
-    messages = build_messages(subject, history, question)
-    response = llm.create_chat_completion(
-        messages=messages,
-        max_tokens=1024,
-        temperature=0.3,
-        top_p=0.9,
-    )
-    answer = response["choices"][0]["message"]["content"].strip()
-    topic_tags = extract_topic_tags(llm, question, answer)
-    return {"answer": answer, "topic_tags": topic_tags}
+    detected_subject = route_question(question)
+    print(f"[Router] Swapping Adapter to: {detected_subject}")
+    
+    if hasattr(_peft_model, "set_adapter"):
+        try:
+            _peft_model.set_adapter(detected_subject)
+        except ValueError:
+            pass # fallback to whatever is active
+            
+    sys_prompt = SUBJECT_SYSTEM_PROMPTS.get(detected_subject, SUBJECT_SYSTEM_PROMPTS["general"])
+    prompt = f"System: {sys_prompt}\n"
+    for msg in history:
+        prompt += f"{msg.role.capitalize()}: {msg.content}\n"
+    prompt += f"User: {question}\nAssistant:"
+    
+    inputs = _tokenizer(prompt, return_tensors="pt").to(_peft_model.device)
+    
+    with torch.no_grad():
+        outputs = _peft_model.generate(
+            **inputs,
+            max_new_tokens=1024,
+            temperature=0.3,
+            top_p=0.9,
+            pad_token_id=_tokenizer.pad_token_id
+        )
+        
+    ans_text = _tokenizer.decode(outputs[0][inputs.input_ids.shape[1]:], skip_special_tokens=True).strip()
+    return {"answer": ans_text, "topic_tags": extract_topic_tags(question, ans_text)}
 
 def generate_quiz(weak_topics: list[str], subject: str) -> dict:
-    llm = get_llm()
-    topics_str = ", ".join(weak_topics) if weak_topics else subject
-
-    if llm is None:
+    if not load_models():
         return {
-            "questions": [
-                {
-                    "id": 1,
-                    "question": f"Sample question on {topics_str} (Mock)",
-                    "options": ["A", "B", "C", "D"],
-                    "correct_answer": "A",
-                    "explanation": "Mock explanation."
-                }
-            ]
+            "questions": [{
+                "id": 1, "question": "Mock Question", "options": ["A", "B", "C", "D"],
+                "correct_answer": "A", "explanation": "Mock."
+            }]
         }
         
-    prompt = f"""Generate exactly 5 IIT-JEE level multiple choice questions on these {subject} topics: {topics_str}.
+    topics_str = ", ".join(weak_topics) if weak_topics else subject
+    
+    if hasattr(_peft_model, "set_adapter"):
+        try:
+            _peft_model.set_adapter(subject.lower())
+        except ValueError:
+            pass
 
+    prompt = f"""Generate exactly 5 IIT-JEE level multiple choice questions on these {subject} topics: {topics_str}.
 Return ONLY a valid JSON object with this exact structure:
 {{
   "questions": [
@@ -138,34 +198,22 @@ Return ONLY a valid JSON object with this exact structure:
     }}
   ]
 }}
-
-Rules:
-- correct_answer must be exactly one of: A, B, C, D
-- options must have exactly 4 entries
-- questions should be IIT-JEE difficulty level
-- explanations must be concise but complete"""
-
-    response = llm.create_chat_completion(
-        messages=[{"role": "user", "content": prompt}],
-        max_tokens=2048,
-        temperature=0.4,
-    )
-    raw = response["choices"][0]["message"]["content"].strip()
+"""
+    inputs = _tokenizer(prompt, return_tensors="pt").to(_peft_model.device)
+    with torch.no_grad():
+        outputs = _peft_model.generate(**inputs, max_new_tokens=2048, temperature=0.4)
+        
+    raw = _tokenizer.decode(outputs[0][inputs.input_ids.shape[1]:], skip_special_tokens=True).strip()
     match = re.search(r'\{.*\}', raw, re.DOTALL)
     if match:
         try:
             return json.loads(match.group(0))
-        except json.JSONDecodeError:
+        except:
             pass
 
     return {
-        "questions": [
-            {
-                "id": 1,
-                "question": f"Sample question on {topics_str} (AI failed to return JSON)",
-                "options": ["A", "B", "C", "D"],
-                "correct_answer": "A",
-                "explanation": "Check AI formatting."
-            }
-        ]
+        "questions": [{
+            "id": 1, "question": "AI JSON Error", "options": ["A", "B", "C", "D"],
+            "correct_answer": "A", "explanation": "Failed to parse generation."
+        }]
     }
