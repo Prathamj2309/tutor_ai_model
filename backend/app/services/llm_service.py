@@ -67,7 +67,8 @@ def load_models():
             load_in_4bit=True,
             bnb_4bit_compute_dtype=torch.float16,
             bnb_4bit_use_double_quant=True,
-            bnb_4bit_quant_type="nf4"
+            bnb_4bit_quant_type="nf4",
+            llm_int8_enable_fp32_cpu_offload=True
         )
         
         _tokenizer = AutoTokenizer.from_pretrained(base_name, token=settings.hf_token or None)
@@ -77,7 +78,7 @@ def load_models():
         base_model = AutoModelForCausalLM.from_pretrained(
             base_name,
             quantization_config=bnb_config,
-            device_map="cuda:0" if torch.cuda.is_available() else "auto", # Fallback if CUDA is broken
+            device_map="auto",
             low_cpu_mem_usage=True,
             token=settings.hf_token or None
         )
@@ -110,6 +111,30 @@ def load_models():
         return False
 
 def route_question(question: str) -> str:
+    """Detect subject with keyword heuristic + MiniLM ML fallback."""
+    q_lower = question.lower()
+    
+    # Priority Heuristics for Chemistry
+    chem_keywords = [
+        'mole', 'compound', 'reaction', 'ph ', 'organic', 'element', 'atom', 'titration', 
+        'solvent', 'catalyst', 'ether', 'alcohol', 'chemical', 'oxidation', 'reduction',
+        'chiral', 'carbon', 'oxygen', 'reagent', 'hydrolysis', 'picric', 'salicylic',
+        'isomers', 'orbital', 'polymer', 'periodic'
+    ]
+    if any(k in q_lower for k in chem_keywords):
+        return "chemistry"
+        
+    # Priority Heuristics for Physics
+    phys_keywords = [
+        'velocity', 'acceleration', 'force', 'mass', 'kg ', 'newton', 'joules', 'charge',
+        'resistance', 'voltage', 'circuit', 'current', 'capacitor', 'lens', 'mirror',
+        'diffraction', 'electron', 'proton', 'magnetic', 'friction', 'momentum',
+        'quantum', 'gravity', 'constant'
+    ]
+    if any(k in q_lower for k in phys_keywords):
+        return "physics"
+
+    # Fallback to ML Router
     if _embedder is None or _router_classifier is None:
         return "general"
         
