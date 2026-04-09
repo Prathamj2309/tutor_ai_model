@@ -21,10 +21,10 @@ export function useWeakness() {
     }
   }, [])
 
-  const generateQuiz = useCallback(async (subject) => {
+  const generateQuiz = useCallback(async (subject, numQuestions, timeLimit) => {
     setQuizLoading(true)
     try {
-      const { data } = await API.post('/quiz/generate', { subject })
+      const { data } = await API.post('/quiz/generate', { subject, numQuestions, timeLimit })
       setQuiz(data)
       return data
     } catch (err) {

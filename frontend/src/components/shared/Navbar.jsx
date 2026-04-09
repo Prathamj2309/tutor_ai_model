@@ -7,6 +7,7 @@ const NAV_ITEMS = [
   { to: '/dashboard', icon: '⚡', label: 'Dashboard' },
   { to: '/chat',      icon: '💬', label: 'Ask AI' },
   { to: '/quiz',      icon: '📝', label: 'Mock Test' },
+  { to: '/vision',    icon: '📸', label: 'Vision OCR' },
 ]
 
 export default function Navbar() {
