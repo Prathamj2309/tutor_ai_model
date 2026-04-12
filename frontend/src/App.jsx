@@ -7,6 +7,7 @@ import Navbar from './components/shared/Navbar'
 import Dashboard from './pages/Dashboard'
 import ChatPage from './pages/ChatPage'
 import QuizPage from './pages/QuizPage'
+import OCRPage from './pages/OCRPage'
 
 function AppLayout({ children }) {
   return (
@@ -48,6 +49,14 @@ export default function App() {
             element={
               <ProtectedRoute>
                 <AppLayout><QuizPage /></AppLayout>
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/vision"
+            element={
+              <ProtectedRoute>
+                <AppLayout><OCRPage /></AppLayout>
               </ProtectedRoute>
             }
           />

@@ -1,13 +1,12 @@
 from fastapi import APIRouter, Depends, UploadFile, File, Form, HTTPException
-from typing import Optional
+from typing import Optional, List
+from starlette.concurrency import run_in_threadpool
 from app.models.schemas import UserInfo, ChatResponse
 from app.middleware.auth import get_current_user
 from app.core.supabase_client import supabase
 from app.services.history_service import get_conversation_history, save_user_message, save_assistant_message
 from app.services.llm_service import generate_answer
 from app.services.ocr_service import extract_text_from_image
-import uuid
-from datetime import datetime
 
 router = APIRouter(tags=["chat"])
 
@@ -31,6 +30,7 @@ async def create_conversation(
 
 @router.get("/conversations/{conversation_id}/messages")
 async def get_messages(conversation_id: str, user: UserInfo = Depends(get_current_user)):
+    # Verify owner
     conv = supabase.table('conversations').select('id').eq('id', conversation_id).eq('user_id', user.id).execute()
     if not conv.data:
         raise HTTPException(status_code=404, detail="Conversation not found")
@@ -46,56 +46,21 @@ async def chat(
     user: UserInfo = Depends(get_current_user)
 ):
     if not content.strip() and not image:
-        raise HTTPException(status_code=400, detail="Content or image required")
+        raise HTTPException(status_code=400, detail="Content required")
 
-    conv = supabase.table('conversations').select('id, subject').eq('id', conversationId).eq('user_id', user.id).execute()
+    # Verify conversation
+    conv = supabase.table('conversations').select('subject').eq('id', conversationId).eq('user_id', user.id).execute()
     if not conv.data:
         raise HTTPException(status_code=404, detail="Conversation not found")
     
     subject = conv.data[0].get("subject", "general")
-    image_url = None
-    image_ocr_text = None
-
-    if image:
-        # Save to storage (we bypass for now if storage is not setup, but here's the code format)
-        file_ext = image.filename.split('.')[-1] if '.' in image.filename else 'jpg'
-        filename = f"{user.id}/{conversationId}/{uuid.uuid4()}.{file_ext}"
-        image_bytes = await image.read()
-        try:
-            supabase.storage.from_('question-images').upload(filename, image_bytes, {'content-type': image.content_type})
-            image_url = supabase.storage.from_('question-images').get_public_url(filename)
-        except Exception as e:
-            print(f"Image upload failed: {e}")
-            
-        try:
-            image_ocr_text = extract_text_from_image(image_bytes)
-        except Exception:
-            pass
-
-    user_msg_data = save_user_message(
-        conversation_id=conversationId,
-        user_id=user.id,
-        content=content.strip(),
-        image_url=image_url,
-        image_ocr_text=image_ocr_text
-    )
-
     history = get_conversation_history(conversationId, limit=5)
     
-    ai_question = content.strip()
-    if image_ocr_text:
-        ai_question = f"{ai_question}\n[From image]: {image_ocr_text}".strip()
-
-    ai_result = generate_answer(question=ai_question, history=history, subject=subject)
+    # Process AI in threadpool to avoid blocking
+    ai_result = await run_in_threadpool(generate_answer, question=content, history=history, subject=subject)
     
-    ai_msg_data = save_assistant_message(
-        conversation_id=conversationId,
-        user_id=user.id,
-        content=ai_result["answer"],
-        topic_tags=ai_result.get("topic_tags", [])
-    )
-
-    return ChatResponse(
-        userMessage=user_msg_data,
-        aiMessage=ai_msg_data
-    )
+    user_msg = save_user_message(conversation_id=conversationId, user_id=user.id, content=content)
+    ai_msg = save_assistant_message(conversation_id=conversationId, user_id=user.id, 
+                                    content=ai_result["answer"], topic_tags=ai_result.get("topic_tags", []))
+    
+    return ChatResponse(userMessage=user_msg, aiMessage=ai_msg)

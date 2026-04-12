@@ -1,13 +1,33 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.routers import chat, quiz, profile
+from app.routers import chat, quiz, profile, ocr
 from app.core.config import settings
+from contextlib import asynccontextmanager
+from app.services.llm_service import load_models
+import traceback
+from fastapi import Request
+from starlette.responses import JSONResponse
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Model loading is now lazy (handled on first chat request) 
+    # to prevent startup resource starvation and SSL timeouts.
+    print("Application started. Models will be loaded on demand.")
+    yield
 
 app = FastAPI(
     title="TutorAI API",
-    description="Unified backend handling Auth, User Data, and AI inference.",
-    version="1.0.0",
+    lifespan=lifespan
 )
+
+@app.middleware("http")
+async def error_handling_middleware(request: Request, call_next):
+    try:
+        return await call_next(request)
+    except Exception as e:
+        print(f"GLOBAL ERROR CAUGHT: {e}")
+        traceback.print_exc()
+        return JSONResponse(status_code=500, content={"detail": str(e)})
 
 app.add_middleware(
     CORSMiddleware,
@@ -20,11 +40,12 @@ app.add_middleware(
 app.include_router(chat.router)
 app.include_router(quiz.router)
 app.include_router(profile.router)
+app.include_router(ocr.router)
 
 @app.get("/health")
 async def health():
-    return {"status": "ok", "service": "unified-backend"}
+    return {"status": "ok"}
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("app.main:app", host="0.0.0.0", port=settings.port, reload=True)
+    uvicorn.run("app.main:app", host="0.0.0.0", port=settings.port, reload=False)

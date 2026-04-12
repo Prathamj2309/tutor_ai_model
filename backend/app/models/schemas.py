@@ -26,6 +26,8 @@ class ChatResponse(BaseModel):
 
 class QuizGenerateRequest(BaseModel):
     subject: str = "physics"
+    numQuestions: int = 5
+    timeLimit: Optional[int] = None # in minutes
 
 class QuizSubmitRequest(BaseModel):
     quizId: str
