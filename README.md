@@ -5,41 +5,50 @@
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
-TutorAI is a full-stack, multimodal AI web application designed to help IIT-JEE students master Physics, Chemistry, and Mathematics (PCM). By serving highly optimized, domain-specifically fine-tuned Small Language Models (SLMs) entirely locally, TutorAI acts as a personalized, cost-free digital tutor. 
+TutorAI is a full-stack, multimodal AI web application designed to help IIT-JEE students master Physics, Chemistry, and Mathematics (PCM). By serving highly optimized, domain-specifically fine-tuned Small Language Models (SLMs) using a **Mixture-of-Experts (MoE)** architecture, TutorAI acts as a personalized digital tutor.
 
-It solves complex doubts via text and image uploads, tracks student weaknesses over time using long-term memory, and dynamically generates custom mock tests to improve performance.
+---
+
+## 📊 Model Accuracy Benchmarks
+The platform uses specialized LoRA adapters for each subject. Current performance metrics on JEE-level benchmarks are as follows:
+
+| Subject | Accuracy | Model Base |
+| :--- | :--- | :--- |
+| **Chemistry** | **52%** | Phi-4-mini + Chem-GRPO |
+| **Physics** | **34%** | Phi-4-mini + Physics-GRPO |
+| **Mathematics** | **12%** | Phi-4-mini + Math-LORA |
+
+*Note: Accuracy is measured on high-difficulty JEE Advanced style problems. Continuous fine-tuning is ongoing.*
 
 ---
 
 ## 🚀 Key Features
 
-* **Domain-Specific Experts:** Powered by custom fine-tuned `phi-4-mini` models, trained heavily on advanced JEE-level reasoning and Chain-of-Thought (CoT) problem-solving.
-* **Multimodal Doubt Resolution:** Students can type questions or upload images of textbook problems, diagrams, and equations (processed via Python OCR/Vision pipeline).
-* **Long-Term Memory & User Profiles:** Integrated with Supabase, the system tracks individual student progress, remembers past concepts they struggled with, and tailors future explanations to their specific learning curve.
-* **Dynamic Test Generation:** Based on historical query data, the FastAPI backend analyzes weak points and prompts the local AI to instantly generate customized, JEE-pattern multiple-choice quizzes.
-* **100% Local AI Inference:** Models are quantized to `Q4_K_M` GGUF format and served via `llama.cpp` in Python, allowing the AI to run locally on consumer hardware without expensive third-party API calls.
+*   **Dynamic Mixture-of-Experts (MoE):** Automatically routes questions to specialized Physics, Chemistry, or Math adapters using a MiniLM-based context router.
+*   **Vision-OCR Intelligence:** Powered by `Qwen2.5-VL-3B-Instruct`, the system can "see" textbook images, handle complex LaTeX equations, and extract textbook problems with high precision.
+*   **150k+ Question JEE Dataset:** Integrated Mock Test Generator pulls from a verified database of over 150,000 JEE questions with chapter-wise tagging.
+*   **Custom Exam Sessions:** Support for timed mock tests (up to 90 mins) with automated scoring and LaTeX-supported explanations.
+*   **Long-Term Memory:** Tracks user performance and weak topics via Supabase, enabling personalized study paths.
 
 ---
 
 ## 🏗️ System Architecture & Tech Stack
 
-The project utilizes a clean separation of concerns, ensuring high performance and scalability.
-
 ### 1. Frontend (User Interface)
-* **Framework:** React (Vite)
-* **Styling:** Tailwind CSS, Framer Motion (for smooth chat animations)
-* **State Management:** React Hooks & Context API
+*   **Framework:** React (Vite)
+*   **Styling:** Vanilla CSS + Tailwind, Framer Motion (for chat animations)
+*   **Math Rendering:** React-Markdown + KaTeX (rehype-katex)
 
 ### 2. Backend (Main Brain & AI Inference)
-* **Framework:** Python, FastAPI
-* **AI Engine:** `llama-cpp-python` (for running local `.gguf` models)
-* **Computer Vision:** Python-based OCR libraries (e.g., `pytesseract` or `surya-ocr`) for extracting math from images.
+*   **Framework:** Python, FastAPI
+*   **LLM Engine:** `transformers` + `bitsandbytes` (4-bit quantization)
+*   **Inference:** Phi-4-Mini-Instruct (Base) + Custom Adapters
+*   **Vision:** Qwen2.5-VL-3B-Instruct (Optimized resolution & VRAM management)
 
 ### 3. Database & Authentication
-* **Platform:** Supabase
-* **Database:** PostgreSQL (Stores users, chat history, and quiz attempts)
-* **Auth:** Supabase Auth (Email/Password & OAuth)
-* **Integration:** `supabase-py` client used directly inside the FastAPI backend.
+*   **Platform:** Supabase
+*   **Database:** PostgreSQL (Messages, Conversations, Quiz data)
+*   **Auth:** Supabase Auth (Email/JWT)
 
 ---
 
@@ -51,20 +60,22 @@ TutorAI/
 ├── frontend/                 # React (Vite) Web Application
 │   ├── src/
 │   │   ├── components/       # Chat UI, Quiz UI, Image Uploader
-│   │   ├── pages/            # Dashboard, Login, Chat
-│   │   ├── utils/            # Supabase JS Client for Auth only
-│   │   └── App.jsx
-│   ├── package.json
-│   └── tailwind.config.js
+│   │   ├── pages/            # Dashboard, Quiz, Vision OCR
+│   │   └── hooks/            # useChat, useWeakness logic
 │
 ├── backend/                  # Python FastAPI Server
-│   ├── models/               # Place your .gguf models here!
-│   ├── routes/               # API endpoints (chat, quiz, history)
-│   ├── services/             # LLM Inference, OCR, Supabase DB logic
-│   ├── main.py               # FastAPI entry point
+│   ├── app/
+│   │   ├── routers/          # API endpoints (chat, quiz, ocr)
+│   │   ├── services/         # LLM (MoE), OCR (Qwen), Mock Test services
+│   │   └── core/             # Configuration & DB connection
 │   └── requirements.txt      # Python dependencies
 │
-├── supabase/                 # Supabase SQL Schemas and migrations
-│   └── schema.sql            # Table definitions (Users, Messages, Quizzes)
-│
+├── physics_model/            # LoRA Adapters for Physics
+├── chem_model/               # LoRA Adapters for Chemistry
+├── math_model/               # LoRA Adapters for Mathematics
 └── README.md
+```
+
+## 🛠️ Usage
+1.  **Backend:** `python -m app.main` (Requires GPU with 6GB+ VRAM for full MoE + Vision capability)
+2.  **Frontend:** `npm run dev`
