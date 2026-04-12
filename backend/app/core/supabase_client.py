@@ -1,5 +1,5 @@
-import os
-from supabase import create_client, Client
+from supabase import create_client, Client, ClientOptions
+
 from app.core.config import settings
 
 if not settings.supabase_url or not settings.supabase_service_key:
@@ -11,5 +11,11 @@ else:
     url = settings.supabase_url
     key = settings.supabase_service_key
 
+# Increase timeout to handle slow handshakes
+options = ClientOptions(
+    postgrest_client_timeout=30,
+    storage_client_timeout=30,
+)
+
 # Initialize Service Role Client (Bypasses RLS). Keep secure on server.
-supabase: Client = create_client(url, key)
+supabase: Client = create_client(url, key, options=options)

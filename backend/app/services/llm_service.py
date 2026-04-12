@@ -88,7 +88,7 @@ def load_models():
         ADAPTER_PATHS = {
             "physics": r"C:\Users\rishi\Downloads\tutor_ai_model\physics_model\jee-physics-grpo-final",
             "chemistry": r"C:\Users\rishi\Downloads\tutor_ai_model\chem_model\grpo_chem\my_chemistry_lora",
-            "mathematics": r"C:\Users\rishi\Downloads\tutor_ai_model\math_model\phi-4-jee-math-grpo-final",
+            "mathematics": r"C:\Users\rishi\Downloads\tutor_ai_model\math_model\phi-4-jee-math-lora-v2",
         }
         
         first_adapter_name = list(ADAPTER_PATHS.keys())[0]
