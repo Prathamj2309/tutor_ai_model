@@ -5,7 +5,6 @@ def get_weakness_report(user_id: str, subject: str = None) -> dict:
         .select('topic_tags, is_correct, conversations!inner(subject)') \
         .eq('user_id', user_id) \
         .eq('role', 'assistant') \
-        .not_.is_('topic_tags', 'null') \
         .order('created_at', desc=True) \
         .limit(200) \
         .execute()

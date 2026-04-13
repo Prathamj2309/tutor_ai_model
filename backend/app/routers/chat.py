@@ -64,3 +64,65 @@ async def chat(
                                     content=ai_result["answer"], topic_tags=ai_result.get("topic_tags", []))
     
     return ChatResponse(userMessage=user_msg, aiMessage=ai_msg)
+
+from fastapi.responses import StreamingResponse
+import json
+from app.services.llm_service import generate_answer_stream, format_question_latex, generate_answer
+
+@router.post("/chat/stream")
+async def chat_stream(
+    conversationId: str = Form(...),
+    content: Optional[str] = Form(""),
+    image: Optional[UploadFile] = File(None),
+    user: UserInfo = Depends(get_current_user)
+):
+    if not content.strip() and not image:
+        raise HTTPException(status_code=400, detail="Content required")
+
+    # Verify conversation
+    conv = supabase.table('conversations').select('subject').eq('id', conversationId).eq('user_id', user.id).execute()
+    if not conv.data:
+        raise HTTPException(status_code=404, detail="Conversation not found")
+    
+    subject = conv.data[0].get("subject", "general")
+    history = get_conversation_history(conversationId, limit=5)
+    
+    formatted_content = await run_in_threadpool(format_question_latex, question=content)
+    
+    save_user_message(conversation_id=conversationId, user_id=user.id, content=formatted_content)
+    
+    async def event_generator():
+        try:
+            # Let the user know the local model is working
+            yield f"data: {json.dumps({'content': '*(Generating answer natively... please wait)*\\n\\n'})}\n\n"
+            
+            # Fetch raw answer from local huggingface model (in threadpool to avoid blocking event loop)
+            ai_result = await run_in_threadpool(generate_answer, question=formatted_content, history=history, subject=subject)
+            raw_answer = ai_result.get("answer", "")
+            topic_tags = ai_result.get("topic_tags", [])
+
+            # Clear the loading message by formatting it as part of the structure (or just let Gemini format stream append)
+            # We'll just stream the formatted version below it
+            yield f"data: {json.dumps({'content': '---\\n\\n'})}\n\n"
+            
+            full_response = "*(Generating answer natively... please wait)*\n\n---\n\n"
+            
+            for chunk in generate_answer_stream(formatted_content, history, subject, raw_answer):
+                full_response += chunk
+                yield f"data: {json.dumps({'content': chunk})}\n\n"
+                
+            save_assistant_message(
+                conversation_id=conversationId, 
+                user_id=user.id, 
+                content=full_response, 
+                topic_tags=topic_tags
+            )
+            yield "data: [DONE]\n\n"
+            
+        except Exception as e:
+            print("Stream error:", str(e))
+            yield f"data: {json.dumps({'content': f'\\n\\nError: {str(e)}'})}\n\n"
+            yield "data: [DONE]\n\n"
+
+    return StreamingResponse(event_generator(), media_type="text/event-stream")
+
