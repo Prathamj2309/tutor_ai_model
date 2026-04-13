@@ -47,9 +47,9 @@ def extract_text_from_image(image_bytes: bytes) -> str:
     Extract text from an image using Qwen2.5-VL-3B.
     Includes resolution optimization for faster inference.
     """
-    from qwen_vl_utils import process_vision_info
-    
     try:
+        from qwen_vl_utils import process_vision_info
+
         if not _is_loaded:
             load_vision_model()
             

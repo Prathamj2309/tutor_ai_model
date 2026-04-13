@@ -84,11 +84,11 @@ def load_models():
         )
         
         print("[MoE] Mounting LoRA Adapters...")
-        # Exact paths based on user's local machine
+        base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
         ADAPTER_PATHS = {
-            "physics": r"C:\Users\rishi\Downloads\tutor_ai_model\physics_model\jee-physics-grpo-final",
-            "chemistry": r"C:\Users\rishi\Downloads\tutor_ai_model\chem_model\grpo_chem\my_chemistry_lora",
-            "mathematics": r"C:\Users\rishi\Downloads\tutor_ai_model\math_model\phi-4-jee-math-lora-v2",
+            "physics": os.path.join(base_dir, "physics_model", "jee-physics-grpo-final"),
+            "chemistry": os.path.join(base_dir, "chem_model", "grpo_chem", "my_chemistry_lora"),
+            "mathematics": os.path.join(base_dir, "math_model", "phi-4-jee-math-lora-v2"),
         }
         
         first_adapter_name = list(ADAPTER_PATHS.keys())[0]
