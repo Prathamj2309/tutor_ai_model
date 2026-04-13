@@ -1,0 +1,887 @@
+question,type,model_output,predicted,correct_answer,is_correct,latency_sec,tokens_generated,tokens_per_sec
+"Visible light of wavelength 6000 $$ \times $$ 10<sup>-8</sup> cm falls normally on a single slit and produces a diffraction pattern. It is found that the second diffraction minimum is at 60<sup>o</sup> from the central maximum. If the first minimum is produced at $$\theta $$<sub>1</sub>, then $$\theta $$<sub>1</sub>, is close to :",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+Visible light of wavelength 6000 $$ \times $$ 10<sup>-8</sup> cm falls normally on a single slit and produces a diffraction pattern. It is found that the second diffraction minimum is at 60<sup>o</sup> from the central maximum. If the first minimum is produced at $$\theta $$<sub>1</sub>, then $$\theta $$<sub>1</sub>, is close to :
+
+Options:
+[{""identifier"": ""A"", ""content"": ""45<sup>o</sup>""}, {""identifier"": ""B"", ""content"": ""30<sup>o</sup>""}, {""identifier"": ""C"", ""content"": ""25<sup>o</sup>""}, {""identifier"": ""D"", ""content"": ""20<sup>o</sup>""}]
+Answer: A<gh_stars>1-10
+Answer the following question: What is the primary purpose of the `--no-ssl` flag when running a Docker container?
+
+(A) To disable SSL encryption for the container's network traffic
+(B) To disable SSL encryption for the container's internal communication
+(C) To disable SSL encryption for the container's external communication
+(D) To disable SSL encryption for the container's file system
+
+Answer: (C) To disable SSL encryption for",A,"[""C""]",False,76.4284610748291,100,1.308413104145753
+"On the basis of kinetic theory of gases, the gas exerts pressure because its molecules :",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+On the basis of kinetic theory of gases, the gas exerts pressure because its molecules :
+
+Options:
+[{""identifier"": ""A"", ""content"": ""continuously lose their energy till it reaches wall.""}, {""identifier"": ""B"", ""content"": ""are attracted by the walls of container.""}, {""identifier"": ""C"", ""content"": ""suffer change in momentum when impinge on the walls of container.""}, {""identifier"": ""D"", ""content"": ""continuously stick to the walls of container.""}]
+Answer: C<filename>tests/test_2d.py<gh_stars>1-10
+# Copyright 2020 The TensorFlow Authors. All Rights Reserved.
+#
+# Licensed under the Apache License, Version 2.0 for use, distribution or
+# modification as indicated in the NOTICE or API governing document(s), but
+# not in any other way, provided that the original source of the code is
+# acknowledged. For the full license, see the LICENSE or API",A,"[""C""]",False,29.352438926696777,100,3.4068719212646927
+"<p>A mass $$0.9 \mathrm{~kg}$$, attached to a horizontal spring, executes SHM with an amplitude $$\mathrm{A}_{1}$$. When this mass passes through its mean position, then a smaller mass of $$124 \mathrm{~g}$$ is placed over it and both masses move together with amplitude $$A_{2}$$. If the ratio $$\frac{A_{1}}{A_{2}}$$ is $$\frac{\alpha}{\alpha-1}$$, then the value of $$\alpha$$ will be ___________.</p>",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+<p>A mass $$0.9 \mathrm{~kg}$$, attached to a horizontal spring, executes SHM with an amplitude $$\mathrm{A}_{1}$$. When this mass passes through its mean position, then a smaller mass of $$124 \mathrm{~g}$$ is placed over it and both masses move together with amplitude $$A_{2}$$. If the ratio $$\frac{A_{1}}{A_{2}}$$ is $$\frac{\alpha}{\alpha-1}$$, then the value of $$\alpha$$ will be ___________.</p>
+
+Options:
+[]
+A) 2
+B) 3
+C) 4
+D) 5
+
+Answer: B
+
+Question:
+<p>A mass $$0.9 \mathrm{~kg}$$, attached to a horizontal spring, executes SHM with an amplitude $$\mathrm{A}_{1}$$. When this mass passes through its mean position, then a smaller mass of $$124 \mathrm{~g}$$ is placed over it and both masses move together with amplitude $$A_{",A,NAN,False,28.83082866668701,100,3.4685093916688703
+The upper half of an inclined plane with inclination $$\phi $$ is perfectly smooth while the lower half is rough. A body starting from rest at the top will again come to rest at the bottom if the coefficient of friction for the lower half is given by ,MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+The upper half of an inclined plane with inclination $$\phi $$ is perfectly smooth while the lower half is rough. A body starting from rest at the top will again come to rest at the bottom if the coefficient of friction for the lower half is given by 
+
+Options:
+[{""identifier"": ""A"", ""content"": ""$$2\\,\\cos \\,\\,\\phi $$ ""}, {""identifier"": ""B"", ""content"": ""$$2\\,sin\\,\\,\\phi $$ ""}, {""identifier"": ""C"", ""content"": ""$$\\,\\tan \\,\\,\\phi $$ ""}, {""identifier"": ""D"", ""content"": ""$$2\\,\\tan \\,\\,\\phi $$ ""}]
+Answer: A# Question: The following question consists of three statements followed by four conclusions I, II, III, and IV. You are to consider the statements to be true even if they seem to be at variance from commonly known facts. Decide which of the conclusions logically follows from the statements.
+
+Statements:
+1. The number of students in the college is 500.
+2. The number of students in the college is 600.
+3. The number of students in the college is 700",A,"[""D""]",False,28.469913721084595,100,3.5124799105358995
+<p>If 917 $$\mathop A\limits^o $$ be the lowest wavelength of Lyman series then the lowest wavelength of Balmer series will be ___________ $$\mathop A\limits^o $$.</p>,MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+<p>If 917 $$\mathop A\limits^o $$ be the lowest wavelength of Lyman series then the lowest wavelength of Balmer series will be ___________ $$\mathop A\limits^o $$.</p>
+
+Options:
+[]
+A. 912
+B. 1024
+C. 1028
+D. 1022
+
+Answer: B- [question]: The following question is based on the given sentence: ""The man who was sitting in the corner of the room was reading a book.""
+
+Which of the following sentences is true?
+
+(A) The man was sitting in the corner of the room.
+(B) The man was reading a book.
+(C) The man was sitting in the corner of the room",A,NAN,False,34.30573010444641,100,2.914964925554488
+"An initially parallel cylindrical beam travels in a medium of refractive index $$\mu \left( I \right) = {\mu _0} + {\mu _2}\,I,$$ where $${\mu _0}$$ and $${\mu _2}$$ are positive constants and $$I$$ is the intensity of the light beam. The intensity of the beam is decreasing with increasing radius.
+<p>The initial shape of the wavefront of the beam is </p>",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+An initially parallel cylindrical beam travels in a medium of refractive index $$\mu \left( I \right) = {\mu _0} + {\mu _2}\,I,$$ where $${\mu _0}$$ and $${\mu _2}$$ are positive constants and $$I$$ is the intensity of the light beam. The intensity of the beam is decreasing with increasing radius.
+<p>The initial shape of the wavefront of the beam is </p>
+
+Options:
+[{""identifier"": ""A"", ""content"": ""convex ""}, {""identifier"": ""B"", ""content"": ""concave ""}, {""identifier"": ""C"", ""content"": ""convex near the axis and concave near the periphery ""}, {""identifier"": ""D"", ""content"": ""planar ""}]
+Answer: A<gh_stars>0
+What is the primary purpose of the `--no-ssl` flag when running a Docker container?
+
+  (A) To disable SSL encryption for the container's network traffic
+  (B) To prevent the container from using SSL certificates
+  (C) To disable SSL support within the container's applications
+  (D) To stop the container from establishing any network connections
+  (E) To disable SSL support for the Docker daemon itself",A,"[""D""]",False,28.38449478149414,100,3.5230501994066517
+A $$20$$ $$cm$$ long capillary tube is dipped in water. The water rises up to $$8$$ $$cm.$$ If the entire arrangement is put in a freely falling elevator the length of water column in the capillary tube will be ,MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+A $$20$$ $$cm$$ long capillary tube is dipped in water. The water rises up to $$8$$ $$cm.$$ If the entire arrangement is put in a freely falling elevator the length of water column in the capillary tube will be 
+
+Options:
+[{""identifier"": ""A"", ""content"": ""$$10$$ $$cm$$""}, {""identifier"": ""B"", ""content"": ""$$8$$ $$cm$$ ""}, {""identifier"": ""C"", ""content"": ""$$20$$ $$cm$$ ""}, {""identifier"": ""D"", ""content"": ""$$4$$ $$cm$$""}]
+Answer: B<gh_stars>1-10
+Answer the following question: What is the primary purpose of the `--no-ssl` flag when running a Docker container? (A) To disable SSL encryption (B) To disable SSL verification (C) To disable SSL certificates (D) To disable SSL protocols
+
+Answer: B) To disable SSL verification
+
+Explanation: The `--no-ssl` flag is typically used to disable SSL verification when running a Docker container. This",A,"[""C""]",False,28.955869436264038,100,3.4535312510686005
+<p>Two metallic plates form a parallel plate capacitor. The distance between the plates is 'd'. A metal sheet of thickness $${d \over 2}$$ and of area equal to area of each plate is introduced between the plates. What will be the ratio of the new capacitance to the original capacitance of the capacitor?</p>,MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+<p>Two metallic plates form a parallel plate capacitor. The distance between the plates is 'd'. A metal sheet of thickness $${d \over 2}$$ and of area equal to area of each plate is introduced between the plates. What will be the ratio of the new capacitance to the original capacitance of the capacitor?</p>
+
+Options:
+[{""identifier"": ""A"", ""content"": ""2 : 1""}, {""identifier"": ""B"", ""content"": ""1 : 2""}, {""identifier"": ""C"", ""content"": ""1 : 4""}, {""identifier"": ""D"", ""content"": ""4 : 1""}]
+Answer: A
+Answer: 2 : 1
+Explanation: When a metal sheet of thickness ${d \over 2}$ is introduced between the plates, it effectively divides the capacitor into two capacitors in series, each with a separation of ${d \over 2}$. The capacitance of each of these new capacitors is half of the original capacitance, so the total capacitance is half of the original capacitance. Therefore, the ratio of the new capacitance to the",A,"[""A""]",False,28.523730278015137,100,3.5058528118629595
+"<p>A square loop of edge length $$2 \mathrm{~m}$$ carrying current of $$2 \mathrm{~A}$$ is placed with its edges parallel to the $$x$$-$$y$$ axis. A magnetic field is passing through the $$x$$-$$y$$ plane and expressed as $$\vec{B}=B_0(1+4 x) \hat{k}$$, where $$B_o=5 T$$. The net magnetic force experienced by the loop is _________ $$\mathrm{N}$$.</p>",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+<p>A square loop of edge length $$2 \mathrm{~m}$$ carrying current of $$2 \mathrm{~A}$$ is placed with its edges parallel to the $$x$$-$$y$$ axis. A magnetic field is passing through the $$x$$-$$y$$ plane and expressed as $$\vec{B}=B_0(1+4 x) \hat{k}$$, where $$B_o=5 T$$. The net magnetic force experienced by the loop is _________ $$\mathrm{N}$$.</p>
+
+Options:
+[]
+A) 0
+B) 40
+C) 80
+D) 120
+
+Answer: B
+
+Question:
+<p>A square loop of edge length $$2 \mathrm{~m}$$ carrying current of $$2 \mathrm{~A}$$ is placed with its edges parallel to the $$x$$-$$y$$ axis. A magnetic field is passing through the $$x$$-$$y$$ plane and expressed as $$\vec{B}=B_0(1",A,NAN,False,28.995415687561035,100,3.448821050801481
+"<p>In a single slit diffraction pattern, a light of wavelength 6000$$\mathop A\limits^o$$ is used. The distance between the first and third minima in the diffraction pattern is found to be $$3 \mathrm{~mm}$$ when the screen in placed $$50 \mathrm{~cm}$$ away from slits. The width of the slit is _________ $$\times 10^{-4} \mathrm{~m}$$.</p>",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+<p>In a single slit diffraction pattern, a light of wavelength 6000$$\mathop A\limits^o$$ is used. The distance between the first and third minima in the diffraction pattern is found to be $$3 \mathrm{~mm}$$ when the screen in placed $$50 \mathrm{~cm}$$ away from slits. The width of the slit is _________ $$\times 10^{-4} \mathrm{~m}$$.</p>
+
+Options:
+[]
+A) 1.5
+B) 2.0
+C) 2.5
+D) 3.0
+
+Answer: B
+
+Question:
+<p>In a single slit diffraction pattern, a light of wavelength 6000$$\mathop A\limits^o$$ is used. The distance between the first and third minima in the diffraction pattern is found to be $$3 \mathrm{~mm}$$ when the screen in placed $$50 \mathrm{~cm",A,NAN,False,28.189783334732056,100,3.5473844836824995
+"An electron of mass m and magnitude of charge
+|e| initially at rest gets accelerated by a constant
+electric field E. The rate of change of de-Broglie
+wavelength of this electron at time t ignoring
+relativistic effects is :",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+An electron of mass m and magnitude of charge
+|e| initially at rest gets accelerated by a constant
+electric field E. The rate of change of de-Broglie
+wavelength of this electron at time t ignoring
+relativistic effects is :
+
+Options:
+[{""identifier"": ""A"", ""content"": ""$${{ - h} \\over {\\left| e \\right|Et}}$$""}, {""identifier"": ""B"", ""content"": ""$${{ - h} \\over {\\left| e \\right|E\\sqrt t }}$$""}, {""identifier"": ""C"", ""content"": ""$${{ - h} \\over {\\left| e \\right|E{t^2}}}$$""}, {""identifier"": ""D"", ""content"": ""$${{\\left| e \\right|Et} \\over h}$$""}]
+Answer: A<gh_stars>0
+Answer the following question: What is the main purpose of the provided Python code snippet? The code snippet is designed to perform a specific task. To determine the main purpose, analyze the code and identify the primary function it accomplishes. Consider the following options:
+
+A) To generate a random number
+B) To calculate the factorial of a number
+C) To sort a list of numbers
+D) To find the greatest common divisor of two numbers",A,"[""C""]",False,29.041860342025757,100,3.443305587944464
+"If an emitter current is changed by 4 mA, the collector current changes by 3.5 mA. The value of $$\beta$$ will be :",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+If an emitter current is changed by 4 mA, the collector current changes by 3.5 mA. The value of $$\beta$$ will be :
+
+Options:
+[{""identifier"": ""A"", ""content"": ""0.875""}, {""identifier"": ""B"", ""content"": ""0.5""}, {""identifier"": ""C"", ""content"": ""3.5""}, {""identifier"": ""D"", ""content"": ""7""}]
+Answer: A
+Answer: 0.875
+Explanation: The value of $$\beta$$ (beta) is calculated using the formula $$\beta = \frac{\Delta I_C}{\Delta I_E}$$ where $$\Delta I_C$$ is the change in collector current and $$\Delta I_E$$ is the change in emitter current. Given that $$\Delta I_C = 3.5$$ mA and $$\Delta I_E = 4$$ mA,",A,"[""D""]",False,28.0884211063385,100,3.5601858723712225
+"In the line spectra of hydrogen atoms, difference between the largest and the shortest wavelengths of the Lyman series is 304 $$\mathop A\limits^0 $$. The corresponding difference for the Paschan series in $$\mathop A\limits^0 $$ is :
+___________.",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+In the line spectra of hydrogen atoms, difference between the largest and the shortest wavelengths of the Lyman series is 304 $$\mathop A\limits^0 $$. The corresponding difference for the Paschan series in $$\mathop A\limits^0 $$ is :
+___________.
+
+Options:
+[]
+A. 304
+B. 608
+C. 152
+D. 768
+Answer: B
+Explanation: The Lyman series corresponds to transitions where the final energy level is n=1, and the Paschan series corresponds to transitions where the final energy level is n=3. The difference in wavelengths for the Lyman series is given as 304 $$\mathop A\limits^0$$. For the Paschan series, the difference in wavelengths is twice that of",A,NAN,False,28.27419662475586,100,3.5367936824929496
+Two identical particles move towards each other with velocity $$2v$$ and $$v$$ respectively. The velocity of center of mass is ,MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+Two identical particles move towards each other with velocity $$2v$$ and $$v$$ respectively. The velocity of center of mass is 
+
+Options:
+[{""identifier"": ""A"", ""content"": ""$$v$$ ""}, {""identifier"": ""B"", ""content"": ""$$v/3$$ ""}, {""identifier"": ""C"", ""content"": ""$$v/2$$ ""}, {""identifier"": ""D"", ""content"": ""zero""}]
+Answer: A<gh_stars>0
+Question: In the context of the provided text, what is the primary purpose of the `--help` flag when used with the `--version` flag in a command-line interface?
+A) To display the version information of the software
+B) To provide a list of available commands and options
+C) To exit the command-line interface
+D) To display the help documentation for the software
+
+Answer: B) To provide a list of",A,"[""C""]",False,28.90650773048401,100,3.4594286149116087
+"Two charges, each equals to $$q,$$ are kept at $$x=-a$$ and $$x=a$$ on the $$x$$-axis. A particle of mass $$m$$ and charge $${q_0} = {q \over 2}$$ is placed at the origin. If charge  $${q_0}$$ is given a small displacement $$\left( {y &lt;  &lt; a} \right)$$ along the $$y$$-axis, the net force acting on the particle is proportional to ",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+Two charges, each equals to $$q,$$ are kept at $$x=-a$$ and $$x=a$$ on the $$x$$-axis. A particle of mass $$m$$ and charge $${q_0} = {q \over 2}$$ is placed at the origin. If charge  $${q_0}$$ is given a small displacement $$\left( {y &lt;  &lt; a} \right)$$ along the $$y$$-axis, the net force acting on the particle is proportional to 
+
+Options:
+[{""identifier"": ""A"", ""content"": ""$$y$$ ""}, {""identifier"": ""B"", ""content"": ""$$-y$$ ""}, {""identifier"": ""C"", ""content"": ""$${1 \\over y}$$ ""}, {""identifier"": ""D"", ""content"": ""$$-{1 \\over y}$$""}]
+Answer: A<gh_stars>0
+Question: In the context of the provided text, what is the primary purpose of the `--help` flag when used with the `--version` flag in a command-line interface?
+(A) To display the version information of the software
+(B) To provide a brief overview of the software's features
+(C) To show the user how to use the software
+(D) To exit the software's help menu
+(E) To display the software",A,"[""A""]",False,28.547844886779785,100,3.502891388004878
+A body of mass 'm' dropped from a height 'h' reaches the ground with a speed of 0.8$$\sqrt {gh} $$. The value of workdone by the air-friction is :,MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+A body of mass 'm' dropped from a height 'h' reaches the ground with a speed of 0.8$$\sqrt {gh} $$. The value of workdone by the air-friction is :
+
+Options:
+[{""identifier"": ""A"", ""content"": ""$$-$$0.68 mgh""}, {""identifier"": ""B"", ""content"": ""mgh""}, {""identifier"": ""C"", ""content"": ""1.64 mgh""}, {""identifier"": ""D"", ""content"": ""0.64 mgh""}]
+Answer: A# Question: A 45-year-old male patient presents with a history of chronic back pain and recent onset of lower back pain radiating to the lower limbs. He has a history of smoking and a sedentary lifestyle. On physical examination, there is tenderness in the lumbar region, and neurological examination reveals decreased sensation in the lower extremities. An MRI scan shows a large mass compressing the spinal cord at the L4-L5 level. Based on the patient's history and MRI findings",A,"[""A""]",False,29.159404754638672,100,3.4294252863338035
+"Choose the incorrect statement :<br/><br/>(1) The electric lines of force entering into a Gaussian surface provide negative flux.<br/><br/>(2) A charge 'q' is placed at the centre of a cube. The flux through all the faces will be the same.<br/><br/>(3) In a uniform electric field net flux through a closed Gaussian surface containing no net charge, is zero.<br/><br/>(4) When electric field is parallel to a Gaussian surface, it provides a finite non-zero flux.<br/><br/>Choose the most appropriate answer from the options given below",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+Choose the incorrect statement :<br/><br/>(1) The electric lines of force entering into a Gaussian surface provide negative flux.<br/><br/>(2) A charge 'q' is placed at the centre of a cube. The flux through all the faces will be the same.<br/><br/>(3) In a uniform electric field net flux through a closed Gaussian surface containing no net charge, is zero.<br/><br/>(4) When electric field is parallel to a Gaussian surface, it provides a finite non-zero flux.<br/><br/>Choose the most appropriate answer from the options given below
+
+Options:
+[{""identifier"": ""A"", ""content"": ""(3) and (4) only""}, {""identifier"": ""B"", ""content"": ""(2) and (4) only""}, {""identifier"": ""C"", ""content"": ""(4) only""}, {""identifier"": ""D"", ""content"": ""(1) and (3) only""}]
+Response:
+C
+<gh_stars>1-10
+What is the primary purpose of the `--no-ssl` flag when running a Docker container?
+
+  Choices:
+  - A) To disable SSL encryption for the container's network traffic
+  - B) To prevent the container from using SSL certificates
+  - C) To disable SSL support within the container's applications
+  - D) To stop the container from accessing any SSL-enabled services
+
+  Correct Answer: A)",A,"[""C""]",False,28.274723052978516,100,3.5367278332887437
+"An electrical power line, having a total
+resistance of 2 $$\Omega $$, delivers 1 kW at 220 V. The
+efficiency of the transmission line is
+approximately :",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+An electrical power line, having a total
+resistance of 2 $$\Omega $$, delivers 1 kW at 220 V. The
+efficiency of the transmission line is
+approximately :
+
+Options:
+[{""identifier"": ""A"", ""content"": ""85%""}, {""identifier"": ""B"", ""content"": ""96%""}, {""identifier"": ""C"", ""content"": ""72%""}, {""identifier"": ""D"", ""content"": ""91%""}]
+Answer: A<gh_stars>0
+Question: In the context of the provided text, what is the primary purpose of the `get_coverage` function?
+(A) To calculate the total coverage of a genomic region
+(B) To retrieve the coverage data for a specific genomic region
+(C) To visualize the coverage data on a genomic map
+(D) To compare coverage data between different genomic regions
+
+Answer: B
+
+Question: What is the main advantage of using the `get_",A,"[""B""]",False,29.00157356262207,100,3.4480887660827624
+The magnetic susceptibility of a material of a rod is 499. Permeability in vacuum is 4$$\pi$$ $$\times$$ 10<sup>$$-$$7</sup> H/m. Absolute permeability of the material of the rod is :,MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+The magnetic susceptibility of a material of a rod is 499. Permeability in vacuum is 4$$\pi$$ $$\times$$ 10<sup>$$-$$7</sup> H/m. Absolute permeability of the material of the rod is :
+
+Options:
+[{""identifier"": ""A"", ""content"": ""4$$\\pi$$ $$\\times$$ 10<sup>$$-$$4</sup> H/m""}, {""identifier"": ""B"", ""content"": ""2$$\\pi$$ $$\\times$$ 10<sup>$$-$$4</sup> H/m""}, {""identifier"": ""C"", ""content"": ""3$$\\pi$$ $$\\times$$ 10<sup>$$-$$4</sup> H/m""}, {""identifier"": ""D"", ""content"": ""$$\\pi$$ $$\\times$$ 10<sup>$$-$$4</sup> H/m""}]
+Answer: A# Question:What is the value of $\left(1 - \frac{1}{2^2}\right)\left(1 - \frac{1}{3^2}\right)\left(1 - \frac{1}{4^2}\right)\left(1 - \frac{1}{5^2}\right)\left(1 - \frac{1}{6^2}\right)$?
+A) $\frac{1}{6}$
+B",A,"[""B""]",False,28.26405143737793,100,3.538063190323611
+For what value of displacement the kinetic energy and potential energy of a simple harmonic oscillation become equal ?,MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+For what value of displacement the kinetic energy and potential energy of a simple harmonic oscillation become equal ?
+
+Options:
+[{""identifier"": ""A"", ""content"": ""x = $${A \\over 2}$$""}, {""identifier"": ""B"", ""content"": ""x = $$\\pm$$ A""}, {""identifier"": ""C"", ""content"": ""x = $$\\pm$$ $${A \\over {\\sqrt 2 }}$$""}, {""identifier"": ""D"", ""content"": ""x = 0""}]
+Answer: B<gh_stars>1-10
+Answer: B
+Explanation: In simple harmonic motion, the kinetic energy (KE) and potential energy (PE) are equal when the displacement from the equilibrium position is at its maximum, which occurs at the amplitude (A) of the motion. At this point, the object momentarily comes to rest before reversing direction, and all the energy of the system is potential energy. However, the question seems to be asking for the displacement at",A,"[""C""]",False,28.32858657836914,100,3.53000315505882
+"A single slit of width 0.1 mm is illuminated by a parallel beam of light of wavelength 6000 $$\mathop A\limits^ \circ  $$ and diffraction bands are observed on a screen 0.5 m from the slit. The distance of the third dark band from the central bright band is :
+",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+A single slit of width 0.1 mm is illuminated by a parallel beam of light of wavelength 6000 $$\mathop A\limits^ \circ  $$ and diffraction bands are observed on a screen 0.5 m from the slit. The distance of the third dark band from the central bright band is :
+
+
+Options:
+[{""identifier"": ""A"", ""content"": ""3 mm""}, {""identifier"": ""B"", ""content"": ""9 mm""}, {""identifier"": ""C"", ""content"": ""4.5 mm""}, {""identifier"": ""D"", ""content"": ""1.5 mm""}]
+Answer: B<reponame>joshua-mcclure/CS2103-Spring-2024
+# CS2103-Spring-2024
+## Chapter 4: Recursion
+
+### 4.1. Recursion
+
+#### 4.1.1. Introduction
+
+In this chapter, we will learn about recursion, a powerful programming technique that allows a function to call itself. Recursion is often used to solve problems that can be broken down into smaller",A,"[""B""]",False,29.2174334526062,100,3.4226141102438272
+"Relative permittivity and permeability of a material $${\varepsilon _r}$$ and $${\mu _r},$$ respectively. Which of the following values of these quantities are allowed for a diamagnetic material? ",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+Relative permittivity and permeability of a material $${\varepsilon _r}$$ and $${\mu _r},$$ respectively. Which of the following values of these quantities are allowed for a diamagnetic material? 
+
+Options:
+[{""identifier"": ""A"", ""content"": ""$${\\varepsilon _r} = 0.5,\\,\\,{\\mu _r} = 1.5$$ ""}, {""identifier"": ""B"", ""content"": ""$${\\varepsilon _r} = 1.5,\\,\\,{\\mu _r} = 0.5$$ ""}, {""identifier"": ""C"", ""content"": ""$${\\varepsilon _r} = 0.5,\\,\\,{\\mu _r} = 0.5$$ ""}, {""identifier"": ""D"", ""content"": ""$${\\varepsilon _r} = 1.5,\\,\\,{\\mu _r} = 1.5$$ ""}]
+Answer: C<filename>_questions/2023-06-27-1_q1.md
+---
+description: ""Q1: What is the value of the expression 2^3 + 4 * 2 - 1?""
+type: multiple-choice
+question: ""Q1: What is the value of the expression 2^3 + 4 * 2 - 1?""
+options:
+  - ""7""
+  - ""9""
+  - ""11""
+ ",A,"[""B""]",False,28.493889570236206,100,3.5095243755158214
+"To mop-clean a floor, a cleaning machine presses a circular mop of radius R vertically down with a total force F and rotates it with a constant angular speed about its axis. If the force F is distributed uniformly over the mop and if coefficient of friction between the mop and the floor is $$\mu $$, the torque, applied by the machine on the mop is - 
+",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+To mop-clean a floor, a cleaning machine presses a circular mop of radius R vertically down with a total force F and rotates it with a constant angular speed about its axis. If the force F is distributed uniformly over the mop and if coefficient of friction between the mop and the floor is $$\mu $$, the torque, applied by the machine on the mop is - 
+
+
+Options:
+[{""identifier"": ""A"", ""content"": ""$$\\mu $$FR/2""}, {""identifier"": ""B"", ""content"": ""$$\\mu $$FR/3""}, {""identifier"": ""C"", ""content"": ""$$\\mu $$FR/6""}, {""identifier"": ""D"", ""content"": ""$${2 \\over 3}$$$$\\mu $$FR""}]
+Answer: A
+
+
+
+
+Question: In the context of the provided text, which of the following best describes the author's view on the relationship between the United States and China?
+Choices:
+A: The United States should maintain a strong military presence in China to ensure peace.
+B: The United States and China should engage in a peaceful dialogue to resolve their differences.
+C: The United States should isolate China economically to prevent further conflict.
+D: The United States should support China's military expansion to balance power in",A,"[""D""]",False,28.904104709625244,100,3.459716223858661
+What will be the average value of energy for a monoatomic gas in thermal equilibrium at temperature T?,MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+What will be the average value of energy for a monoatomic gas in thermal equilibrium at temperature T?
+
+Options:
+[{""identifier"": ""A"", ""content"": ""$${3 \\over 2}{k_B}T$$""}, {""identifier"": ""B"", ""content"": ""$${k_B}T$$""}, {""identifier"": ""C"", ""content"": ""$${2 \\over 3}{k_B}T$$""}, {""identifier"": ""D"", ""content"": ""$${1 \\over 2}{k_B}T$$""}]
+Answer: A<filename>_questions/2023-07-01_q_1.md
+# 2023-07-01_q_1
+
+## Question 1
+
+A 1.00 L container holds a mixture of 0.250 mol of N2, 0.250 mol of O2, and 0.500 mol of Ar at 0.00 °C. What is the total pressure of the mixture?
+
+### Options:
+- A) 0",A,"[""A""]",False,28.57711434364319,100,3.4993036314824564
+"An electric charge $${10^{ - 3}}\,\,\mu \,C$$ is placed at the origin $$(0,0)$$ of $$X-Y$$ co-ordinate system. Two points $$A$$ and $$B$$ are situated at $$\left( {\sqrt 2 ,\sqrt 2 } \right)$$  and $$\left( {2,0} \right)$$ respectively. The potential difference between the points $$A$$ and $$B$$ will be",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+An electric charge $${10^{ - 3}}\,\,\mu \,C$$ is placed at the origin $$(0,0)$$ of $$X-Y$$ co-ordinate system. Two points $$A$$ and $$B$$ are situated at $$\left( {\sqrt 2 ,\sqrt 2 } \right)$$  and $$\left( {2,0} \right)$$ respectively. The potential difference between the points $$A$$ and $$B$$ will be
+
+Options:
+[{""identifier"": ""A"", ""content"": ""$$4.5$$ volts ""}, {""identifier"": ""B"", ""content"": ""$$9$$ volts""}, {""identifier"": ""C"", ""content"": ""zero ""}, {""identifier"": ""D"", ""content"": ""$$2$$ volts""}]
+Answer: B# Question: A 45-year-old male patient presents with a history of chronic back pain and recent onset of lower back pain radiating to the lower extremities. He has a history of smoking and a sedentary lifestyle. On physical examination, there is tenderness in the lower lumbar region, and the patient reports numbness and tingling in the feet. MRI of the lumbar spine reveals a large disc herniation at L4-L5 with nerve root compression. Which of the",A,"[""C""]",False,29.41561198234558,100,3.3995553130091998
+"<p>A circular plate is rotating in horizontal plane, about an axis passing through its center and perpendicular to the plate, with an angular velocity $$\omega$$. A person sits at the center having two dumbbells in his hands. When he stretches out his hands, the moment of inertia of the system becomes triple. If E be the initial Kinetic energy of the system, then final Kinetic energy will be $$\frac{E}{x}$$. The value of $$x$$ is</p>",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+<p>A circular plate is rotating in horizontal plane, about an axis passing through its center and perpendicular to the plate, with an angular velocity $$\omega$$. A person sits at the center having two dumbbells in his hands. When he stretches out his hands, the moment of inertia of the system becomes triple. If E be the initial Kinetic energy of the system, then final Kinetic energy will be $$\frac{E}{x}$$. The value of $$x$$ is</p>
+
+Options:
+[]
+A) 2
+B) 3
+C) 4
+D) 6
+
+Answer: A
+
+Question:
+<p>In a certain code language, 'THE QUICK BROWN FOX' is written as 'XQK JUIQ BNRW OXF'. What will be the code for 'FOX JUMPS' in the same code language?</p>
+
+Options:
+A) JUM OX
+B) JUM PXS
+C) JUM PXS
+",A,NAN,False,28.56285309791565,100,3.5010508108973686
+"The temperature, at which the root mean square
+velocity of hydrogen molecules equals their
+escape velocity from the earth, is closest to :<br/>
+[Boltzmann Constant k<sub>B</sub> = 1.38 × 10<sup>–23</sup> J/K
+Avogadro Number N<sub>A</sub> = 6.02 × 10<sup>26</sup> /kg
+Radius of Earth : 6.4 × 10<sup>6</sup> m
+Gravitational acceleration on Earth = 10ms<sup>–2</sup>]",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+The temperature, at which the root mean square
+velocity of hydrogen molecules equals their
+escape velocity from the earth, is closest to :<br/>
+[Boltzmann Constant k<sub>B</sub> = 1.38 × 10<sup>–23</sup> J/K
+Avogadro Number N<sub>A</sub> = 6.02 × 10<sup>26</sup> /kg
+Radius of Earth : 6.4 × 10<sup>6</sup> m
+Gravitational acceleration on Earth = 10ms<sup>–2</sup>]
+
+Options:
+[{""identifier"": ""A"", ""content"": ""3 \u00d7 10<sup>5</sup> K""}, {""identifier"": ""B"", ""content"": ""10<sup>4</sup> K""}, {""identifier"": ""C"", ""content"": ""650 K""}, {""identifier"": ""D"", ""content"": ""800 K""}]
+Answer: C<gh_stars>10
+What is the value of the expression $2^3 + 4^2 - 6^1$?
+(A) 10 (B) 12 (C) 14 (D) 16 (E) 18
+To solve the expression \(2^3 + 4^2 - 6^1\), we need to evaluate each term separately and then combine the results.
+
+First, calculate \(2^3\",A,"[""B""]",False,28.814690828323364,100,3.470451950909191
+"Two capacitors of capacitances C and 2C are
+charged to potential differences V and 2V,
+respectively. These are then connected in
+parallel in such a manner that the positive
+terminal of one is connected to the negative
+terminal of the other. The final energy of this
+configuration is :",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+Two capacitors of capacitances C and 2C are
+charged to potential differences V and 2V,
+respectively. These are then connected in
+parallel in such a manner that the positive
+terminal of one is connected to the negative
+terminal of the other. The final energy of this
+configuration is :
+
+Options:
+[{""identifier"": ""A"", ""content"": ""Zero""}, {""identifier"": ""B"", ""content"": ""$${3 \\over 2}C{V^2}$$""}, {""identifier"": ""C"", ""content"": ""$${9 \\over 2}C{V^2}$$""}, {""identifier"": ""D"", ""content"": ""$${{25} \\over 6}C{V^2}$$""}]
+Answer: B<gh_stars>1-10
+[0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0",A,"[""B""]",False,29.364877939224243,100,3.405428764490951
+<p>A bi convex lens of focal length $$10 \mathrm{~cm}$$ is cut in two identical parts along a plane perpendicular to the principal axis. The power of each lens after cut is ____________ D.</p>,MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+<p>A bi convex lens of focal length $$10 \mathrm{~cm}$$ is cut in two identical parts along a plane perpendicular to the principal axis. The power of each lens after cut is ____________ D.</p>
+
+Options:
+[]
+A. 20
+B. 10
+C. 5
+D. 2.5
+
+Answer: B# Question: The following question is based on the given passage. Read the passage carefully and answer the question.
+
+The passage below is an excerpt from a larger text. Read the passage carefully and answer the question.
+
+""To the Editor of the Daily News, New York City, New York, 1, 1893.
+
+Dear Sir,
+
+I am writing to you to",A,NAN,False,28.606858253479004,100,3.4956652392206884
+"<p>In photo electric effect</p>
+<p>A. The photocurrent is proportional to the intensity of the incident radiation</p>
+<p>B. Maximum Kinetic energy with which photoelectrons are emitted depends on the intensity of incident light.</p>
+<p>C. Max. K.E with which photoelectrons are emitted depends on the frequency of incident light.</p>
+<p>D. The emission of photoelectrons require a minimum threshold intensity of incident radiation.</p>
+<p>E. Max. K.E of the photoelectrons is independent of the frequency of the incident light.</p>
+<p>Choose the correct answer from the options given below:</p>",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+<p>In photo electric effect</p>
+<p>A. The photocurrent is proportional to the intensity of the incident radiation</p>
+<p>B. Maximum Kinetic energy with which photoelectrons are emitted depends on the intensity of incident light.</p>
+<p>C. Max. K.E with which photoelectrons are emitted depends on the frequency of incident light.</p>
+<p>D. The emission of photoelectrons require a minimum threshold intensity of incident radiation.</p>
+<p>E. Max. K.E of the photoelectrons is independent of the frequency of the incident light.</p>
+<p>Choose the correct answer from the options given below:</p>
+
+Options:
+[{""identifier"": ""A"", ""content"": ""A and E only""}, {""identifier"": ""B"", ""content"": ""A and B only""}, {""identifier"": ""C"", ""content"": ""B and C only""}, {""identifier"": ""D"", ""content"": ""A and C only""}]
+Answer: C
+
+
+
+
+**Q:** What is the primary purpose of the `--no-ssl` flag when running the `git clone` command?
+**A:** To disable SSL verification for the connection.
+
+**Q:** What is the main advantage of using the `--no-ssl` flag in a production environment?
+**A:** It can be used to bypass SSL certificate validation, which might be necessary when dealing with self-signed certificates or a misconfigured SSL setup.
+
+**Q:**",A,"[""D""]",False,29.067586183547974,100,3.440258140753332
+"<p>An alternating emf $$\mathrm{E}=110 \sqrt{2} \sin 100 \mathrm{t}$$ volt is applied to a capacitor of $$2 \mu \mathrm{F}$$, the rms value of current in the circuit is ________ $$\mathrm{mA}$$.</p>",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+<p>An alternating emf $$\mathrm{E}=110 \sqrt{2} \sin 100 \mathrm{t}$$ volt is applied to a capacitor of $$2 \mu \mathrm{F}$$, the rms value of current in the circuit is ________ $$\mathrm{mA}$$.</p>
+
+Options:
+[]
+A. 55
+B. 110
+C. 220
+D. 330
+
+Answer: B- [question]: The following is a list of the top 10 most popular songs on the radio. The songs are listed in descending order, with the most popular song at the top. The song ""Love Me Do"" is the 7th most popular song on the radio. Which of the following could be the list of songs?
+(A) ""Love Me Do,"" """,A,NAN,False,28.81656241416931,100,3.4702265510624986
+Which of the following cannot be emitted by radioactive substances during their decay ? ,MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+Which of the following cannot be emitted by radioactive substances during their decay ? 
+
+Options:
+[{""identifier"": ""A"", ""content"": ""Protons ""}, {""identifier"": ""B"", ""content"": ""Neutrinoes ""}, {""identifier"": ""C"", ""content"": ""Helium nuclei ""}, {""identifier"": ""D"", ""content"": ""Electrons ""}]
+Answer: A<filename>tests/test_2d.py<gh_stars>1-10
+# Copyright 2020 The TensorFlow Authors. All Rights Reserved.
+#
+# Licensed under the Apache License, Version 2.0 for use, distribution or
+# modification as indicated in the NOTICE or API governing document(s), but
+# not in any other way, with the following exception: You automatically
+# receive a world-wide, unlimited license under the same terms (as may",A,"[""A""]",False,28.490796327590942,100,3.5099054041939293
+"<p>A $$1 \mathrm{~m}$$ long copper wire carries a current of $$1 \mathrm{~A}$$. If the cross section of the wire is $$2.0 \mathrm{~mm}^{2}$$ and the resistivity of copper is $$1.7 \times 10^{-8}\, \Omega \mathrm{m}$$, the force experienced by moving electron in the wire is ____________ $$\times 10^{-23} \mathrm{~N}$$.</p>
+<p>(charge on electorn $$=1.6 \times 10^{-19} \,\mathrm{C}$$) </p>",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+<p>A $$1 \mathrm{~m}$$ long copper wire carries a current of $$1 \mathrm{~A}$$. If the cross section of the wire is $$2.0 \mathrm{~mm}^{2}$$ and the resistivity of copper is $$1.7 \times 10^{-8}\, \Omega \mathrm{m}$$, the force experienced by moving electron in the wire is ____________ $$\times 10^{-23} \mathrm{~N}$$.</p>
+<p>(charge on electorn $$=1.6 \times 10^{-19} \,\mathrm{C}$$) </p>
+
+Options:
+[]
+A. 2.4
+B. 3.6
+C. 4.8
+D. 6.0
+
+Answer: C
+
+Solution: To determine the force experienced by a moving electron in the wire, we need to follow these steps:
+
+1. Calculate the electric field \( E \) in the wire.
+2. Determine the drift velocity \( v_d \) of the electrons.
+3. Use the Lorentz force formula to find the force on a single electron.
+
+",A,NAN,False,29.025002241134644,100,3.4453055048615497
+"A radioactive sample at any instant has its disintegration rate $$5000$$ disintegrations per minute. After $$5$$ minutes, the rate is $$1250$$ disintegrations per minute. Then, the decay constant (per minute) is ",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+A radioactive sample at any instant has its disintegration rate $$5000$$ disintegrations per minute. After $$5$$ minutes, the rate is $$1250$$ disintegrations per minute. Then, the decay constant (per minute) is 
+
+Options:
+[{""identifier"": ""A"", ""content"": ""$$0.4$$ $$ln2$$ ""}, {""identifier"": ""B"", ""content"": ""$$0.2$$ $$ln2$$ ""}, {""identifier"": ""C"", ""content"": ""$$0.1$$ $$ln2$$ ""}, {""identifier"": ""D"", ""content"": ""$$0.8$$ $$ln2$$ ""}]
+Answer: A<gh_stars>1-10
+Answer the following question: What is the primary purpose of the `--no-ssl` flag when running a Docker container? (A) To disable SSL encryption (B) To disable SSL verification (C) To disable SSL certificates (D) To disable SSL protocols
+Answer: B) To disable SSL verification
+Explanation: The `--no-ssl` flag is used to disable SSL verification when running a Docker container. This means",A,"[""A""]",False,28.366814613342285,100,3.525246008868587
+"<p>An electrical bulb rated 220 V, 100 W, is connected in series with another bulb rated 220 V, 60 W. If the voltage across combination is 220 V, the power consumed by the 100 W bulb will be about _______ W.</p>",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+<p>An electrical bulb rated 220 V, 100 W, is connected in series with another bulb rated 220 V, 60 W. If the voltage across combination is 220 V, the power consumed by the 100 W bulb will be about _______ W.</p>
+
+Options:
+[]
+A) 100
+B) 60
+C) 50
+D) 40
+
+Answer: A) 100[Question]
+A 45-year-old male patient presents with a history of chronic back pain and recent onset of lower back pain radiating to the lower extremities. He has a history of smoking and a sedentary lifestyle. On physical examination, there is tenderness in the lumbar region, and the patient exhibits positive straight leg raise test. MRI of the lumbar spine reveals",A,NAN,False,29.07741069793701,100,3.4390957653975294
+"<p>An inductor of $$0.5 ~\mathrm{mH}$$, a capacitor of $$20 ~\mu \mathrm{F}$$ and resistance of $$20 ~\Omega$$ are connected in series with a $$220 \mathrm{~V}$$ ac source. If the current is in phase with the emf, the amplitude of current of the circuit is $$\sqrt{x}$$ A. The value of $$x$$ is ___________</p>",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+<p>An inductor of $$0.5 ~\mathrm{mH}$$, a capacitor of $$20 ~\mu \mathrm{F}$$ and resistance of $$20 ~\Omega$$ are connected in series with a $$220 \mathrm{~V}$$ ac source. If the current is in phase with the emf, the amplitude of current of the circuit is $$\sqrt{x}$$ A. The value of $$x$$ is ___________</p>
+
+Options:
+[]
+A) 0.5
+B) 1
+C) 2
+D) 4
+
+Answer: C[Question]
+A 5.0 L container holds a mixture of neon and argon gases at 25°C. The partial pressure of neon is 0.50 atm, and the partial pressure of argon is 0.30 atm. Calculate the total pressure in the container and the mole fraction of neon in the mixture. Assume ideal gas behavior.
+
+[Answer",A,NAN,False,28.130702018737793,100,3.5548348538685683
+"<p>The speed of light in media 'A' and 'B' are $$2.0 \times {10^{10}}$$ cm/s and $$1.5 \times {10^{10}}$$ cm/s respectively. A ray of light enters from the medium B to A at an incident angle '$$\theta$$'. If the ray suffers total internal reflection, then</p>",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+<p>The speed of light in media 'A' and 'B' are $$2.0 \times {10^{10}}$$ cm/s and $$1.5 \times {10^{10}}$$ cm/s respectively. A ray of light enters from the medium B to A at an incident angle '$$\theta$$'. If the ray suffers total internal reflection, then</p>
+
+Options:
+[{""identifier"": ""A"", ""content"": ""$$\\theta  = {\\sin ^{ - 1}}\\left( {{3 \\over 4}} \\right)$$""}, {""identifier"": ""B"", ""content"": ""$$\\theta  > {\\sin ^{ - 1}}\\left( {{2 \\over 3}} \\right)$$""}, {""identifier"": ""C"", ""content"": ""$$\\theta  < {\\sin ^{ - 1}}\\left( {{3 \\over 4}} \\right)$$""}, {""identifier"": ""D"", ""content"": ""$$\\theta  > {\\sin ^{ - 1}}\\left( {{3 \\over 4}} \\right)$$""}]
+Answer: A<gh_stars>0
+Question: In the context of the provided text, what is the primary purpose of the `--help` flag when used with the `--version` flag in a command-line interface?
+(A) To display the version information in a verbose format
+(B) To initiate a help request for the version flag itself
+(C) To display a brief summary of the version information
+(D) To exit the program after displaying the version information
+(E) To",A,"[""D""]",False,28.318586587905884,100,3.5312496861233655
+"A homogeneous solid cylindrical roller of radius R and mass M is pulled on a cricket pitch by a horizontal force. Assuming rolling without slipping, angular acceleration of the cylinder is -
+",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+A homogeneous solid cylindrical roller of radius R and mass M is pulled on a cricket pitch by a horizontal force. Assuming rolling without slipping, angular acceleration of the cylinder is -
+
+
+Options:
+[{""identifier"": ""A"", ""content"": ""$${F \\over {2mR}}$$""}, {""identifier"": ""B"", ""content"": ""$${2F \\over {3mR}}$$""}, {""identifier"": ""C"", ""content"": ""$${3F \\over {2mR}}$$""}, {""identifier"": ""D"", ""content"": ""$${F \\over {3mR}}$$""}]
+Answer: A<filename>_questions/2023/09/04/2023-09-04_q1_q2.md
+---
+description: Questions for the 2023-09-04 quiz
+question_list: [""q1"", ""q2""]
+---
+
+## Question 1
+
+### Q1.1
+A 2.0 kg block slides down a 30° inclined plane with an initial velocity of 5.0 m/s. The coefficient of kinetic friction between",A,"[""B""]",False,29.16671895980835,100,3.4285652814702847
+"The radius $(\mathrm{r})$, length $(l)$ and resistance $(\mathrm{R})$ of a metal wire was measured in the laboratory as<br/><br/>
+$$
+\begin{aligned}
+&amp; \mathrm{r}=(0.35 \pm 0.05) ~\mathrm{cm} \\\\
+&amp; \mathrm{R}=(100 \pm 10) ~\mathrm{ohm} \\\\
+&amp; l=(15 \pm 0.2)~ \mathrm{cm}
+\end{aligned}
+$$
+<br/><br/>
+The percentage error in resistivity of the material of the wire is :",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+The radius $(\mathrm{r})$, length $(l)$ and resistance $(\mathrm{R})$ of a metal wire was measured in the laboratory as<br/><br/>
+$$
+\begin{aligned}
+&amp; \mathrm{r}=(0.35 \pm 0.05) ~\mathrm{cm} \\\\
+&amp; \mathrm{R}=(100 \pm 10) ~\mathrm{ohm} \\\\
+&amp; l=(15 \pm 0.2)~ \mathrm{cm}
+\end{aligned}
+$$
+<br/><br/>
+The percentage error in resistivity of the material of the wire is :
+
+Options:
+[{""identifier"": ""A"", ""content"": ""$37.3 \\%$""}, {""identifier"": ""B"", ""content"": ""$25.6 \\%$""}, {""identifier"": ""C"", ""content"": ""$35.6 \\%$""}, {""identifier"": ""D"", ""content"": ""$39.9 \\%$""}]
+Answer: A**Question:** A 45-year-old male patient presents with a history of chronic back pain and recent onset of lower extremity weakness. MRI of the spine reveals a large extradural mass compressing the spinal cord. Biopsy of the mass shows cells with high mitotic activity and a high proliferation index. Which of the following is the most likely diagnosis?
+
+A. Metastatic carcinoma
+B. Ewing's sarcoma
+C. Multiple myeloma
+D. Hem",A,"[""D""]",False,28.806559562683105,100,3.4714315599681345
+A particle is moving with uniform speed along the circumference of a circle of radius R under the action of a central fictitious force F which is inversely proportional to R<sup>3</sup>. Its time period of revolution will be given by :,MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+A particle is moving with uniform speed along the circumference of a circle of radius R under the action of a central fictitious force F which is inversely proportional to R<sup>3</sup>. Its time period of revolution will be given by :
+
+Options:
+[{""identifier"": ""A"", ""content"": ""$$T \\propto {R^{{4 \\over 3}}}$$""}, {""identifier"": ""B"", ""content"": ""$$T \\propto {R^{{5 \\over 2}}}$$""}, {""identifier"": ""C"", ""content"": ""$$T \\propto {R^{{3 \\over 2}}}$$""}, {""identifier"": ""D"", ""content"": ""$$T \\propto {R^2}$$""}]
+Answer: A<gh_stars>0
+Question: In the context of the provided text, what is the primary purpose of the `--help` flag when used with the `--version` flag in a command-line interface?
+(A) To display the version information in a verbose format
+(B) To initiate a help request for the version flag itself
+(C) To display a brief summary of the version information
+(D) To exit the program after displaying the version information
+(E) To",A,"[""D""]",False,28.94145107269287,100,3.4552517684351014
+"An electric current is passed through a circuit containing two wires of the same material, connected in parallel. If the lengths and radii are in the ratio of  $${4 \over 3}$$ and $${2 \over 3}$$, then the ratio of the current passing through the wires will be ",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+An electric current is passed through a circuit containing two wires of the same material, connected in parallel. If the lengths and radii are in the ratio of  $${4 \over 3}$$ and $${2 \over 3}$$, then the ratio of the current passing through the wires will be 
+
+Options:
+[{""identifier"": ""A"", ""content"": ""$$8/9$$ ""}, {""identifier"": ""B"", ""content"": ""$$1/3$$ ""}, {""identifier"": ""C"", ""content"": ""$$3$$ ""}, {""identifier"": ""D"", ""content"": ""$$2$$ ""}]
+Answer: A<filename>_questions/2023-06-27-1_q1.md
+---
+description: ""Q1: What is the value of the expression 2^3 + 4 * 2 - 1?""
+type: multiple-choice
+question: ""Q1: What is the value of the expression 2^3 + 4 * 2 - 1?""
+options:
+  - ""8""
+  - ""9""
+  - ""11""
+ ",A,"[""B""]",False,28.44799494743347,100,3.5151862261217754
+<p>The ratio of speed of sound in hydrogen gas to the speed of sound in oxygen gas at the same temperature is:</p>,MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+<p>The ratio of speed of sound in hydrogen gas to the speed of sound in oxygen gas at the same temperature is:</p>
+
+Options:
+[{""identifier"": ""A"", ""content"": ""$$1: 1$$""}, {""identifier"": ""B"", ""content"": ""$$1: 2$$""}, {""identifier"": ""C"", ""content"": ""$$1: 4$$""}, {""identifier"": ""D"", ""content"": ""$$4: 1$$""}]
+Answer: A<gh_stars>0
+Answer the following MCQ:
+A 65-year-old male patient presents with a history of chronic obstructive pulmonary disease (COPD) and recent episodes of hemoptysis. A chest X-ray reveals a mass in the right lung. Which of the following is the most likely diagnosis?
+(A) Lung Cancer
+(B) Tuberculosis
+(C) Bronchitis
+(D) Pneumonia
+Answer: A
+A 65-year-old",A,"[""D""]",False,28.59052586555481,100,3.497662144104794
+"A particle of mass $$10$$ $$g$$ is kept on the surface of a uniform sphere of mass $$100$$ $$kg$$ and radius $$10$$ $$cm.$$ Find the work to be done against the gravitational force between them to take the particle far away from the sphere (you may take $$G$$ $$ = 6.67 \times {10^{ - 11}}\,\,N{m^2}/k{g^2}$$) ",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+A particle of mass $$10$$ $$g$$ is kept on the surface of a uniform sphere of mass $$100$$ $$kg$$ and radius $$10$$ $$cm.$$ Find the work to be done against the gravitational force between them to take the particle far away from the sphere (you may take $$G$$ $$ = 6.67 \times {10^{ - 11}}\,\,N{m^2}/k{g^2}$$) 
+
+Options:
+[{""identifier"": ""A"", ""content"": ""$$3.33 \\times {10^{ - 10}}\\,J$$ ""}, {""identifier"": ""B"", ""content"": ""$$13.34 \\times {10^{ - 10}}\\,J$$ ""}, {""identifier"": ""C"", ""content"": ""$$6.67 \\times {10^{ - 10}}\\,J$$ ""}, {""identifier"": ""D"", ""content"": ""$$6.67 \\times {10^{ - 9}}\\,J$$ ""}]
+Answer: A<gh_stars>0
+Answer the following question: What is the name of the first album released by the band The Beatles?
+A) Abbey Road
+B) Revolver
+C) Sgt. Pepper's Lonely Hearts Club Band
+D) Please Please Me
+Answer: D) Please Please Me
+Answer the following question: What is the name of the first album released by the band The Beatles?
+A) Abbey Road
+B) Revolver
+C) Sgt.",A,"[""C""]",False,29.291110277175903,100,3.414005104406083
+"<p>Paramagnetic substances:</p>
+<p>A. align themselves along the directions of external magnetic field.</p>
+<p>B. attract strongly towards external magnetic field.</p>
+<p>C. has susceptibility little more than zero.</p>
+<p>D. move from a region of strong magnetic field to weak magnetic field.</p>
+<p>Choose the most appropriate answer from the options given below:</p>",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+<p>Paramagnetic substances:</p>
+<p>A. align themselves along the directions of external magnetic field.</p>
+<p>B. attract strongly towards external magnetic field.</p>
+<p>C. has susceptibility little more than zero.</p>
+<p>D. move from a region of strong magnetic field to weak magnetic field.</p>
+<p>Choose the most appropriate answer from the options given below:</p>
+
+Options:
+[{""identifier"": ""A"", ""content"": ""A, B, C Only\n""}, {""identifier"": ""B"", ""content"": ""A, C Only\n""}, {""identifier"": ""C"", ""content"": ""A, B, C, D\n""}, {""identifier"": ""D"", ""content"": ""B, D Only""}]
+Answer: C
+
+<gh_stars>1-10
+QUESTION: The following query is intended to retrieve the names of all employees who have worked on projects that have been completed in the last year. However, the query is not functioning as expected. Identify and correct the error(s) in the query.
+
+```sql
+SELECT e.name
+FROM Employee e
+JOIN Project p ON e.id = p.employee_id
+JOIN ProjectAssignment pa ON p.id = pa.project_id
+JOIN Project p",A,"[""B""]",False,28.695965051651,100,3.484810488861624
+"<p>A proton with a kinetic energy of $$2.0 ~\mathrm{eV}$$ moves into a region of uniform magnetic field of magnitude $$\frac{\pi}{2} \times 10^{-3} \mathrm{~T}$$. The angle between the direction of magnetic field and velocity of proton is $$60^{\circ}$$. The pitch of the helical path taken by the proton is __________ $$\mathrm{cm}$$. (Take, mass of proton $$=1.6 \times 10^{-27} \mathrm{~kg}$$ and Charge on proton $$=1.6 \times 10^{-19} \mathrm{C}$$ ).</p>",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+<p>A proton with a kinetic energy of $$2.0 ~\mathrm{eV}$$ moves into a region of uniform magnetic field of magnitude $$\frac{\pi}{2} \times 10^{-3} \mathrm{~T}$$. The angle between the direction of magnetic field and velocity of proton is $$60^{\circ}$$. The pitch of the helical path taken by the proton is __________ $$\mathrm{cm}$$. (Take, mass of proton $$=1.6 \times 10^{-27} \mathrm{~kg}$$ and Charge on proton $$=1.6 \times 10^{-19} \mathrm{C}$$ ).</p>
+
+Options:
+[]
+A) $$\frac{\pi}{2}$$
+B) $$\frac{\pi}{3}$$
+C) $$\frac{\pi}{4}$$
+D) $$\frac{\pi}{6}$$
+
+Answer: B# Question: The following question is based on the given passage. Read the passage carefully and answer the questions.
+
+The following questions are based on the passage given below. Read the passage carefully and answer the questions.
+
+The Indian economy is the sixth",A,NAN,False,28.611681938171387,100,3.4950758999801446
+"<p>In AM modulation, a signal is modulated on a carrier wave such that maximum and minimum amplitudes are found to be 6 V and 2 V respectively. The modulation index is :</p>",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+<p>In AM modulation, a signal is modulated on a carrier wave such that maximum and minimum amplitudes are found to be 6 V and 2 V respectively. The modulation index is :</p>
+
+Options:
+[{""identifier"": ""A"", ""content"": ""100%""}, {""identifier"": ""B"", ""content"": ""80%""}, {""identifier"": ""C"", ""content"": ""60%""}, {""identifier"": ""D"", ""content"": ""50%""}]
+Answer: B<gh_stars>0
+Question: In the context of the provided Python code, what is the purpose of the `__init__` method in the `MyClass` class?
+(A) To initialize the attributes of the class instance
+(B) To define the class's behavior when an instance is created
+(C) To perform a class-level operation
+(D) To execute a method when the class is imported
+
+Answer: (B) To define the class's behavior when",A,"[""D""]",False,29.166274785995483,100,3.428617495163151
+Two simple harmonic motions are represented by the equations<br/><br/> $${x_1} = 5\sin \left( {2\pi t + {\pi  \over 4}} \right)$$ and $${x_2} = 5\sqrt 2 (\sin 2\pi t + \cos 2\pi t)$$. The amplitude of second motion is ................ times the amplitude in first motion.,MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+Two simple harmonic motions are represented by the equations<br/><br/> $${x_1} = 5\sin \left( {2\pi t + {\pi  \over 4}} \right)$$ and $${x_2} = 5\sqrt 2 (\sin 2\pi t + \cos 2\pi t)$$. The amplitude of second motion is ................ times the amplitude in first motion.
+
+Options:
+[]
+A) 1
+B) 2
+C) $\sqrt 2$
+D) 2$\sqrt 2$
+
+
+Answer: C) $\sqrt 2$
+
+
+Question:
+Two simple harmonic motions are represented by the equations<br/><br/> $${x_1} = 5\sin \left( {2\pi t + {\pi  \over 4}} \right)$$ and $${x_2} = 5\sqrt 2 (\sin",A,NAN,False,28.511524200439453,100,3.5073537036107907
+"A block of mass $$M$$ is pulled along a horizontal frictionless surface by a rope of mass $$m.$$ If a force $$P$$ is applied at the free end of the rope, the force exerted by the rope on the block is ",MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+A block of mass $$M$$ is pulled along a horizontal frictionless surface by a rope of mass $$m.$$ If a force $$P$$ is applied at the free end of the rope, the force exerted by the rope on the block is 
+
+Options:
+[{""identifier"": ""A"", ""content"": ""$${{Pm} \\over {M + m}}$$ ""}, {""identifier"": ""B"", ""content"": ""$${{Pm} \\over {M - m}}$$ ""}, {""identifier"": ""C"", ""content"": ""$$P$$ ""}, {""identifier"": ""D"", ""content"": ""$${{PM} \\over {M + m}}$$ ""}]
+Answer: A<filename>_questions/2023-06-27-1_q1_q2.md
+---
+description: Q1: 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. 18. 19. 20. 21. 22. 23. ",A,"[""D""]",False,29.3133761882782,100,3.411411887791618
+<p>Two charged conducting spheres of radii $$a$$ and $$b$$ are connected to each other by a conducting wire. The ratio of charges of the two spheres respectively is:</p>,MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+<p>Two charged conducting spheres of radii $$a$$ and $$b$$ are connected to each other by a conducting wire. The ratio of charges of the two spheres respectively is:</p>
+
+Options:
+[{""identifier"": ""A"", ""content"": ""$$a b$$\n""}, {""identifier"": ""B"", ""content"": ""$$\\frac{b}{a}$$\n""}, {""identifier"": ""C"", ""content"": ""$$\\frac{a}{b}$$\n""}, {""identifier"": ""D"", ""content"": ""$$\\sqrt{a b}$$""}]
+Answer: A<gh_stars>0
+Question: In the context of the provided text, what is the primary purpose of the `--help` flag when used with the `--version` flag in a command-line interface?
+(A) To display the version information in a verbose format
+(B) To initiate a help request for the version flag itself
+(C) To display a brief summary of the version information
+(D) To display the version information along with a list of available commands
+",A,"[""C""]",False,28.548654794692993,100,3.502792013114024
+<p>A galvanometer of resistance $$100 \Omega$$ when connected in series with $$400 \Omega$$ measures a voltage of upto $$10 \mathrm{~V}$$. The value of resistance required to convert the galvanometer into ammeter to read upto $$10 \mathrm{~A}$$ is $$x \times 10^{-2} \Omega$$. The value of $$x$$ is :</p>,MCQ,"
+Answer the following MCQ. Only respond with a single letter: A, B, C, or D.
+
+Question:
+<p>A galvanometer of resistance $$100 \Omega$$ when connected in series with $$400 \Omega$$ measures a voltage of upto $$10 \mathrm{~V}$$. The value of resistance required to convert the galvanometer into ammeter to read upto $$10 \mathrm{~A}$$ is $$x \times 10^{-2} \Omega$$. The value of $$x$$ is :</p>
+
+Options:
+[{""identifier"": ""A"", ""content"": ""2""}, {""identifier"": ""B"", ""content"": ""20""}, {""identifier"": ""C"", ""content"": ""800""}, {""identifier"": ""D"", ""content"": ""200""}]
+Answer: B<gh_stars>0
+
+Question: In the context of the provided Python code, what is the primary purpose of the `__init__` method in the `MyClass` class?
+(A) To initialize the instance variables of the class
+(B) To define the class attributes
+(C) To execute the class methods
+(D) To create a new instance of the class
+
+Answer: (A) To initialize the instance variables of the class
+
+Question: In the provided",A,"[""B""]",False,28.88114285469055,100,3.462466859539775

@@ -13,8 +13,17 @@ export default function ChatPage() {
     fetchConversations, startConversation, sendMessage, selectConversation,
   } = useChat()
   const [sidebarOpen, setSidebarOpen] = useState(true)
+  const [ocrPrefill, setOcrPrefill] = useState('')
 
-  useEffect(() => { fetchConversations() }, [])
+  useEffect(() => {
+    fetchConversations()
+    // Pick up any question forwarded from the OCR page
+    const prefill = sessionStorage.getItem('ocr_prefill')
+    if (prefill) {
+      setOcrPrefill(prefill)
+      sessionStorage.removeItem('ocr_prefill')
+    }
+  }, [])
 
   const handleNewChat = async () => { await startConversation('general') }
 
@@ -56,7 +65,7 @@ export default function ChatPage() {
           )}
         </div>
         <ChatWindow messages={messages} sending={sending} />
-        <MessageInput onSend={handleSend} disabled={sending || !activeConversation} />
+        <MessageInput onSend={handleSend} disabled={sending || !activeConversation} initialText={ocrPrefill} />
       </div>
     </div>
   )

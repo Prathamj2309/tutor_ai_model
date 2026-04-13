@@ -1,12 +1,23 @@
-import { useState, useRef, useCallback } from 'react'
+import { useState, useRef, useCallback, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
-export default function MessageInput({ onSend, disabled }) {
+export default function MessageInput({ onSend, disabled, initialText = '' }) {
   const [text, setText] = useState('')
   const [imageFile, setImageFile] = useState(null)
   const [imagePreview, setImagePreview] = useState(null)
   const fileRef = useRef(null)
   const textareaRef = useRef(null)
+
+  // Seed input if OCR page forwarded a question
+  useEffect(() => {
+    if (initialText) {
+      setText(initialText)
+      setTimeout(() => {
+        const el = textareaRef.current
+        if (el) { el.style.height = 'auto'; el.style.height = Math.min(el.scrollHeight, 160) + 'px' }
+      }, 50)
+    }
+  }, [initialText])
 
   const handleImageSelect = (e) => {
     const file = e.target.files?.[0]
