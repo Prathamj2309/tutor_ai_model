@@ -5,20 +5,16 @@ def get_weakness_report(user_id: str, subject: str = None) -> dict:
         .select('topic_tags, is_correct, conversations!inner(subject)') \
         .eq('user_id', user_id) \
         .eq('role', 'assistant') \
-        .neq('topic_tags', 'null') \
         .order('created_at', desc=True) \
         .limit(200) \
         .execute()
     
     conv_data = query.data or []
-    
     stats = {'physics': {}, 'chemistry': {}, 'mathematics': {}, 'general': {}}
     
     for msg in conv_data:
         subj = msg.get('conversations', {}).get('subject') or 'general'
-        if subj not in stats:
-            continue
-        
+        if subj not in stats: continue
         tags = msg.get('topic_tags') or []
         for tag in tags:
             if tag not in stats[subj]:
@@ -29,35 +25,27 @@ def get_weakness_report(user_id: str, subject: str = None) -> dict:
 
     result = {}
     for subj_key, topics in stats.items():
-        if subject and subj_key != subject:
-            continue
-        
+        if subject and subj_key != subject: continue
         topic_list = []
         for topic, v in topics.items():
-            if v['attempts'] >= 1:
-                topic_list.append({
-                    'topic': topic,
-                    'attempts': v['attempts'],
-                    'error_rate': v['errors'] / v['attempts'] if v['attempts'] > 0 else 0
-                })
-        
-        # Sort by error rate descending
+            topic_list.append({
+                'topic': topic,
+                'attempts': v['attempts'],
+                'error_rate': v['errors'] / v['attempts'] if v['attempts'] > 0 else 0
+            })
         topic_list.sort(key=lambda x: x['error_rate'], reverse=True)
         result[subj_key] = topic_list
-        
     return result
 
 def get_top_weak_topics(user_id: str, subject: str, n: int = 3) -> list[str]:
     report = get_weakness_report(user_id, subject)
     topics = report.get(subject, [])
-    
     if not topics:
         fallbacks = {
-            'physics': ['kinematics', 'thermodynamics', 'electrostatics'],
-            'chemistry': ['chemical-equilibrium', 'coordination-compounds', 'electrochemistry'],
-            'mathematics': ['integration', 'probability', 'matrices'],
-            'general': ['basic-concepts']
+            'physics': ['kinematics', 'thermodynamics'],
+            'chemistry': ['equilibrium', 'bonding'],
+            'mathematics': ['calculus', 'algebra'],
+            'general': ['basics']
         }
         return fallbacks.get(subject, fallbacks['general'])
-    
     return [t['topic'] for t in topics[:n]]

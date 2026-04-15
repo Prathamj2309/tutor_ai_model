@@ -1,0 +1,132 @@
+mode,sample_id,image_path,image_size,predicted_subject,extracted_question,latency_sec,tokens_generated,tokens_per_sec,gpu_mem_before_mb,gpu_mem_after_mb,gpu_mem_delta_mb,full_output,status
+4bit,Screenshot 2026-04-09 230325,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 230325.png,1019x157,Chemistry,"80 mL of a hydrocarbon on mixing with 264 mL of oxygen in a closed U-tube undergoes complete combustion. The residual gases after cooling to 273 K occupy 224 mL. When the system is treated with KOH solution, the volume decreases to 64 mL. The formula of the hydrocarbon is :",8.667,81,9.35,4625.6,4625.6,0.0,"Subject: Chemistry
+Question: 80 mL of a hydrocarbon on mixing with 264 mL of oxygen in a closed U-tube undergoes complete combustion. The residual gases after cooling to 273 K occupy 224 mL. When the system is treated with KOH solution, the volume decreases to 64 mL. The formula of the hydrocarbon is :",success
+4bit,Screenshot 2026-04-09 230354,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 230354.png,1000x446,Chemistry,The correct statements are:,12.05,109,9.05,4625.6,4625.6,0.0,"Subject: Chemistry
+Question: The correct statements are:
+
+A. Activation energy for enzyme catalysed hydrolysis of sucrose is lower than that of acid catalysed hydrolysis.
+
+B. During denaturation, secondary and tertiary structures of a protein are destroyed but primary structure remains intact.
+
+C. Nucleotides are joined together by glycosidic linkage between C1 and C4 carbons of the pentose sugar.
+
+D. Quaternary structure of proteins represents overall folding of the polypeptide chain.",success
+4bit,Screenshot 2026-04-09 230409,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 230409.png,1011x446,Chemistry,Match List - I with List - II.,12.802,118,9.22,4625.6,4625.6,0.0,"Subject: Chemistry
+Question: Match List - I with List - II.
+| List - I | Reaction of Glucose with | List - II | Product formed |
+| --- | --- | --- | --- |
+| A. | Hydroxylamine | I. | Gluconic acid |
+| B. | Br₂ water | II. | Glucose pentacetate |
+| C. | Excess acetic anhydride | III. | Saccharic acid |
+| D. | Concentrated HNO₃ | IV. | Glucoxime |",success
+4bit,Screenshot 2026-04-09 230435,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 230435.png,1014x202,Chemistry,It is noticed that Pb²⁺ is more stable than Pb⁴⁺ but Sn²⁺ is less stable than Sn⁴⁺. Observe the following reactions:,8.531,79,9.26,4625.6,4625.6,0.0,"Subject: Chemistry
+Question: It is noticed that Pb²⁺ is more stable than Pb⁴⁺ but Sn²⁺ is less stable than Sn⁴⁺. Observe the following reactions:
+
+PbO₂ + Pb → 2PbO; ΔrG°(1)
+
+SnO₂ + Sn → 2SnO; ΔrG°(2)",success
+4bit,Screenshot 2026-04-09 230452,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 230452.png,1015x304,Chemistry,Given below are two statements:,12.889,122,9.47,4625.6,4625.6,0.0,"Subject: Chemistry
+Question: Given below are two statements:
+
+Statement I: The number of pairs among [SiO₂, CO₂], [SnO, SnO₂], [PbO, PbO₂] and [GeO, GeO₂], which contain oxides that are both amphoteric is 2.
+
+Statement II: BF₃ is an electron deficient molecule, can act as a Lewis acid, forms adduct with NH₃ and has a trigonal planar geometry.
+
+In the light of the above statements, choose the correct answer from the options given below:",success
+4bit,Screenshot 2026-04-09 230505,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 230505.png,1012x82,Chemistry,"The nature of oxide (TeO₂) and hydride (TeH₂) formed by Te, respectively are :",3.218,32,9.94,4625.6,4625.6,0.0,"Subject: Chemistry
+Question: The nature of oxide (TeO₂) and hydride (TeH₂) formed by Te, respectively are :",success
+4bit,Screenshot 2026-04-09 230536,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 230536.png,1006x489,Chemistry,40 mL of a mixture of CH₃COOH and HCl (aqueous solution) is titrated against 0.1 M NaOH solution conductometrically. Which of the following statements is correct?,6.39,52,8.14,4625.6,4625.6,0.0,"Subject: Chemistry
+Question: 40 mL of a mixture of CH₃COOH and HCl (aqueous solution) is titrated against 0.1 M NaOH solution conductometrically. Which of the following statements is correct?",success
+4bit,Screenshot 2026-04-09 230550,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 230550.png,1011x147,Chemistry,"If equal volumes of \( AB_2 \) and \( XY \) (both are salts) aqueous solutions are mixed, which of the following combinations will give a precipitate of \( AY_2 \) at 300 K? (Given \( K_{sp} \) (at 300 K) for \( AY_2 = 5.2 \times 10^{-7} \))",9.934,96,9.66,4625.6,4625.6,0.0,"Subject: Chemistry
+Question: If equal volumes of \( AB_2 \) and \( XY \) (both are salts) aqueous solutions are mixed, which of the following combinations will give a precipitate of \( AY_2 \) at 300 K? (Given \( K_{sp} \) (at 300 K) for \( AY_2 = 5.2 \times 10^{-7} \))",success
+4bit,Screenshot 2026-04-09 230614,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 230614.png,1009x113,Mathematics,"Let \( S = \{x^3 + ax^2 + bx + c : a, b, c \in \mathbb{N} \text{ and } a, b, c \leq 20\} \) be a set of polynomials. Then the number of polynomials in \( S \), which are divisible by \( x^2 + 2 \), is",9.22,90,9.76,4625.6,4625.6,0.0,"Subject: Mathematics
+Question: Let \( S = \{x^3 + ax^2 + bx + c : a, b, c \in \mathbb{N} \text{ and } a, b, c \leq 20\} \) be a set of polynomials. Then the number of polynomials in \( S \), which are divisible by \( x^2 + 2 \), is",success
+4bit,Screenshot 2026-04-09 230628,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 230628.png,970x93,Mathematics,The number of real roots of the equation \( x|x-2| + 3|x-3| + 1 = 0 \) is:,4.464,38,8.51,4625.6,4625.6,0.0,"Subject: Mathematics
+Question: The number of real roots of the equation \( x|x-2| + 3|x-3| + 1 = 0 \) is:",success
+4bit,Screenshot 2026-04-09 230656,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 230656.png,1009x140,Mathematics,Let PQ and MN be two straight lines touching the circle \(x^2 + y^2 - 4x - 6y - 3 = 0\) at the points \(A\) and \(B\) respectively. Let \(O\) be the center of the circle and \(\angle AOB = \pi/3\). Then the locus of the point of intersection of the lines PQ and MN is :,9.199,92,10.0,4625.6,4625.6,0.0,"Subject: Mathematics
+Question: Let PQ and MN be two straight lines touching the circle \(x^2 + y^2 - 4x - 6y - 3 = 0\) at the points \(A\) and \(B\) respectively. Let \(O\) be the center of the circle and \(\angle AOB = \pi/3\). Then the locus of the point of intersection of the lines PQ and MN is :",success
+4bit,Screenshot 2026-04-09 230717,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 230717.png,1004x199,Mathematics,Let each of the two ellipses \( E_1 \): \( \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1 \) (\( a > b \)) and \( E_2 \): \( \frac{x^2}{A^2} + \frac{y^2}{B^2} = 1 \) (\( A < B \)) have eccentricities \( \frac{4}{5} \). Let the lengths of the latus recta of \( E_1 \) and \(,13.664,128,9.37,4625.6,4625.6,0.0,"Subject: Mathematics
+Question: Let each of the two ellipses \( E_1 \): \( \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1 \) (\( a > b \)) and \( E_2 \): \( \frac{x^2}{A^2} + \frac{y^2}{B^2} = 1 \) (\( A < B \)) have eccentricities \( \frac{4}{5} \). Let the lengths of the latus recta of \( E_1 \) and \(",success
+4bit,Screenshot 2026-04-09 230740,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 230740.png,1009x171,Mathematics,"Let \( f(t) = \int \left( \frac{1 - \sin(\log_e t)}{1 - \cos(\log_e t)} \right) dt, t > 1 \). If \( f(e^{\pi/2}) = -e^{\pi/2} \) and \( f(e^{\pi/4}) = \alpha e^{\pi/4} \), then \( \alpha \) equals",10.359,101,9.75,4625.6,4625.6,0.0,"Subject: Mathematics
+Question: Let \( f(t) = \int \left( \frac{1 - \sin(\log_e t)}{1 - \cos(\log_e t)} \right) dt, t > 1 \). If \( f(e^{\pi/2}) = -e^{\pi/2} \) and \( f(e^{\pi/4}) = \alpha e^{\pi/4} \), then \( \alpha \) equals",success
+4bit,Screenshot 2026-04-09 233203,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 233203.png,1001x187,Mathematics,"Let I(x) = ∫(3dx/(4x+6)(√(4x²+8x+3))) and I(0) = √3/4 + 20. If I(1/2) = a√2/b + c, where a, b, c ∈ N, gcd(a, b) = 1, then a + b + c is equal to :",10.058,93,9.25,4625.6,4625.6,0.0,"Subject: Mathematics
+Question: Let I(x) = ∫(3dx/(4x+6)(√(4x²+8x+3))) and I(0) = √3/4 + 20. If I(1/2) = a√2/b + c, where a, b, c ∈ N, gcd(a, b) = 1, then a + b + c is equal to :",success
+4bit,Screenshot 2026-04-09 233218,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 233218.png,1013x120,Mathematics,"Let \( f(x) = \int \frac{dx}{x^{2/3} + 2x^{1/2}} \), be such that \( f(0) = -26 + 24\log_e(2) \). If \( f(1) = a + b\log_e(3) \), where \( a, b \in \mathbb{Z} \), then \( a + b \) is equal to :",11.012,105,9.54,4625.6,4625.6,0.0,"Subject: Mathematics
+Question: Let \( f(x) = \int \frac{dx}{x^{2/3} + 2x^{1/2}} \), be such that \( f(0) = -26 + 24\log_e(2) \). If \( f(1) = a + b\log_e(3) \), where \( a, b \in \mathbb{Z} \), then \( a + b \) is equal to :",success
+4bit,Screenshot 2026-04-09 233246,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 233246.png,1007x150,Mathematics,"If \( y(x) = \begin{vmatrix} \sin x & \cos x & \sin x + \cos x + 1 \\ 27 & 28 & 27 \\ 1 & 1 & 1 \end{vmatrix}, x \in \mathbb{R} \), then find \( \frac{d^2y}{dx^2} + y \).",9.995,94,9.4,4625.6,4625.6,0.0,"Subject: Mathematics
+Question: If \( y(x) = \begin{vmatrix} \sin x & \cos x & \sin x + \cos x + 1 \\ 27 & 28 & 27 \\ 1 & 1 & 1 \end{vmatrix}, x \in \mathbb{R} \), then find \( \frac{d^2y}{dx^2} + y \).",success
+4bit,Screenshot 2026-04-09 233301,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 233301.png,1029x132,Mathematics,"Let \( f : \mathbb{R} - \{0\} \to \mathbb{R} \) be a function satisfying \( f\left(\frac{x}{y}\right) = \frac{f(x)}{f(y)} \) for all \( x, y, f(y) \neq 0 \). If \( f'(1) = 2024 \), then",10.122,94,9.29,4625.6,4625.6,0.0,"Subject: Mathematics
+Question: Let \( f : \mathbb{R} - \{0\} \to \mathbb{R} \) be a function satisfying \( f\left(\frac{x}{y}\right) = \frac{f(x)}{f(y)} \) for all \( x, y, f(y) \neq 0 \). If \( f'(1) = 2024 \), then",success
+4bit,Screenshot 2026-04-09 233347,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 233347.png,1007x113,Mathematics,"Let A be the focus of the parabola \( y^2 = 8x \). Let the line \( y = mx + c \) intersect the parabola at two distinct points B and C. If the centroid of the triangle ABC is \( \left( \frac{7}{3}, \frac{4}{3} \right) \), then \( (BC)^2 \) is equal to :",9.787,94,9.6,4625.6,4625.6,0.0,"Subject: Mathematics
+Question: Let A be the focus of the parabola \( y^2 = 8x \). Let the line \( y = mx + c \) intersect the parabola at two distinct points B and C. If the centroid of the triangle ABC is \( \left( \frac{7}{3}, \frac{4}{3} \right) \), then \( (BC)^2 \) is equal to :",success
+4bit,Screenshot 2026-04-09 233416,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 233416.png,1021x126,Mathematics,"If the distances of the point $(1, 2, a)$ from the line $\frac{x-1}{1} = \frac{y}{2} = \frac{z-1}{1}$ along the lines $\vec{L}_1: \frac{x-1}{3} = \frac{y-2}{4} = \frac{z-a}{b}$ and $\vec{L}_2: \frac{x-1}{3} = \frac{y-2}{4} = \frac{z-a}{c}$ are equal, then $a +",13.884,128,9.22,4625.6,4625.6,0.0,"Subject: Mathematics
+Question: If the distances of the point $(1, 2, a)$ from the line $\frac{x-1}{1} = \frac{y}{2} = \frac{z-1}{1}$ along the lines $\vec{L}_1: \frac{x-1}{3} = \frac{y-2}{4} = \frac{z-a}{b}$ and $\vec{L}_2: \frac{x-1}{3} = \frac{y-2}{4} = \frac{z-a}{c}$ are equal, then $a +",success
+4bit,Screenshot 2026-04-09 233441,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 233441.png,1012x544,Mathematics,Let \( S = \{ z \in \mathbb{C} : \left| \frac{z-6i}{z-2i} \right| = 1 \text{ and } \left| \frac{z-8+2i}{z+2i} \right| = \frac{3}{5} \} \). Then \( \sum_{z \in S} |z|^2 \) is equal to :,11.27,103,9.14,4625.6,4625.6,0.0,"Subject: Mathematics
+Question: Let \( S = \{ z \in \mathbb{C} : \left| \frac{z-6i}{z-2i} \right| = 1 \text{ and } \left| \frac{z-8+2i}{z+2i} \right| = \frac{3}{5} \} \). Then \( \sum_{z \in S} |z|^2 \) is equal to :",success
+4bit,Screenshot 2026-04-09 233455,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 233455.png,875x497,Mathematics,"Let \( A = \left\{ \theta \in [0, 2\pi] : 1 + 10 \text{Re}\left( \frac{2\cos\theta + i\sin\theta}{\cos\theta - 3i\sin\theta} \right) = 0 \right\} \). Then \( \sum_{\theta \in A} \theta^2 \) is equal to",10.496,101,9.62,4625.6,4625.6,0.0,"Subject: Mathematics
+Question: Let \( A = \left\{ \theta \in [0, 2\pi] : 1 + 10 \text{Re}\left( \frac{2\cos\theta + i\sin\theta}{\cos\theta - 3i\sin\theta} \right) = 0 \right\} \). Then \( \sum_{\theta \in A} \theta^2 \) is equal to",success
+4bit,Screenshot 2026-04-09 233521,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 233521.png,1010x505,Mathematics,"The common difference of the A.P.: \(a_1, a_2, \ldots, a_m\) is 13 more than the common difference of the A.P.: \(b_1, b_2, \ldots, b_n\). If \(b_{31} = -277\), \(b_{43} = -385\) and \(a_{78} = 327\), then \(a_1\) is equal to?",12.166,112,9.21,4625.6,4625.6,0.0,"Subject: Mathematics
+Question: The common difference of the A.P.: \(a_1, a_2, \ldots, a_m\) is 13 more than the common difference of the A.P.: \(b_1, b_2, \ldots, b_n\). If \(b_{31} = -277\), \(b_{43} = -385\) and \(a_{78} = 327\), then \(a_1\) is equal to?",success
+4bit,Screenshot 2026-04-09 233603,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 233603.png,1009x489,Mathematics,Let \(\frac{\pi}{2} < \theta < \pi\) and \(\cot \theta = -\frac{1}{2\sqrt{2}}\). Then the value of \(\sin \left(\frac{15\theta}{2}\right)\left(\cos 8\theta + \sin 8\theta\right) + \cos \left(\frac{15\theta}{2}\right)\left(\cos 8\theta - \sin 8\theta\right)\) is equal to :,13.253,121,9.13,4625.6,4625.6,0.0,"Subject: Mathematics
+Question: Let \(\frac{\pi}{2} < \theta < \pi\) and \(\cot \theta = -\frac{1}{2\sqrt{2}}\). Then the value of \(\sin \left(\frac{15\theta}{2}\right)\left(\cos 8\theta + \sin 8\theta\right) + \cos \left(\frac{15\theta}{2}\right)\left(\cos 8\theta - \sin 8\theta\right)\) is equal to :",success
+4bit,Screenshot 2026-04-09 233624,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 233624.png,1012x532,Mathematics,"Let A(1, 2) and C(-3, -6) be two diagonally opposite vertices of a rhombus, whose sides AD and BC are parallel to the line 7x - y = 14. If B(α, β) and D(γ, δ) are the other two vertices, then |α + β + γ + δ| is equal to :",9.747,89,9.13,4625.6,4625.6,0.0,"Subject: Mathematics
+Question: Let A(1, 2) and C(-3, -6) be two diagonally opposite vertices of a rhombus, whose sides AD and BC are parallel to the line 7x - y = 14. If B(α, β) and D(γ, δ) are the other two vertices, then |α + β + γ + δ| is equal to :",success
+4bit,Screenshot 2026-04-09 233637,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 233637.png,1017x500,Mathematics,"If the orthocenter of the triangle formed by the lines \( y = x + 1 \), \( y = 4x - 8 \) and \( y = mx + c \) is at \( (3, -1) \), then \( m - c \) is :",7.996,68,8.5,4625.6,4625.6,0.0,"Subject: Mathematics
+Question: If the orthocenter of the triangle formed by the lines \( y = x + 1 \), \( y = 4x - 8 \) and \( y = mx + c \) is at \( (3, -1) \), then \( m - c \) is :",success
+4bit,Screenshot 2026-04-09 233719,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 233719.png,1015x476,Physics,"As shown in the figure, a spring is kept in a stretched position with some extension by holding the masses 1 kg and 0.2 kg with a separation more than spring natural length and are released. Assuming the horizontal surface to be frictionless, the angular frequency (in SI unit) of the system is :",8.613,71,8.24,4625.6,4625.6,0.0,"Subject: Physics
+Question: As shown in the figure, a spring is kept in a stretched position with some extension by holding the masses 1 kg and 0.2 kg with a separation more than spring natural length and are released. Assuming the horizontal surface to be frictionless, the angular frequency (in SI unit) of the system is :",success
+4bit,Screenshot 2026-04-09 233747,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 233747.png,1003x610,Physics,A cylindrical block of mass \( M \) and area of cross section \( A \) is floating in a liquid of density \( \rho \) and with its axis vertical. When depressed a little and released the block starts oscillating. The period of oscillation is ____.,7.228,63,8.72,4625.6,4625.6,0.0,"Subject: Physics
+Question: A cylindrical block of mass \( M \) and area of cross section \( A \) is floating in a liquid of density \( \rho \) and with its axis vertical. When depressed a little and released the block starts oscillating. The period of oscillation is ____.",success
+4bit,Screenshot 2026-04-09 233841,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 233841.png,1012x634,Physics,"Two loudspeakers \( L_1 \) and \( L_2 \) are placed with a separation of 10 meters, as shown in the figure. Both speakers are fed with an audio input signal of the same frequency with constant volume. A voice recorder, initially at point \( A \), is moved by 25 meters along the line \( AB \) while monitoring the audio signal. The measured signal was found to undergo 10 cycles of minima and maxima during the movement. What is the frequency of the input signal? (Speed of sound in air is 32",14.662,128,8.73,4625.6,4625.6,0.0,"Subject: Physics
+Question: Two loudspeakers \( L_1 \) and \( L_2 \) are placed with a separation of 10 meters, as shown in the figure. Both speakers are fed with an audio input signal of the same frequency with constant volume. A voice recorder, initially at point \( A \), is moved by 25 meters along the line \( AB \) while monitoring the audio signal. The measured signal was found to undergo 10 cycles of minima and maxima during the movement. What is the frequency of the input signal? (Speed of sound in air is 32",success
+4bit,Screenshot 2026-04-09 233908,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 233908.png,990x704,Physics,"Given below are two statements: one is labeled as Assertion (A) and the other is labeled as Reason (R). Assertion (A): Magnetic monopoles do not exist. Reason (R): Magnetic field lines are continuous and form closed loops. In the light of the above statements, choose the most appropriate answer from the options given below:",9.065,76,8.38,4625.6,4625.6,0.0,"Subject: Physics
+Question: Given below are two statements: one is labeled as Assertion (A) and the other is labeled as Reason (R). Assertion (A): Magnetic monopoles do not exist. Reason (R): Magnetic field lines are continuous and form closed loops. In the light of the above statements, choose the most appropriate answer from the options given below:",success
+4bit,Screenshot 2026-04-09 234038,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 234038.png,915x532,Physics,Two point charges of 1 nC and 2 nC are placed at the two corners of an equilateral triangle with side length 1 cm. The work done in bringing a charge of 3 nC from infinity to the third corner of the triangle is ____ μJ.,7.713,64,8.3,4625.6,4625.6,0.0,"Subject: Physics
+Question: Two point charges of 1 nC and 2 nC are placed at the two corners of an equilateral triangle with side length 1 cm. The work done in bringing a charge of 3 nC from infinity to the third corner of the triangle is ____ μJ.",success
+4bit,Screenshot 2026-04-09 234057,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 234057.png,874x334,Physics,Two point charges \(2q\) and \(q\) are placed at vertex \(A\) and center of face \(CDEF\) of the cube shown in the figure. The electric flux passing through the cube is?,5.405,50,9.25,4625.6,4625.6,0.0,"Subject: Physics
+Question: Two point charges \(2q\) and \(q\) are placed at vertex \(A\) and center of face \(CDEF\) of the cube shown in the figure. The electric flux passing through the cube is?",success
+4bit,Screenshot 2026-04-09 234113,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 234113.png,992x504,Physics,Two point charges \(2q\) and \(q\) are placed at vertex \(A\) and center of face \(CDEF\) of the cube as shown in figure. The electric flux passing through the cube is:,6.283,50,7.96,4625.6,4625.6,0.0,"Subject: Physics
+Question: Two point charges \(2q\) and \(q\) are placed at vertex \(A\) and center of face \(CDEF\) of the cube as shown in figure. The electric flux passing through the cube is:",success
+4bit,Screenshot 2026-04-09 234128,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 234128.png,1014x539,Physics,Five positive charges each having charge \( q \) are placed at the vertices of a pentagon as shown in the figure. The electric potential (\( V \)) and the electric field (\( \vec{E} \)) at the center \( O \) of the pentagon due to these five positive charges are :,7.846,72,9.18,4625.6,4625.6,0.0,"Subject: Physics
+Question: Five positive charges each having charge \( q \) are placed at the vertices of a pentagon as shown in the figure. The electric potential (\( V \)) and the electric field (\( \vec{E} \)) at the center \( O \) of the pentagon due to these five positive charges are :",success
+4bit,Screenshot 2026-04-09 234152,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 234152.png,1011x557,Physics,"A cubical block of density \( \rho_b = 600 \, \text{kg/m}^3 \) floats in a liquid of density \( \rho_e = 900 \, \text{kg/m}^3 \). If the height of the block is \( H = 8.0 \, \text{cm} \), then the height of the submerged part is ______ cm.",10.622,95,8.94,4625.6,4625.6,0.0,"Subject: Physics
+Question: A cubical block of density \( \rho_b = 600 \, \text{kg/m}^3 \) floats in a liquid of density \( \rho_e = 900 \, \text{kg/m}^3 \). If the height of the block is \( H = 8.0 \, \text{cm} \), then the height of the submerged part is ______ cm.",success
+4bit,Screenshot 2026-04-09 234215,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 234215.png,1004x649,Chemistry,Observe the following equilibrium in a 1 L flask.,10.759,93,8.64,4625.6,4625.6,0.0,"Subject: Chemistry
+Question: Observe the following equilibrium in a 1 L flask.
+A(g) ⇌ B(g)
+At T(K), the equilibrium concentrations of A and B are 0.5 M and 0.375 M respectively. 0.1 moles of A is added into the flask and heated to T(K) to establish the equilibrium again. The new equilibrium concentrations (in M) of A and B are respectively",success
+4bit,Screenshot 2026-04-09 234235,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 234235.png,1009x653,Chemistry,Consider the following gaseous equilibrium in a closed container of volume 'V' at T(K):,14.167,128,9.03,4625.6,4625.6,0.0,"Subject: Chemistry
+Question: Consider the following gaseous equilibrium in a closed container of volume 'V' at T(K):
+\[ \text{P}_2(\text{g}) + \text{Q}_2(\text{g}) \rightleftharpoons 2\text{PQ}(\text{g}) \]
+2 moles each of \(\text{P}_2(\text{g})\), \(\text{Q}_2(\text{g})\), and \(2\text{PQ}(\text{g})\) are present at equilibrium. Now, one mole",success
+4bit,Screenshot 2026-04-09 234300,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 234300.png,1006x513,Chemistry,The plot of \(\log_{10} K\) vs \(\frac{1}{T}\) gives a straight line. The intercept and slope respectively are (where \(K\) is equilibrium constant).,6.125,49,8.0,4625.6,4625.6,0.0,"Subject: Chemistry
+Question: The plot of \(\log_{10} K\) vs \(\frac{1}{T}\) gives a straight line. The intercept and slope respectively are (where \(K\) is equilibrium constant).",success
+4bit,Screenshot 2026-04-09 234320,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 234320.png,1016x470,Physics,Match the LIST-I with LIST-II:,14.183,128,9.02,4625.6,4625.6,0.0,"Subject: Physics
+Question: Match the LIST-I with LIST-II:
+
+| List-I Isothermal process for ideal gas system | List-II Work done ($V_f > V_i$) |
+|---|---|
+| A. Reversible expansion | I. w = 0 |
+| B. Free expansion | II. w = -nRT ln $\frac{V_f}{V_i}$ |
+| C. Irreversible expansion | III. w = -p_{ex} (V_f - V_i) |
+| D. Irreversible compression | IV. w = -p_{ex} (V_i - V",success
+4bit,Screenshot 2026-04-09 234405,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 234405.png,1008x640,Chemistry,Given below are two statements:,12.64,113,8.94,4625.6,4625.6,0.0,"Subject: Chemistry
+Question: Given below are two statements:
+Statement I: K > Mg > Al > B is the correct order in terms of metallic character.
+Statement II: Atomic radius is always greater than the ionic radius for any element.
+In the light of the above statements, choose the correct answer from the options given below:
+
+A) Both Statement I and Statement II are false
+B) Statement I is false but Statement II is true
+C) Statement I is true but Statement II is false
+D) Both Statement I and Statement II are true",success
+4bit,Screenshot 2026-04-09 234431,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 234431.png,1013x587,Chemistry,"A student performed analysis of aliphatic organic compound 'X' which on analysis gave C = 61.01%, H = 15.25%, N = 23.74%. This compound, on treatment with HNO₂/H₂O produced another compound 'Y' which did not contain any nitrogen atom. However, the compound 'Y' upon controlled oxidation produced another compound 'Z' that responded to iodoform test. The structure of 'X' is :",12.172,109,8.95,4625.6,4625.6,0.0,"Subject: Chemistry
+Question: A student performed analysis of aliphatic organic compound 'X' which on analysis gave C = 61.01%, H = 15.25%, N = 23.74%. This compound, on treatment with HNO₂/H₂O produced another compound 'Y' which did not contain any nitrogen atom. However, the compound 'Y' upon controlled oxidation produced another compound 'Z' that responded to iodoform test. The structure of 'X' is :",success
+4bit,Screenshot 2026-04-09 234510,BENCHMARK_DATASET/BENCHMARK_DATASET/Screenshot 2026-04-09 234510.png,999x735,Chemistry,Given below are two statements:,14.197,128,9.02,4625.6,4625.6,0.0,"Subject: Chemistry
+Question: Given below are two statements:
+Statement I: The halogen that makes the longest bond with hydrogen in HX has the smallest covalent radius in its group.
+Statement II: A group 15 element's hydride EH₃ has the lowest boiling point among corresponding hydrides of other group 15 elements. The maximum covalency of that element E is 4.
+
+In the light of the above statements, choose the correct answer from the options given below:
+A) Statement I is true but Statement II is false
+B) Statement I is false but Statement II is true",success

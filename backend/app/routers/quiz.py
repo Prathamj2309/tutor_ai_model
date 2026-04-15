@@ -4,7 +4,7 @@ from app.models.schemas import UserInfo, QuizGenerateRequest, QuizSubmitRequest,
 from app.middleware.auth import get_current_user
 from app.core.supabase_client import supabase
 from app.services.weakness_service import get_top_weak_topics
-from app.services.llm_service import generate_quiz
+from app.services.mock_test_service import get_mock_test_questions
 from datetime import datetime
 
 router = APIRouter(prefix="/quiz", tags=["quiz"])
@@ -12,9 +12,14 @@ router = APIRouter(prefix="/quiz", tags=["quiz"])
 @router.post("/generate")
 async def generate_quiz_endpoint(req: QuizGenerateRequest, user: UserInfo = Depends(get_current_user)):
     weak_topics = get_top_weak_topics(user.id, req.subject, n=3)
-    quiz_data = generate_quiz(weak_topics, req.subject)
-    questions = quiz_data.get("questions", [])
+    questions = get_mock_test_questions(req.subject, req.numQuestions)
+    
+    if not questions:
+        raise HTTPException(status_code=500, detail="Failed to load questions from dataset")
 
+    # Default to 2 minutes per question if no time limit is provided
+    time_limit = req.timeLimit or (len(questions) * 2)
+    
     res = supabase.table('quiz_attempts').insert({
         'user_id': user.id,
         'subject': req.subject,
@@ -28,7 +33,8 @@ async def generate_quiz_endpoint(req: QuizGenerateRequest, user: UserInfo = Depe
         "id": attempt["id"],
         "subject": req.subject,
         "weakTopics": weak_topics,
-        "questions": questions
+        "questions": questions,
+        "timeLimit": time_limit
     }
 
 @router.post("/submit", response_model=QuizSubmitResponse)

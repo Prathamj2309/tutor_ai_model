@@ -1,0 +1,1731 @@
+question,ground_truth,prediction,exact_match,numeric_match,latency,full_output
+"If an endothermic reaction is non-spontaneous at freezing point of water and becomes feasible at its boiling point, then :
+
+Options:
+(A) $$\Delta H$$ is -ve, $$\Delta S$$ is +ve
+(B) $$\Delta H$$ and $$\Delta S$$ are both +ve
+(C) $$\Delta H$$ and $$\Delta S$$ are both -ve
+(D) $$\Delta H$$ is +ve, $$\Delta S$$ is -ve
+",$$\Delta H$$ and $$\Delta S$$ are both +ve,0,False,False,517.8786542415619,"To determine the correct option, we need to analyze the given conditions and apply the principles of thermodynamics, particularly the Gibbs free energy equation:
+
+\[ \Delta G = \Delta H - T \Delta S \]
+
+For a reaction to be non-spontaneous at one temperature and spontaneous at another, the sign of \(\Delta G\) changes with temperature. 
+
+1. At the freezing point of water (0°C or 273 K), the reaction is non-spontaneous, so \(\Delta G > 0\).
+2. At the boiling point of water (100°C or 373 K), the reaction becomes spontaneous, so \(\Delta G < 0\).
+
+Given that the reaction is endothermic, \(\Delta H\) is positive (\(\Delta H > 0\)).
+
+Now, let's consider the entropy change (\(\Delta S\)):
+
+- If \(\Delta S\) were positive, then as temperature increases, the term \(T \Delta S\) would increase, making \(\Delta G\) more negative at higher temperatures, which would support the reaction becoming spontaneous at the boiling point.
+- If \(\Delta S\) were negative, then as temperature increases, the term \(T \Delta S\) would decrease, making \(\Delta G\) less negative or even positive at higher temperatures, which would not support the reaction becoming spontaneous at the boiling point.
+
+Since the reaction becomes feasible at the boiling point, \(\Delta S\) must be positive to satisfy the condition that \(\Delta G\) becomes negative at higher temperatures.
+
+Therefore, the correct option is:
+
+(B) \(\Delta H\) is +ve, \(\Delta S\) is +ve"
+"<p>If [Cu(H<sub>2</sub>O)<sub>4</sub>]<sup>2+</sup> absorbs a light of wavelength 600 nm for d-d transition, then the value of octahedral crystal field splitting energy for [Cu(H<sub>2</sub>O)<sub>6</sub>]<sup>2+</sup> will be ____________ $$\times$$ 10<sup>$$-$$21</sup> J. [Nearest Integer]</p>
+<p>(Given : h = 6.63 $$\times$$ 10<sup>$$-$$34</sup> Js and c = 3.08 $$\times$$ 10<sup>8</sup> ms<sup>$$-$$1</sup>)</p>",766,-21,False,False,153.22164678573608,"To find the octahedral crystal field splitting energy (\(\Delta_0\)) for the complex \([Cu(H_2O)_6]^{2+}\), we need to use the given wavelength of light absorbed for the d-d transition and the provided constants.
+
+The energy of the absorbed light can be calculated using the equation:
+\[ E = \frac{hc}{\lambda} \]
+
+Given:
+- \( h = 6.63 \times 10^{-34} \) Js (Planck's constant)
+- \( c = 3.08 \times 10^8 \) m/s (speed of light)
+- \( \lambda = 600 \) nm = \( 600 \times 10^{-9} \) m (wavelength)
+
+First, convert the wavelength to meters:
+\[ \lambda = 600 \times 10^{-9} \, \text{m} \]
+
+Now, calculate the energy \( E \):
+\[ E = \frac{(6.63 \times 10^{-34} \, \text{Js}) \times (3.08 \times 10^8 \, \text{m/s})}{600 \times 10^{-9} \, \text{m}} \]
+
+\[ E = \frac{2.0384 \times 10^{-25} \, \text{J}}{600 \times 10^{-9}} \]
+
+\[ E = \frac{2.0384 \times 10^{-25}}{6 \times 10^{-7}} \]
+
+\[ E = 3.396 \times 10^{-19} \, \text{J} \]
+
+Thus, the octahedral crystal field splitting energy \(\Delta_0\) for \([Cu(H_2O)_6]^{2+}\) is:
+\[ \Delta_0 = 3.396 \times 10^{-19} \, \text{J} \]
+
+Expressing this in the required format:
+\[ \Delta_0 = 3396 \times 10^{-21} \, \text{J} \]
+
+Rounding to the nearest integer, we get:
+\[ \Delta_0 \approx 3396 \]
+
+So, the value of the octahedral crystal field splitting energy for \([Cu(H_2O)_6]^{2+}\) is approximately \( 3396 \times 10^{-21} \, \text{J} \)."
+"When 2-butyne is treate with H<sub>2</sub>/Lindlar's catalyst,  compound X is produced as the major product and when treated with Na/liq. NH<sub>3</sub> it produces Y as the major product Which of the following statements is correct ? 
+
+Options:
+(A) X will have higher dipole moment and higher boiling point than Y. 
+(B) Y will have higher dipole moment and higher boiling point than X. 
+(C) X will have lower dipole moment and lower boiling point than Y. 
+(D) Y will have higher dipole momet and lower boiling point than X. 
+",X will have higher dipole moment and higher boiling point than Y.,-2,False,False,99.57587671279907,"To determine the correct statement, let's first identify the products X and Y formed by the reactions of 2-butyne with H₂/Lindlar's catalyst and Na/liq. NH₃, respectively.
+
+1. **Reaction with H₂/Lindlar's catalyst:**
+   - 2-butyne (C₄H₆) undergoes partial hydrogenation to form cis-2-butene (C₄H₈).
+   - The product X is cis-2-butene.
+
+2. **Reaction with Na/liq. NH₃:**
+   - 2-butyne (C₄H₆) undergoes partial reduction to form trans-2-butene (C₄H₈).
+   - The product Y is trans-2-butene.
+
+Now, let's compare the properties of cis-2-butene (X) and trans-2-butene (Y):
+
+- **Dipole Moment:**
+  - Cis-2-butene has a higher dipole moment because the two methyl groups are on the same side, creating a net dipole.
+  - Trans-2-butene has a lower dipole moment because the two methyl groups are on opposite sides, canceling each other out.
+
+- **Boiling Point:**
+  - Cis-2-butene has a higher boiling point due to the higher dipole moment, which leads to stronger intermolecular forces (dipole-dipole interactions).
+  - Trans-2-butene has a lower boiling point because it has a lower dipole moment and weaker intermolecular forces.
+
+Based on this analysis, the correct statement is:
+
+(A) X will have higher dipole moment and higher boiling point than Y."
+"Which of these factors does not govern the stability of a conformation in acyclic compounds?
+
+Options:
+(A) Angle strain
+(B) Torsional strain
+(C) Electrostatic forces of interaction
+(D) Steric interactions
+",Angle strain,C,False,False,26.94609236717224,"(C) Electrostatic forces of interaction
+
+Electrostatic forces of interaction are not a primary factor in determining the stability of a conformation in acyclic compounds. The stability of a conformation in acyclic compounds is mainly governed by angle strain, torsional strain, and steric interactions. Electrostatic forces of interaction are more relevant in systems where charged species are involved, such as in ionic compounds or in the context of solvation and intermolecular interactions."
+"The reaction of toluene with Cl<sub>2</sub> in presence of FeCl<sub>3</sub> gives predominantly
+
+Options:
+(A) benzoyl chloride
+(B) benzyl chloride
+(C) o-and p-chlorotoluene
+(D) m-chlorotoluene 
+",o-and p-chlorotoluene,C,False,False,52.48846220970154,"The reaction of toluene with Cl₂ in the presence of FeCl₃ is an example of electrophilic aromatic substitution. In this reaction, the chlorine (Cl) acts as the electrophile, and FeCl₃ acts as a Lewis acid catalyst.
+
+Toluene has a methyl group (-CH₃) attached to the benzene ring, which is an electron-donating group. This methyl group activates the benzene ring towards electrophilic substitution, making the ortho and para positions more reactive towards electrophiles.
+
+When Cl₂ reacts with toluene in the presence of FeCl₃, the chlorine electrophile preferentially substitutes at the ortho and para positions relative to the methyl group. This results in the formation of ortho- and para-chlorotoluene as the major products.
+
+Therefore, the correct answer is:
+
+(C) o-and p-chlorotoluene"
+"<p>PCl<sub>5</sub> dissociates as</p>
+<p>PCl<sub>5</sub>(g) $$\rightleftharpoons$$ PCl<sub>3</sub>(g) + Cl<sub>2</sub>(g)</p>
+<p>5 moles of PCl<sub>5</sub> are placed in a 200 litre vessel which contains 2 moles of N<sub>2</sub> and is maintained at 600 K. The equilibrium pressure is 2.46 atm. The equilibrium constant K<sub>p</sub> for the dissociation of PCl<sub>5</sub> is __________ $$\times$$ 10<sup>$$-$$3</sup>. (nearest integer)</p>
+<p>(Given : R  = 0.082 L atm K<sup>$$-$$1</sup> mol<sup>$$-$$1</sup>; Assume ideal gas behaviour)</p>",1107,49.2,False,False,146.1267704963684,"To find the equilibrium constant \( K_p \) for the dissociation of \( PCl_5 \), we need to follow these steps:
+
+1. **Write the balanced chemical equation:**
+   \[
+   PCl_5(g) \rightleftharpoons PCl_3(g) + Cl_2(g)
+   \]
+
+2. **Set up the initial conditions and changes in moles:**
+   - Initial moles of \( PCl_5 \): 5 moles
+   - Initial moles of \( N_2 \): 2 moles (not involved in the reaction)
+   - Volume of the vessel: 200 L
+   - Temperature: 600 K
+   - Equilibrium pressure: 2.46 atm
+
+3. **Define the change in moles at equilibrium:**
+   Let \( x \) be the number of moles of \( PCl_5 \) that dissociate at equilibrium.
+   - Moles of \( PCl_5 \) at equilibrium: \( 5 - x \)
+   - Moles of \( PCl_3 \) at equilibrium: \( x \)
+   - Moles of \( Cl_2 \) at equilibrium: \( x \)
+
+4. **Calculate the total moles at equilibrium:**
+   \[
+   \text{Total moles} = (5 - x) + x + x = 5 + x
+   \]
+
+5. **Use the ideal gas law to find the total pressure:**
+   \[
+   P_{\text{total}} = \frac{(5 + x)RT}{V}
+   \]
+   Given \( P_{\text{total}} = 2.46 \) atm, \( R = 0.082 \) L atm K\(^{-1}\) mol\(^{-1}\), and \( T = 600 \) K, we can solve for \( x \):
+   \[
+   2.46 = \frac{(5 + x) \cdot 0.082 \cdot 600}{200}
+   \]
+   Simplifying,
+   \[
+   2.46 = \frac{(5 + x) \cdot 49.2}{200}
+   \]
+   \[
+   2.46 = \frac{49.2 + 49.2x}{200}
+   \]
+   \[
+   2.46 \cdot 200 = 49.2 +"
+"In which of the following arrangements, the sequence is not strictly according to the property written against it
+
+Options:
+(A) CO<sub>2</sub> &lt; SiO<sub>2</sub> &lt;  SnO<sub>2</sub> &lt; PbO<sub>2</sub> : increasing oxidising power
+(B) HF &lt; HCl &lt; HBr, HI : increasing acid strength
+(C) NH<sub>3</sub> &lt; PH<sub>3</sub> &lt; AsH<sub>3</sub> &lt; SbH<sub>3</sub> : increasing basic strength
+(D) B &lt; C &lt; O &lt; N : increasing first ionization enthalpy
+",NH<sub>3</sub> &lt; PH<sub>3</sub> &lt; AsH<sub>3</sub> &lt; SbH<sub>3</sub> : increasing basic strength,15,False,False,86.62832260131836,"Let's analyze each option to determine if the sequence is not strictly according to the property written against it.
+
+(A) CO<sub>2</sub> < SiO<sub>2</sub> < SnO<sub>2</sub> < PbO<sub>2</sub> : increasing oxidising power
+- Oxidising power generally decreases as we move down the group in the periodic table. However, CO<sub>2</sub> is not an oxidising agent, and the sequence does not make sense in terms of oxidising power.
+
+(B) HF < HCl < HBr, HI : increasing acid strength
+- This sequence is correct. Acid strength increases down the group in the halogen series.
+
+(C) NH<sub>3</sub> < PH<sub>3</sub> < AsH<sub>3</sub> < SbH<sub>3</sub> : increasing basic strength
+- This sequence is correct. Basic strength increases down the group in the group 15 elements.
+
+(D) B < C < O < N : increasing first ionization enthalpy
+- This sequence is incorrect. The first ionization enthalpy generally increases across a period from left to right. The correct order should be B < N < O < C.
+
+Therefore, the sequence that is not strictly according to the property written against it is:
+
+(D) B < C < O < N : increasing first ionization enthalpy"
+"Which one of the following reactions will not form acetaldehyde?
+
+Options:
+(A) $$C{H_3}C{H_2}OH\mathrel{\mathop{\kern0pt\longrightarrow}
+\limits_{573K}^{Cu}} $$
+(B) $$C{H_3}C{H_2}OH\buildrel {Cr{O_3} - {H_2}S{O_4}} \over
+ \longrightarrow $$
+(C) $$C{H_2} = C{H_2} + {O_2}\mathrel{\mathop{\kern0pt\longrightarrow}
+\limits_{{H_2}O}^{Pd(II)/Cu(II)}} $$
+(D) $$C{H_3}CN\mathrel{\mathop{\kern0pt\longrightarrow}
+\limits_{ii)\,{H_2}O}^{i)\,DIBAL - H}} $$
+","$$C{H_3}C{H_2}OH\buildrel {Cr{O_3} - {H_2}S{O_4}} \over
+ \longrightarrow $$",2,False,False,109.6584107875824,"To determine which reaction will not form acetaldehyde (CH3CHO), let's analyze each reaction step by step:
+
+(A) \( CH_3CH_2OH \xrightarrow{573K, Cu} \)
+- This reaction involves the dehydration of ethanol (CH3CH2OH) in the presence of copper at 573 K. The product formed is acetaldehyde (CH3CHO).
+
+(B) \( CH_3CH_2OH \xrightarrow{CrO_3, H_2SO_4} \)
+- This reaction involves the oxidation of ethanol (CH3CH2OH) using chromium trioxide (CrO3) and sulfuric acid (H2SO4). The product formed is acetaldehyde (CH3CHO).
+
+(C) \( CH_2=CH_2 + O_2 \xrightarrow{H_2O, Pd(II)/Cu(II)} \)
+- This reaction involves the oxidation of ethene (CH2=CH2) in the presence of oxygen (O2) and water, using palladium (II) and copper (II) as catalysts. The product formed is acetaldehyde (CH3CHO).
+
+(D) \( CH_3CN \xrightarrow{ii, H_2O; i, DIBAL-H} \)
+- This reaction involves the reduction of acetonitrile (CH3CN) using DIBAL-H (Diisobutylaluminum hydride) in the presence of water. The product formed is not acetaldehyde; instead, it forms an aldehyde (CH3CH2OH) or an alcohol (CH3CH2OH).
+
+Therefore, the reaction that will not form acetaldehyde is:
+
+(D) \( CH_3CN \xrightarrow{ii, H_2O; i, DIBAL-H} \)"
+"Arrange the carbanions, $${(C{H_3})_3}\overline C $$,  $$\overline C C{l_3}$$ , $${(C{H_3})_2}\overline C H$$, $${C_6}{H_5}\overline C H{}_2$$ in order of their decreasing stability : 
+
+Options:
+(A) $${(C{H_3})_2}\overline C H$$ &gt; $$\overline C C{l_3}$$ &gt; $${C_6}{H_5}\overline C H{}_2$$ &gt; $${(C{H_3})_3}\overline C $$
+(B) $$\overline C C{l_3}$$ &gt; $${C_6}{H_5}\overline C H{}_2$$ &gt; $${(C{H_3})_2}\overline C H$$ &gt; $${(C{H_3})_3}\overline C $$
+(C) $${(C{H_3})_3}\overline C $$ &gt; $${(C{H_3})_2}\overline C H$$ &gt; $${C_6}{H_5}\overline C H{}_2$$ &gt; $$\overline C C{l_3}$$
+(D) $${C_6}{H_5}\overline C H{}_2$$ &gt; $$\overline C C{l_3}$$ &gt; $${(C{H_3})_3}\overline C $$ &gt; $${(C{H_3})_2}\overline C H$$
+",$$\overline C C{l_3}$$ &gt; $${C_6}{H_5}\overline C H{}_2$$ &gt; $${(C{H_3})_2}\overline C H$$ &gt; $${(C{H_3})_3}\overline C $$,3,False,False,132.0146164894104,"To determine the order of stability for the given carbanions, we need to consider the factors that stabilize or destabilize carbanions. These factors include:
+
+1. **Inductive effect**: Electron-withdrawing groups (EWGs) stabilize carbanions by delocalizing the negative charge.
+2. **Resonance effect**: Groups that can delocalize the negative charge through resonance also stabilize carbanions.
+3. **Hyperconjugation**: Alkyl groups can donate electron density through hyperconjugation, which stabilizes carbanions.
+
+Let's analyze each carbanion:
+
+1. **$$\overline C C{l_3}$$**: The three chlorine atoms are highly electronegative and strongly withdraw electron density through the inductive effect, stabilizing the carbanion significantly.
+2. **$${(C{H_3})_2}\overline C H$$**: Two methyl groups provide some hyperconjugation and inductive effects, but not as strongly as chlorine atoms.
+3. **$${C_6}{H_5}\overline C H{}_2$$**: The phenyl group can delocalize the negative charge through resonance, providing some stabilization.
+4. **$${(C{H_3})_3}\overline C $$**: Three methyl groups provide hyperconjugation, but the inductive effect is minimal compared to the other groups.
+
+Based on these considerations, the order of decreasing stability is:
+
+$$\overline C C{l_3}$$ > $${C_6}{H_5}\overline C H{}_2$$ > $${(C{H_3})_2}\overline C H$$ > $${(C{H_3})_3}\overline C $$
+
+Thus, the correct answer is:
+
+(B) $$\overline C C{l_3}$$ &gt; $${C_6}{H_5}\overline C H{}_2$$ &gt; $${(C{H_3})_2}\overline C H$$ &gt; $${(C{H_3})_3}\overline C $$"
+"<p>Given below are two statements:</p>
+<p>Statement - I: Along the period, the chemical reactivity of the elements gradually increases from group 1 to group 18 .</p>
+<p>Statement - II: The nature of oxides formed by group 1 elements is basic while that of group 17 elements is acidic.</p>
+<p>In the light of the above statements, choose the most appropriate from the options given below:</p>
+
+Options:
+(A) Statement I is False but Statement II is true
+
+(B) Both Statement I and Statement II are False
+
+(C) Statement I is True But Statement II is False
+
+(D) Both Statement I and Statement II are True
+",Statement I is False but Statement II is true,2,False,False,69.13083338737488,"To determine the validity of the statements, let's analyze each one individually.
+
+**Statement I: Along the period, the chemical reactivity of the elements gradually increases from group 1 to group 18.**
+
+This statement is incorrect. Along a period, the reactivity of elements generally decreases from group 1 to group 18. Group 1 elements (alkali metals) are highly reactive, and as you move across the period to group 18 (noble gases), the reactivity decreases significantly because noble gases are generally inert.
+
+**Statement II: The nature of oxides formed by group 1 elements is basic while that of group 17 elements is acidic.**
+
+This statement is correct. Group 1 elements (alkali metals) form oxides that are basic in nature (e.g., Na2O, K2O). Group 17 elements (halogens) form oxides that are acidic in nature (e.g., Cl2O, Br2O).
+
+Given the analysis:
+
+- Statement I is false.
+- Statement II is true.
+
+Therefore, the most appropriate option is:
+
+(A) Statement I is False but Statement II is true."
+"What volume of hydrogen gas at 273 K and 1 atm pressure will be consumed in obtaining 21.6 g of elemental boron (atomic mass = 10.8) from the reduction of boron trichloride by hydrogen?
+
+Options:
+(A) 67.2 L
+(B) 44.8 L
+(C) 22.4 L
+(D) 89.6 L
+",67.2 L,134.4,False,False,149.78113508224487,"To determine the volume of hydrogen gas consumed, we first need to write the balanced chemical equation for the reduction of boron trichloride (BCl₃) by hydrogen (H₂):
+
+\[ BCl_3 + 3H_2 \rightarrow B + 3HCl \]
+
+From the balanced equation, we see that 3 moles of hydrogen gas (H₂) are required to produce 1 mole of boron (B).
+
+Next, we need to find the number of moles of boron (B) in 21.6 g of boron. The atomic mass of boron is given as 10.8 g/mol.
+
+\[ \text{Moles of B} = \frac{\text{mass of B}}{\text{molar mass of B}} = \frac{21.6 \text{ g}}{10.8 \text{ g/mol}} = 2 \text{ moles of B} \]
+
+Since 3 moles of H₂ are required to produce 1 mole of B, the moles of H₂ needed to produce 2 moles of B are:
+
+\[ \text{Moles of H₂} = 3 \times 2 = 6 \text{ moles of H₂} \]
+
+Now, we need to find the volume of 6 moles of hydrogen gas at 273 K and 1 atm pressure. Using the ideal gas law, where 1 mole of gas occupies 22.4 L at standard temperature and pressure (STP: 273 K and 1 atm):
+
+\[ \text{Volume of H₂} = \text{moles of H₂} \times 22.4 \text{ L/mol} = 6 \times 22.4 \text{ L} = 134.4 \text{ L} \]
+
+However, this result does not match any of the given options. Let's re-evaluate the problem to ensure accuracy.
+
+Given the options, it seems there might be a misunderstanding in the problem setup or the provided options. The correct calculation based on the stoichiometry and ideal gas law should yield 134.4 L, but none of the provided options match this result. Therefore, it is possible that there is an error in the provided options or the problem statement itself. 
+
+If we strictly adhere to the provided options, none of them are correct based on the stoichiometric calculations. The correct volume should be 134.4 L."
+"The decreasing order of bond angles in BF<sub>3</sub>, NH<sub>3</sub>, PF<sub>3</sub> and I<sub>3</sub><sup>-</sup> is :
+
+Options:
+(A) I<sub>3</sub><sup>-</sup> &gt; NH<sub>3</sub> &gt; PF<sub>3</sub> &gt; BF<sub>3</sub>
+(B) I<sub>3</sub><sup>-</sup> &gt; BF<sub>3</sub> &gt; NH<sub>3</sub> &gt; PF<sub>3</sub>
+(C) BF<sub>3</sub> &gt; I<sub>3</sub><sup>-</sup> &gt; PF<sub>3</sub> &gt; NH<sub>3</sub>
+(D) BF<sub>3</sub>  &gt; NH<sub>3</sub> &gt; PF<sub>3</sub> &gt; I<sub>3</sub><sup>-</sup>
+",I<sub>3</sub><sup>-</sup> &gt; BF<sub>3</sub> &gt; NH<sub>3</sub> &gt; PF<sub>3</sub>,3,False,False,91.48480439186096,"To determine the decreasing order of bond angles in BF\(_3\), NH\(_3\), PF\(_3\), and I\(_3^-\), we need to consider the molecular geometry and the factors affecting bond angles in these molecules.
+
+1. **BF\(_3\)**: Boron trifluoride has a trigonal planar geometry with bond angles of 120°.
+2. **NH\(_3\)**: Ammonia has a trigonal pyramidal geometry with bond angles of approximately 107° due to the lone pair-bond pair repulsion.
+3. **PF\(_3\)**: Phosphorus trifluoride also has a trigonal pyramidal geometry similar to NH\(_3\), with bond angles slightly less than 107° due to the larger size of phosphorus and the lone pair repulsion.
+4. **I\(_3^-\)**: The triiodide ion has a linear geometry with bond angles of 180°.
+
+Given these bond angles, we can arrange them in decreasing order:
+
+- I\(_3^-\) (180°)
+- BF\(_3\) (120°)
+- NH\(_3\) (107°)
+- PF\(_3\) (slightly less than 107°)
+
+Thus, the correct order is:
+
+**(B) I\(_3^-\) > BF\(_3\) > NH\(_3\) > PF\(_3\)**"
+"<p>The equilibrium $$\mathrm{Cr}_2 \mathrm{O}_7^{2-} \rightleftharpoons 2 \mathrm{CrO}_4^{2-}$$ is shifted to the right in :</p>
+
+Options:
+(A) a weakly acidic medium
+
+(B) a basic medium
+
+(C) a neutral medium
+
+(D) an acidic medium
+",a basic medium,2,False,False,27.492429733276367,"The equilibrium \(\mathrm{Cr}_2 \mathrm{O}_7^{2-} \rightleftharpoons 2 \mathrm{CrO}_4^{2-}\) is influenced by the pH of the solution. In a basic medium, the equilibrium shifts to the right, favoring the formation of \(\mathrm{CrO}_4^{2-}\).
+
+Therefore, the correct answer is:
+
+(B) a basic medium"
+The spin only magnetic moment of a divalent ion in aqueous solution (atomic number 29) is _________ BM.,2,1.73,False,False,63.89416551589966,"The atomic number 29 corresponds to copper (Cu). In its divalent state, copper typically forms the Cu²⁺ ion. The electron configuration of a neutral copper atom is [Ar] 3d¹⁰ 4s¹. When it loses two electrons to form Cu²⁺, the configuration becomes [Ar] 3d⁹.
+
+The spin-only magnetic moment (μ) can be calculated using the formula:
+
+μ = √(n(n+2)) BM
+
+where n is the number of unpaired electrons.
+
+For Cu²⁺, the 3d⁹ configuration has 1 unpaired electron (since the 3d subshell has 9 electrons, with 1 unpaired).
+
+Thus, n = 1.
+
+Substituting n into the formula:
+
+μ = √(1(1+2)) = √3 ≈ 1.73 BM
+
+Therefore, the spin-only magnetic moment of a divalent copper ion (Cu²⁺) in aqueous solution is approximately 1.73 BM."
+"<p>Consider the species CH<sub>4</sub>, NH$$_4^ + $$ and BH$$_4^ - $$. Choose the correct option with respect to the these species.</p>
+
+Options:
+(A) They are isoelectronic and only two have tetrahedral structures.
+(B) They are isoelectronic and all have tetrahedral structures.
+(C) Only two are isoelectronic and all have tetrahedral structures.
+(D) Only two are isoelectronic and only two have tetrahedral structures.
+",They are isoelectronic and all have tetrahedral structures.,4,False,False,111.62264108657837,"To determine the correct option, we need to analyze the electronic configurations and structures of the given species: CH\(_4\), NH\(_4^+\), and BH\(_4^-\).
+
+1. **Isoelectronic Species:**
+   - Isoelectronic species have the same number of electrons.
+   - CH\(_4\) (Methane): Carbon has 6 electrons, and each hydrogen has 1 electron. Total = 6 + 4(1) = 10 electrons.
+   - NH\(_4^+\) (Ammonium ion): Nitrogen has 7 electrons, and each hydrogen has 1 electron. Total = 7 + 4(1) - 1 (positive charge) = 10 electrons.
+   - BH\(_4^-\) (Tetrahydroborate ion): Boron has 5 electrons, and each hydrogen has 1 electron. Total = 5 + 4(1) + 1 (negative charge) = 10 electrons.
+
+   All three species have 10 electrons, so they are isoelectronic.
+
+2. **Tetrahedral Structure:**
+   - Tetrahedral structure is a common geometry for molecules or ions with four substituents around a central atom.
+   - CH\(_4\) (Methane): Carbon forms four single bonds with hydrogen atoms, resulting in a tetrahedral structure.
+   - NH\(_4^+\) (Ammonium ion): Nitrogen forms four single bonds with hydrogen atoms, resulting in a tetrahedral structure.
+   - BH\(_4^-\) (Tetrahydroborate ion): Boron forms four single bonds with hydrogen atoms, resulting in a tetrahedral structure.
+
+   All three species have tetrahedral structures.
+
+Based on the analysis, the correct option is:
+
+(B) They are isoelectronic and all have tetrahedral structures."
+"<p>Given below are two statements :</p>
+<p>Statement I : In Hofmann degradation reaction, the migration of only an alkyl group takes place from carbonyl carbon of the amide to the nitrogen atom.</p>
+<p>Statement II : The group is migrated in Hofmann degradation reaction to electron deficient atom.</p>
+<p>In the light of the above statements, choose the most appropriate answer from the options given below :</p>
+
+Options:
+(A) Both Statement I and Statement II are correct.
+(B) Both Statement I and Statement II are incorrect.
+(C) Statement I is correct but Statement II is incorrect.
+(D) Statement I is incorrect but Statement II is correct.
+",Statement I is incorrect but Statement II is correct.,C,False,False,71.1821072101593,"To determine the correctness of the statements regarding the Hofmann degradation reaction, let's analyze each statement individually.
+
+**Statement I: In Hofmann degradation reaction, the migration of only an alkyl group takes place from carbonyl carbon of the amide to the nitrogen atom.**
+
+This statement is correct. In the Hofmann degradation reaction, an amide is converted to an amine with one fewer carbon atom. The reaction involves the migration of an alkyl group from the carbonyl carbon of the amide to the nitrogen atom, resulting in the formation of an isocyanate intermediate, which then hydrolyzes to form the primary amine.
+
+**Statement II: The group is migrated in Hofmann degradation reaction to electron deficient atom.**
+
+This statement is incorrect. The migration of the alkyl group in the Hofmann degradation reaction occurs from the carbonyl carbon to the nitrogen atom, not to an electron-deficient atom. The nitrogen atom in the amide is not electron-deficient; rather, it is the carbonyl carbon that is electron-deficient and facilitates the migration of the alkyl group.
+
+Given the analysis, the most appropriate answer is:
+
+(C) Statement I is correct but Statement II is incorrect."
+"<p>The metal complex that is diamagnetic is (Atomic number: $$\mathrm{Fe}, 26 ; \mathrm{Cu}, 29)$$</p>
+
+Options:
+(A) $$\mathrm{K}_{3}\left[\mathrm{Cu}(\mathrm{CN})_{4}\right]$$
+(B) $$\mathrm{K}_{2}\left[\mathrm{Cu}(\mathrm{CN})_{4}\right]$$
+(C) $$\mathrm{K}_{3}\left[\mathrm{Fe}(\mathrm{CN})_{4}\right]$$
+(D) $$\mathrm{K}_{4}\left[\mathrm{FeCl}_{6}\right]$$
+",$$\mathrm{K}_{3}\left[\mathrm{Cu}(\mathrm{CN})_{4}\right]$$,3,False,False,146.88849020004272,"To determine which metal complex is diamagnetic, we need to consider the electronic configuration of the metal ions in each complex and their corresponding oxidation states. Diamagnetic substances have all their electrons paired and do not exhibit magnetic properties.
+
+Let's analyze each complex:
+
+(A) \(\mathrm{K}_{3}\left[\mathrm{Cu}(\mathrm{CN})_{4}\right]\):
+- The complex ion is \(\left[\mathrm{Cu}(\mathrm{CN})_{4}\right]^{3-}\).
+- The oxidation state of Cu in this complex is +1 (since CN is -1 and there are 4 CN, the total charge is -4, and the complex ion has a charge of -3).
+- The electronic configuration of Cu (atomic number 29) is [Ar] 3d\(^1\)4s\(^1\).
+- In the +1 oxidation state, Cu has the configuration [Ar] 3d\(^10\) 4s\(^0\).
+- All electrons are paired, so this complex is diamagnetic.
+
+(B) \(\mathrm{K}_{2}\left[\mathrm{Cu}(\mathrm{CN})_{4}\right]\):
+- The complex ion is \(\left[\mathrm{Cu}(\mathrm{CN})_{4}\right]^{2-}\).
+- The oxidation state of Cu in this complex is +2 (since CN is -1 and there are 4 CN, the total charge is -4, and the complex ion has a charge of -2).
+- The electronic configuration of Cu (atomic number 29) is [Ar] 3d\(^1\)4s\(^1\).
+- In the +2 oxidation state, Cu has the configuration [Ar] 3d\(^8\) 4s\(^0\).
+- There are unpaired electrons, so this complex is paramagnetic.
+
+(C) \(\mathrm{K}_{3}\left[\mathrm{Fe}(\mathrm{CN})_{4}\right]\):
+- The complex ion is \(\left[\mathrm{Fe}(\mathrm{CN})_{4}\right]^{3-}\).
+- The oxidation state of Fe in this complex is +1 (since CN is -1 and there are 4 CN, the total charge is -4, and the complex ion has a charge of -3).
+- The electronic configuration of Fe (atomic number 26) is [Ar] 3"
+"Based on lattice energy and other considerations which one of the following alkali
+metal chlorides is expected to have the highest melting point :
+
+Options:
+(A) LiCl
+(B) NaCl 
+(C) KCl
+(D) RbCl
+",NaCl,A,False,False,57.6963632106781,"The melting point of alkali metal chlorides is influenced by the lattice energy, which is the energy required to break the ionic bonds in the crystal lattice. Lattice energy is affected by the charge and size of the ions involved. In the case of alkali metal chlorides, the ions involved are the alkali metal cations (Li+, Na+, K+, Rb+) and the chloride anion (Cl-).
+
+Lattice energy is inversely proportional to the ionic radius; smaller ions result in a higher lattice energy and thus a higher melting point. Among the alkali metals, lithium (Li) has the smallest ionic radius, followed by sodium (Na), potassium (K), and rubidium (Rb).
+
+Given this information, the alkali metal chloride with the highest melting point will be the one with the smallest cation, which is lithium chloride (LiCl).
+
+Therefore, the alkali metal chloride with the highest melting point is:
+
+(A) LiCl"
+"According to molecular orbital theory, the species among the following that does not exist is :
+
+Options:
+(A) $${O_2}^{2 - }$$
+(B) $$B{e_2}$$
+(C) $$H{e_2}^ - $$
+(D) $$H{e_2}^ + $$
+",$$B{e_2}$$,1,False,False,151.15221118927002,"To determine which species does not exist according to molecular orbital theory, we need to consider the bond order for each species. The bond order can be calculated using the formula:
+
+\[ \text{Bond Order} = \frac{(n - n^*)}{2} \]
+
+where \( n \) is the number of bonding electrons and \( n^* \) is the number of antibonding electrons.
+
+Let's analyze each species:
+
+(A) \( O_2^{2-} \):
+- The molecular orbital configuration for \( O_2 \) is: \( \sigma_{1s}^2 \sigma_{1s}^*2 \sigma_{2s}^2 \sigma_{2s}^*2 \sigma_{2p_z}^2 \pi_{2p_x}^2 \pi_{2p_y}^2 \pi_{2p_x}^*1 \pi_{2p_y}^*1 \).
+- Adding 2 electrons to form \( O_2^{2-} \) results in: \( \sigma_{1s}^2 \sigma_{1s}^*2 \sigma_{2s}^2 \sigma_{2s}^*2 \sigma_{2p_z}^2 \pi_{2p_x}^2 \pi_{2p_y}^2 \pi_{2p_x}^*2 \pi_{2p_y}^*2 \).
+- Bond order = \( \frac{(8 - 6)}{2} = 1 \). This species exists.
+
+(B) \( Be_2 \):
+- The molecular orbital configuration for \( Be_2 \) is: \( \sigma_{1s}^2 \sigma_{1s}^*2 \sigma_{2s}^2 \sigma_{2s}^*2 \).
+- Bond order = \( \frac{(4 - 4)}{2} = 0 \). This species does not exist as a stable molecule.
+
+(C) \( He_2^+ \):
+- The molecular orbital configuration for \( He_2 \) is: \( \sigma_{1s}^2 \sigma_{1s}^*2 \).
+- Adding one electron to form \( He_2^+ \) results in: \( \sigma_{1s}^2 \sigma_{1s}^*2 \sigma_{1s}^1 \).
+- Bond order ="
+"The electrode potential of the following half cell at $298 \mathrm{~K}$
+<br/><br/>
+$\mathrm{X}\left|\mathrm{X}^{2+}(0.001 \mathrm{M}) \| \mathrm{Y}^{2+}(0.01 \mathrm{M})\right| \mathrm{Y}$ is _______ $\times 10^{-2} \mathrm{~V}$ (Nearest integer)
+<br/><br/>
+Given: $\mathrm{E}^{0} _ {\mathrm{X}^{2+} \mid \mathrm{X}}=-2.36 \mathrm{~V}$
+<br/><br/>
+$\mathrm{E}_{\mathrm{Y}^{2+} \mid \mathrm{Y}}^{0}=+0.36 \mathrm{~V}$
+<br/><br/>
+$\frac{2.303 \mathrm{RT}}{\mathrm{F}}=0.06 \mathrm{~V}$",275,0.001,False,False,150.08428025245667,"To find the electrode potential of the given half-cell, we can use the Nernst equation. The Nernst equation for a half-cell reaction is given by:
+
+\[ E = E^0 - \frac{0.06}{n} \log Q \]
+
+where:
+- \( E \) is the electrode potential,
+- \( E^0 \) is the standard electrode potential,
+- \( n \) is the number of moles of electrons transferred in the half-cell reaction,
+- \( Q \) is the reaction quotient.
+
+For the given half-cell, we have two half-cell reactions:
+
+1. For the half-cell involving X:
+\[ \mathrm{X}^{2+} + 2e^- \rightarrow \mathrm{X} \]
+\[ E^0_{\mathrm{X}^{2+} \mid \mathrm{X}} = -2.36 \, \mathrm{V} \]
+
+2. For the half-cell involving Y:
+\[ \mathrm{Y}^{2+} + 2e^- \rightarrow \mathrm{Y} \]
+\[ E^0_{\mathrm{Y}^{2+} \mid \mathrm{Y}} = +0.36 \, \mathrm{V} \]
+
+The overall cell reaction is:
+\[ \mathrm{X}^{2+} + \mathrm{Y} \rightarrow \mathrm{X} + \mathrm{Y}^{2+} \]
+
+The standard cell potential \( E^0_{\text{cell}} \) is given by:
+\[ E^0_{\text{cell}} = E^0_{\mathrm{Y}^{2+} \mid \mathrm{Y}} - E^0_{\mathrm{X}^{2+} \mid \mathrm{X}} \]
+\[ E^0_{\text{cell}} = 0.36 \, \mathrm{V} - (-2.36 \, \mathrm{V}) \]
+\[ E^0_{\text{cell}} = 0.36 \, \mathrm{V} + 2.36 \, \mathrm{V} \]
+\[ E^0_{\text{cell}} = 2.72 \, \mathrm{V} \]
+
+The reaction quotient \( Q \) is given by:
+\[ Q = \frac{[\mathrm{Y}^{2+}]}{[\mathrm{X}^{2+}]} \]
+\[ Q = \frac{0.01 \, \mathrm{M}}{0.001 \"
+"<p>The concentration of dissolved Oxygen in water for growth of fish should be more than $$\mathrm{\underline X }$$ ppm and Biochemical Oxygen Demand in clean water should be less than $$\mathrm{\underline Y }$$ ppm. X and Y in ppm are, respectively.</p>
+
+Options:
+(A) <style type=""text/css"">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+</style>
+<table class=""tg"" style=""undefined;table-layout: fixed; width: 134px"">
+<colgroup>
+<col style=""width: 67px"">
+<col style=""width: 67px"">
+</colgroup>
+<thead>
+  <tr>
+    <th class=""tg-baqh"">$$\mathrm{X}$$</th>
+    <th class=""tg-baqh"">$$\mathrm{Y}$$</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class=""tg-baqh"">4</td>
+    <td class=""tg-baqh"">15</td>
+  </tr>
+</tbody>
+</table>
+(B) <style type=""text/css"">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+</style>
+<table class=""tg"" style=""undefined;table-layout: fixed; width: 134px"">
+<colgroup>
+<col style=""width: 67px"">
+<col style=""width: 67px"">
+</colgroup>
+<thead>
+  <tr>
+    <th class=""tg-baqh"">$$\mathrm{X}$$</th>
+    <th class=""tg-baqh"">$$\mathrm{Y}$$</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class=""tg-baqh"">4</td>
+    <td class=""tg-baqh"">8</td>
+  </tr>
+</tbody>
+</table>
+(C) <style type=""text/css"">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+</style>
+<table class=""tg"" style=""undefined;table-layout: fixed; width: 134px"">
+<colgroup>
+<col style=""width: 67px"">
+<col style=""width: 67px"">
+</colgroup>
+<thead>
+  <tr>
+    <th class=""tg-baqh"">$$\mathrm{X}$$</th>
+    <th class=""tg-baqh"">$$\mathrm{Y}$$</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class=""tg-baqh"">6</td>
+    <td class=""tg-baqh"">12</td>
+  </tr>
+</tbody>
+</table>
+(D) <style type=""text/css"">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+</style>
+<table class=""tg"" style=""undefined;table-layout: fixed; width: 134px"">
+<colgroup>
+<col style=""width: 67px"">
+<col style=""width: 67px"">
+</colgroup>
+<thead>
+  <tr>
+    <th class=""tg-baqh"">$$\mathrm{X}$$</th>
+    <th class=""tg-baqh"">$$\mathrm{Y}$$</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class=""tg-baqh"">6</td>
+    <td class=""tg-baqh"">5</td>
+  </tr>
+</tbody>
+</table>
+","<style type=""text/css"">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+</style>
+<table class=""tg"" style=""undefined;table-layout: fixed; width: 134px"">
+<colgroup>
+<col style=""width: 67px"">
+<col style=""width: 67px"">
+</colgroup>
+<thead>
+  <tr>
+    <th class=""tg-baqh"">$$\mathrm{X}$$</th>
+    <th class=""tg-baqh"">$$\mathrm{Y}$$</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class=""tg-baqh"">6</td>
+    <td class=""tg-baqh"">5</td>
+  </tr>
+</tbody>
+</table>",15,False,False,20.199042081832886,"The correct answer is (A).
+
+The concentration of dissolved Oxygen in water for the growth of fish should be more than 4 ppm, and Biochemical Oxygen Demand (BOD) in clean water should be less than 15 ppm. Therefore, X and Y in ppm are 4 and 15, respectively."
+"Staggered and eclipsed conformers of ethane are :
+
+Options:
+(A) Polymers
+(B) Rotamers
+(C) Enantiomers
+(D) Mirror images
+",Rotamers,B,False,False,15.021095037460327,"The staggered and eclipsed conformers of ethane are examples of rotamers. Rotamers are different conformations of the same molecule that result from rotation around a single bond.
+
+So, the correct answer is:
+(B) Rotamers"
+"<p>Consider the two different first order reactions given below</p>
+<p>$$\begin{aligned}
+&amp; \mathrm{A}+\mathrm{B} \rightarrow \mathrm{C} \text { (Reaction 1) } \\
+&amp; \mathrm{P} \rightarrow \mathrm{Q} \text { (Reaction 2) }
+\end{aligned}$$</p>
+<p>The ratio of the half life of Reaction 1 :  Reaction 2 is $$5: 2$$ If $$t_1$$ and $$t_2$$ represent the time taken to complete $$2 / 3^{\text {rd }}$$ and $$4 / 5^{\text {th }}$$ of Reaction 1 and Reaction 2 , respectively, then the value of the ratio $$t_1: t_2$$ is _________ $$\times 10^{-1}$$ (nearest integer).
+[Given : $$\log _{10}(3)=0.477$$ and $$\log _{10}(5)=0.699$$]</p>",17,2,False,False,148.60791182518005,"To solve this problem, we need to use the properties of first-order reactions and the given information about the half-lives and completion times.
+
+### Step 1: Determine the half-lives of the reactions
+
+For a first-order reaction, the half-life (\( t_{1/2} \)) is given by:
+\[ t_{1/2} = \frac{\ln 2}{k} \]
+
+Given the ratio of the half-lives of Reaction 1 and Reaction 2 is \( 5:2 \), we can write:
+\[ \frac{t_{1/2,1}}{t_{1/2,2}} = \frac{5}{2} \]
+
+Since \( t_{1/2,1} = \frac{\ln 2}{k_1} \) and \( t_{1/2,2} = \frac{\ln 2}{k_2} \), we have:
+\[ \frac{\frac{\ln 2}{k_1}}{\frac{\ln 2}{k_2}} = \frac{5}{2} \]
+\[ \frac{k_2}{k_1} = \frac{5}{2} \]
+\[ k_2 = \frac{5}{2} k_1 \]
+
+### Step 2: Determine the completion times
+
+For a first-order reaction, the time taken to reach a certain fraction of completion is given by:
+\[ t = \frac{\ln \left( \frac{1}{1 - f} \right)}{k} \]
+where \( f \) is the fraction of completion.
+
+#### For Reaction 1 ( \( f = \frac{2}{3} \) ):
+\[ t_1 = \frac{\ln \left( \frac{1}{1 - \frac{2}{3}} \right)}{k_1} = \frac{\ln \left( \frac{1}{\frac{1}{3}} \right)}{k_1} = \frac{\ln 3}{k_1} \]
+
+#### For Reaction 2 ( \( f = \frac{4}{5} \) ):
+\[ t_2 = \frac{\ln \left( \frac{1}{1 - \frac{4}{5}} \right)}{k_2} = \frac{\ln \left( \frac{1}{\frac{1}{5}} \right)}{k_2} ="
+"<p>If $$279 \mathrm{~g}$$ of aniline is reacted with one equivalent of benzenediazonium chloride, the maximum amount of aniline yellow formed will be ________ g. (nearest integer)</p>
+<p>(consider complete conversion).</p>",591,6,False,False,146.12517023086548,"To determine the maximum amount of aniline yellow formed when 279 g of aniline reacts with one equivalent of benzenediazonium chloride, we need to follow these steps:
+
+1. **Determine the molar mass of aniline (C6H5NH2):**
+   - Carbon (C): 12.01 g/mol
+   - Hydrogen (H): 1.01 g/mol
+   - Nitrogen (N): 14.01 g/mol
+
+   Molar mass of aniline = 6(12.01) + 7(1.01) + 14.01 = 93.13 g/mol
+
+2. **Calculate the moles of aniline:**
+   \[
+   \text{Moles of aniline} = \frac{\text{mass}}{\text{molar mass}} = \frac{279 \text{ g}}{93.13 \text{ g/mol}} \approx 2.998 \text{ mol}
+   \]
+
+3. **Reaction stoichiometry:**
+   The reaction between aniline and benzenediazonium chloride to form aniline yellow (also known as phenyl azide) is:
+   \[
+   \text{C6H5NH2} + \text{C6H5N2+Cl-} \rightarrow \text{C6H5N3 + HCl}
+   \]
+   This reaction shows a 1:1 molar ratio between aniline and benzenediazonium chloride.
+
+4. **Determine the moles of aniline yellow formed:**
+   Since the reaction is 1:1, the moles of aniline yellow formed will be the same as the moles of aniline reacted:
+   \[
+   \text{Moles of aniline yellow} = 2.998 \text{ mol}
+   \]
+
+5. **Determine the molar mass of aniline yellow (C6H5N3):**
+   - Carbon (C): 12.01 g/mol
+   - Hydrogen (H): 1.01 g/mol
+   - Nitrogen (N): 14.01 g/mol
+
+   Molar mass of aniline yellow = 6(12.01) + 5(1.01) + 3(14.01) = 119.13 g/mol
+
+6. **Calculate the mass of aniline yellow formed:**
+   \[
+   \text{Mass of aniline yellow}"
+"<p>Consider the reaction :<br/>
+<br>Cl<sub>2</sub>(aq) + H<sub>2</sub>S(aq) → S(s) + 2H<sup>+</sup> (aq) + 2Cl<sup>–</sup> (aq)<br/>
+<br>The rate equation for this reaction is rate = k [Cl<sub>2</sub>] [H<sub>2</sub>S]<br/>
+<br>Which of these mechanisms is/are consistent with this rate equation?</br></br></br></p>
+<p>(A) Cl<sub>2</sub> + H<sub>2</sub>S $$\to$$ H<sup>+</sup> + Cl<sup>–</sup> + Cl<sup>+</sup> + HS<sup>–</sup> (slow)<br/>
+<br>Cl<sup>+</sup> + HS<sup>–</sup> $$\to$$ H<sup>+</sup> + Cl<sup>–</sup> + S (fast) </br></p>
+<p>(B) H<sub>2</sub>S $$ \Leftrightarrow $$ H<sup>+</sup> + HS<sup>–</sup> (fast equilibrium) <br/>
+<br>Cl<sub>2</sub> + HS<sup>–</sup> $$\to$$ 2Cl<sup>–</sup> + H<sup>+</sup> + S (slow) </br></p>
+
+Options:
+(A) B only
+(B) Both A and B
+(C) Neither A nor B
+(D) A only
+",A only,2,False,False,136.25281405448914,"To determine which mechanism is consistent with the given rate equation, we need to analyze the proposed mechanisms and see if they match the rate law: rate = k [Cl₂] [H₂S].
+
+### Mechanism (A):
+1. Cl₂ + H₂S → H⁺ + Cl⁻ + Cl⁺ + HS⁻ (slow)
+2. Cl⁺ + HS⁻ → H⁺ + Cl⁻ + S (fast)
+
+For this mechanism, the slow step determines the rate. The rate law for the slow step is:
+\[ \text{rate} = k [\text{Cl}_2][\text{H}_2\text{S}] \]
+
+This matches the given rate law. Therefore, Mechanism (A) is consistent with the rate equation.
+
+### Mechanism (B):
+1. H₂S ⇌ H⁺ + HS⁻ (fast equilibrium)
+2. Cl₂ + HS⁻ → 2Cl⁻ + H⁺ + S (slow)
+
+For this mechanism, the slow step determines the rate. The rate law for the slow step is:
+\[ \text{rate} = k [\text{Cl}_2][\text{HS}^-] \]
+
+However, HS⁻ is an intermediate, and we need to express its concentration in terms of the reactants. From the fast equilibrium step, we have:
+\[ [\text{HS}^-] = K [\text{H}_2\text{S}] \]
+where \( K \) is the equilibrium constant for the first step.
+
+Substituting this into the rate law for the slow step:
+\[ \text{rate} = k [\text{Cl}_2] K [\text{H}_2\text{S}] \]
+\[ \text{rate} = k' [\text{Cl}_2] [\text{H}_2\text{S}] \]
+where \( k' = k K \) is a new rate constant.
+
+This matches the given rate law. Therefore, Mechanism (B) is also consistent with the rate equation.
+
+### Conclusion:
+Both Mechanism (A) and Mechanism (B) are consistent with the given rate equation.
+
+The correct answer is:
+(B) Both A and B"
+"The ratio of the mass percentages of ‘C &amp; H’
+and ‘C &amp; O’ of a saturated acyclic organic
+compound ‘X’ are 4 : 1 and 3 : 4 respectively.
+Then, the moles of oxygen gas required for
+complete combustion of two moles of organic
+compound ‘X’ is ________.",5,5.33,False,False,146.41641354560852,"To determine the moles of oxygen gas required for the complete combustion of two moles of the organic compound 'X', we first need to establish the empirical formula of the compound based on the given mass percentages.
+
+Given:
+- The ratio of mass percentages of C and H is 4:1.
+- The ratio of mass percentages of C and O is 3:4.
+
+Let's assume the mass percentages are as follows:
+- Mass percentage of C = 4x
+- Mass percentage of H = x
+- Mass percentage of O = 3x
+
+Since the compound is saturated and acyclic, it must contain only single bonds. The simplest saturated hydrocarbon (alkane) has the general formula CnH2n+2. However, since we have a different ratio of C to H, we need to adjust our approach.
+
+The mass percentages of C and H together are 4x + x = 5x, and the mass percentages of C and O together are 3x + 3x = 6x. Since the compound is saturated, we can assume that the mass percentage of O is the remaining part of the compound after accounting for C and H.
+
+Now, let's find the empirical formula by assuming a certain mass for the compound. We can assume a total mass of 100 g for simplicity, which means:
+- Mass of C = 4x = 4 * (100 g / 5x) = 80 g
+- Mass of H = x = 100 g / 5x = 20 g
+- Mass of O = 3x = 3 * (100 g / 5x) = 60 g
+
+Now, we convert these masses to moles:
+- Moles of C = 80 g / 12 g/mol (molar mass of C) = 6.67 mol
+- Moles of H = 20 g / 1 g/mol (molar mass of H) = 20 mol
+- Moles of O = 60 g / 16 g/mol (molar mass of O) = 3.75 mol
+
+The empirical formula is approximately C6.67H20O3.75. To simplify, we can divide by the smallest number of moles, which is 3.75, to get the simplest whole number ratio:
+- C: 6.67 / 3.75 ≈ 2
+- H: 20 / 3.75 ≈ 5.33 �"
+"<p>Match List I and List II</p>
+<p><style type=""text/css"">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class=""tg"" style=""undefined;table-layout: fixed; width: 607px"">
+<colgroup>
+<col style=""width: 50px""/>
+<col style=""width: 249px""/>
+<col style=""width: 45px""/>
+<col style=""width: 263px""/>
+</colgroup>
+<thead>
+<tr>
+<th class=""tg-7btt""></th>
+<th class=""tg-7btt"">List I</th>
+<th class=""tg-7btt""></th>
+<th class=""tg-7btt"">List II</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class=""tg-0pky"">A.</td>
+<td class=""tg-0pky"">Osmosis</td>
+<td class=""tg-0pky"">I.</td>
+<td class=""tg-0pky"">Solvent molecules pass through semi permeable membrane towards solvent side.</td>
+</tr>
+<tr>
+<td class=""tg-0pky"">B.</td>
+<td class=""tg-0pky"">Reverse osmosis</td>
+<td class=""tg-0pky"">II.</td>
+<td class=""tg-0pky"">Movement of charged colloidal particles under the influence of applied electric potential towards oppositely charged electrodes.</td>
+</tr>
+<tr>
+<td class=""tg-0pky"">C.</td>
+<td class=""tg-0pky"">Electro osmosis</td>
+<td class=""tg-0pky"">III.</td>
+<td class=""tg-0pky"">Solvent molecules pass through semi permeable membrane towards solution side.</td>
+</tr>
+<tr>
+<td class=""tg-0pky"">D.</td>
+<td class=""tg-0pky"">Electrophoresis</td>
+<td class=""tg-0pky"">IV.</td>
+<td class=""tg-0pky"">Dispersion medium moves in an electric field.</td>
+</tr>
+</tbody>
+</table></p>
+<p>Choose the correct answer from the options given below :</p>
+
+Options:
+(A) A-III, B-I, C-IV, D-II
+(B) A-III, B-I, C-II, D-IV
+(C) A-I, B-III, C-IV, D-II
+(D) A-I, B-III, C-II, D-IV
+","A-III, B-I, C-IV, D-II",A,False,False,124.37471508979797,"To match List I with List II correctly, let's analyze each term and its corresponding definition:
+
+- **Osmosis**: This is the movement of solvent molecules through a semi-permeable membrane from a region of lower solute concentration to a region of higher solute concentration. This matches with ""Solvent molecules pass through semi permeable membrane towards solution side.""
+- **Reverse osmosis**: This process involves the movement of solvent molecules through a semi-permeable membrane from a region of higher solute concentration to a region of lower solute concentration, driven by pressure. This matches with ""Solvent molecules pass through semi permeable membrane towards solvent side.""
+- **Electro osmosis**: This is the movement of the dispersion medium (solvent) through a semi-permeable membrane in an electric field. This matches with ""Dispersion medium moves in an electric field.""
+- **Electrophoresis**: This is the movement of charged colloidal particles under the influence of an applied electric potential, towards oppositely charged electrodes. This matches with ""Movement of charged colloidal particles under the influence of applied electric potential towards oppositely charged electrodes.""
+
+Now, let's match them with the given options:
+
+(A) A-III, B-I, C-IV, D-II
+(B) A-III, B-I, C-II, D-IV
+(C) A-I, B-III, C-IV, D-II
+(D) A-I, B-III, C-II, D-IV
+
+The correct matches are:
+- A (Osmosis) - III (Solvent molecules pass through semi permeable membrane towards solution side)
+- B (Reverse osmosis) - I (Solvent molecules pass through semi permeable membrane towards solvent side)
+- C (Electro osmosis) - IV (Dispersion medium moves in an electric field)
+- D (Electrophoresis) - II (Movement of charged colloidal particles under the influence of applied electric potential towards oppositely charged electrodes)
+
+Thus, the correct answer is:
+(A) A-III, B-I, C-IV, D-II"
+Five moles of an ideal gas at 293 K is expanded isothermally from an initial pressure of 2.1 MPa to 1.3 MPa against at constant external pressure 4.3 MPa. The heat transferred in this process is _________ kJ mol<sup>$$-$$1</sup>. (Rounded off to the nearest integer) [Use R = 8.314 J mol<sup>$$-$$1</sup>K<sup>$$-$$1</sup>],15,10,False,False,146.58146977424622,"To solve this problem, we need to use the first law of thermodynamics and the properties of an ideal gas undergoing an isothermal process.
+
+Given:
+- Number of moles, \( n = 5 \)
+- Temperature, \( T = 293 \) K
+- Initial pressure, \( P_i = 2.1 \) MPa
+- Final pressure, \( P_f = 1.3 \) MPa
+- External pressure, \( P_{ext} = 4.3 \) MPa
+- Universal gas constant, \( R = 8.314 \) J mol\(^{-1}\) K\(^{-1}\)
+
+For an isothermal process, the change in internal energy (\( \Delta U \)) is zero because the internal energy of an ideal gas depends only on temperature, which is constant.
+
+The first law of thermodynamics for an isothermal process is:
+\[ \Delta U = Q - W \]
+Since \( \Delta U = 0 \):
+\[ Q = W \]
+
+The work done by the gas during an isothermal expansion against a constant external pressure is given by:
+\[ W = P_{ext} \Delta V \]
+
+To find \( \Delta V \), we use the ideal gas law:
+\[ PV = nRT \]
+
+Initially:
+\[ P_i V_i = nRT \]
+\[ V_i = \frac{nRT}{P_i} \]
+
+Finally:
+\[ P_f V_f = nRT \]
+\[ V_f = \frac{nRT}{P_f} \]
+
+The change in volume (\( \Delta V \)) is:
+\[ \Delta V = V_f - V_i \]
+\[ \Delta V = \frac{nRT}{P_f} - \frac{nRT}{P_i} \]
+\[ \Delta V = nRT \left( \frac{1}{P_f} - \frac{1}{P_i} \right) \]
+
+Substitute the given values:
+\[ \Delta V = 5 \times 8.314 \times 293 \left( \frac{1}{1.3 \times 10^6} - \frac{1}{2.1 \times 10^6} \right) \]
+\[ \Delta V = 5 \times 8.314 \times 293 \left( \frac{1}{1.3 \times 10^6} - \frac{1}{2.1 \times 10"
+"If a reaction follows the Arrhenius equation, the plot ln k vs $${1 \over {\left( {RT} \right)}}$$ gives straight line with a gradient ($$-$$ y) unit. 
+<br/><br/>The energy required to active the reactant is : 
+
+Options:
+(A) y unit
+(B) y/R unit
+(C) yR unit
+(D) $$-$$y unit
+",y unit,1,False,False,92.79922389984131,"The Arrhenius equation is given by:
+
+\[ k = A e^{-\frac{E_a}{RT}} \]
+
+where:
+- \( k \) is the rate constant,
+- \( A \) is the pre-exponential factor,
+- \( E_a \) is the activation energy,
+- \( R \) is the gas constant,
+- \( T \) is the temperature in Kelvin.
+
+Taking the natural logarithm of both sides, we get:
+
+\[ \ln k = \ln A - \frac{E_a}{RT} \]
+
+Rearranging this equation, we have:
+
+\[ \ln k = -\frac{E_a}{R} \cdot \frac{1}{T} + \ln A \]
+
+This equation is in the form of a straight line \( y = mx + c \), where:
+- \( y = \ln k \),
+- \( x = \frac{1}{T} \),
+- the slope \( m = -\frac{E_a}{R} \).
+
+From the given information, the plot of \( \ln k \) vs \( \frac{1}{T} \) gives a straight line with a gradient of \( -y \) units. Therefore, we can equate the gradient to the slope:
+
+\[ -\frac{E_a}{R} = -y \]
+
+Solving for \( E_a \):
+
+\[ E_a = yR \]
+
+Thus, the energy required to activate the reactant is \( yR \) units.
+
+The correct answer is:
+(C) \( yR \) unit"
+<p>Assume that the radius of the first Bohr orbit of hydrogen atom is 0.6 $$\mathrm{\mathop A\limits^o }$$. The radius of the third Bohr orbit of He$$^+$$ is __________ picometer. (Nearest Integer)</p>,270,1.35,False,False,146.6936399936676,"To find the radius of the third Bohr orbit of the He\(^+\) ion, we can use the Bohr model formula for the radius of an orbit:
+
+\[ r_n = \frac{n^2 \hbar^2}{Z e^2 m_e} \]
+
+where:
+- \( r_n \) is the radius of the \( n \)-th orbit,
+- \( n \) is the principal quantum number,
+- \( \hbar \) is the reduced Planck's constant,
+- \( Z \) is the atomic number,
+- \( e \) is the elementary charge,
+- \( m_e \) is the electron mass.
+
+For hydrogen-like atoms, the radius formula can be simplified to:
+
+\[ r_n = \frac{n^2 a_0}{Z} \]
+
+where \( a_0 \) is the Bohr radius (the radius of the first Bohr orbit of hydrogen, which is approximately 0.529 Å or 52.9 pm).
+
+Given:
+- The radius of the first Bohr orbit of hydrogen (\( a_0 \)) = 0.6 Å,
+- The atomic number \( Z \) for He\(^+\) is 2,
+- We need to find the radius of the third Bohr orbit (\( n = 3 \)).
+
+First, we need to adjust the Bohr radius for the He\(^+\) ion. The Bohr radius for He\(^+\) is given by:
+
+\[ a_0 (\text{He}^+) = \frac{a_0 (\text{H})}{Z} = \frac{0.6 \, \text{Å}}{2} = 0.3 \, \text{Å} \]
+
+Now, we can find the radius of the third Bohr orbit for He\(^+\):
+
+\[ r_3 = \frac{n^2 a_0 (\text{He}^+)}{Z} = \frac{3^2 \times 0.3 \, \text{Å}}{2} = \frac{9 \times 0.3 \, \text{Å}}{2} = \frac{2.7 \, \text{Å}}{2} = 1.35 \, \text{Å} \]
+
+Converting Å to picometers (1 Å = 100 pm):
+
+\[ r_3 = 1.35 \, \text{Å}"
+"Which one of the following methods is most suitable for preparing deionized water?
+
+Options:
+(A) Synthetic resin method
+(B) Clark's method
+(C) Calgon's method
+(D) Permutit method
+",Synthetic resin method,C,False,False,20.698468446731567,"(C) Calgon's method
+
+Calgon's method, also known as the sodium hexametaphosphate method, is most suitable for preparing deionized water. This method effectively removes ions from water by forming complexes with them, which are then removed from the solution. This method is widely used in laboratory settings to produce high-purity deionized water."
+"The heat of combustion of ethanol into carbon
+dioxide and water is – 327 kcal at constant
+pressure. The heat evolved (in cal) at constant
+volume and 27<sup>o</sup>C (if all gases behave ideally) is
+(R = 2 cal mol<sup>–1</sup> K<sup>–1</sup>) ________.",326400,-327000,False,False,145.63645100593567,"To find the heat evolved at constant volume, we need to use the relationship between the heat of combustion at constant pressure (\(q_p\)) and the heat of combustion at constant volume (\(q_v\)).
+
+The relationship is given by:
+\[ q_v = q_p - nRT \]
+
+Where:
+- \( q_v \) is the heat evolved at constant volume.
+- \( q_p \) is the heat evolved at constant pressure.
+- \( n \) is the number of moles of gas produced.
+- \( R \) is the gas constant.
+- \( T \) is the temperature in Kelvin.
+
+First, we need to determine the number of moles of gas produced in the combustion of ethanol. The balanced chemical equation for the combustion of ethanol (\(C_2H_5OH\)) is:
+\[ C_2H_5OH + 3O_2 \rightarrow 2CO_2 + 3H_2O \]
+
+From the balanced equation, we see that 1 mole of ethanol produces 2 moles of \(CO_2\) and 3 moles of \(H_2O\). However, \(H_2O\) is in the liquid state, so we only consider the gaseous products, which are \(CO_2\).
+
+Thus, the total number of moles of gas produced is:
+\[ n = 2 \text{ moles of } CO_2 \]
+
+Next, we convert the temperature from Celsius to Kelvin:
+\[ T = 27^\circ C + 273.15 = 300.15 \text{ K} \]
+
+Now we can plug in the values into the equation:
+\[ q_v = q_p - nRT \]
+\[ q_v = -327 \text{ kcal} - (2 \text{ moles}) \times (2 \text{ cal mol}^{-1} \text{ K}^{-1}) \times (300.15 \text{ K}) \]
+
+First, calculate the product \( nRT \):
+\[ nRT = 2 \times 2 \times 300.15 = 1200.6 \text{ cal} \]
+
+Now, convert \( q_p \) from kcal to cal:
+\[ q_p = -327 \text{ kcal} \times 1000 \text{ cal/kcal} = -327000 \text{ cal} \]
+
+Finally, calculate \( q_v \):
+\[ q_v = -327000"
+"<p>The number of pairs of the solutions having the same value of the osmotic pressure from the following is _________.</p>
+<p>(Assume 100% ionization)</p>
+<p>A. 0.500 $$\mathrm{M~C_2H_5OH~(aq)}$$ and 0.25 $$\mathrm{M~KBr~(aq)}$$</p>
+<p>B. 0.100 $$\mathrm{M~K_4[Fe(CN)_6]~(aq)}$$ and 0.100 $$\mathrm{M~FeSO_4(NH_4)_2SO_4~(aq)}$$</p>
+<p>C. 0.05 $$\mathrm{M~K_4[Fe(CN)_6]~(aq)}$$ and 0.25 $$\mathrm{M~NaCl~(aq)}$$</p>
+<p>D. 0.15 $$\mathrm{M~NaCl~(aq)}$$ and 0.1 $$\mathrm{M~BaCl_2~(aq)}$$</p>
+<p>E. 0.02 $$\mathrm{M~KCl.MgCl_2.6H_2O~(aq)}$$ and 0.05 $$\mathrm{M~KCl~(aq)}$$</p>",4,0.25,False,False,147.5265920162201,"To determine the number of pairs of solutions that have the same osmotic pressure, we need to calculate the van't Hoff factor (i) for each solution, which represents the number of particles into which a solute dissociates in solution. The osmotic pressure (\(\pi\)) is given by the formula:
+
+\[
+\pi = i \cdot M \cdot R \cdot T
+\]
+
+where \(M\) is the molarity, \(R\) is the gas constant, and \(T\) is the temperature in Kelvin. Since we are comparing osmotic pressures, we can ignore \(R\) and \(T\) and focus on the product \(i \cdot M\).
+
+Let's calculate \(i \cdot M\) for each solution:
+
+A. 0.500 M C2H5OH (ethanol) and 0.25 M KBr (potassium bromide)
+- Ethanol does not dissociate, so \(i = 1\).
+- KBr dissociates into K+ and Br-, so \(i = 2\).
+- \(i \cdot M\) for C2H5OH = 1 * 0.500 = 0.500
+- \(i \cdot M\) for KBr = 2 * 0.25 = 0.500
+
+B. 0.100 M K4[Fe(CN)6] (potassium hexacyanoferrate(II)) and 0.100 M FeSO4(NH4)2SO4 (ammonium iron(II) sulfate)
+- K4[Fe(CN)6] dissociates into 4 K+ and [Fe(CN)6]4-, so \(i = 5\).
+- FeSO4(NH4)2SO4 dissociates into Fe2+ and (NH4)2SO4, so \(i = 3\).
+- \(i \cdot M\) for K4[Fe(CN)6] = 5 * 0.100 = 0.500
+- \(i \cdot M\) for FeSO4(NH4)2SO4 = 3 * 0.100 = 0.300
+
+C. 0.05 M K4[Fe(CN)6] (potassium hexacyanoferrate(II)) and 0.25 M NaCl ("
+"<p>Match List I with List II</p>
+<p><style type=""text/css"">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class=""tg"" style=""undefined;table-layout: fixed; width: 690px"">
+<colgroup>
+<col style=""width: 75px""/>
+<col style=""width: 239px""/>
+<col style=""width: 75px""/>
+<col style=""width: 301px""/>
+</colgroup>
+<thead>
+<tr>
+<th class=""tg-7btt""></th>
+<th class=""tg-7btt"">LIST I<br/>(Compound/Species)</th>
+<th class=""tg-7btt""></th>
+<th class=""tg-7btt"">LIST II<br/>(Shape/Geometry)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class=""tg-c3ow"">A.</td>
+<td class=""tg-0pky"">$$\mathrm{SF_4}$$</td>
+<td class=""tg-c3ow"">I.</td>
+<td class=""tg-0pky"">Tetrahedral</td>
+</tr>
+<tr>
+<td class=""tg-c3ow"">B.	</td>
+<td class=""tg-0pky"">$$\mathrm{BrF_3}$$</td>
+<td class=""tg-c3ow"">II.</td>
+<td class=""tg-0pky"">Pyramidal</td>
+</tr>
+<tr>
+<td class=""tg-c3ow"">C.</td>
+<td class=""tg-0pky"">$$\mathrm{BrO_3^-}$$</td>
+<td class=""tg-c3ow"">III.</td>
+<td class=""tg-0pky"">See saw</td>
+</tr>
+<tr>
+<td class=""tg-c3ow"">D.</td>
+<td class=""tg-0pky"">$$\mathrm{NH_4^+}$$</td>
+<td class=""tg-c3ow"">IV.</td>
+<td class=""tg-0pky"">Bent T-Shape</td>
+</tr>
+</tbody>
+</table></p>
+<p>Choose the correct answer from the options given below:</p>
+
+Options:
+(A) A-III, B-II, C-IV, D-I
+
+(B) A-III, B-IV, C-II, D-I
+
+(C) A-II, B-IV, C-III, D-I
+
+(D) A-II, B-III, C-I, D-IV
+","A-III, B-IV, C-II, D-I",4,False,False,90.9979419708252,"To match the compounds/species in List I with their corresponding shapes/geometry in List II, we need to consider the molecular geometry based on the VSEPR (Valence Shell Electron Pair Repulsion) theory.
+
+1. **$$\mathrm{SF_4}$$ (A)**: Sulfur tetrafluoride has 4 bonding pairs and 1 lone pair of electrons. According to VSEPR theory, this results in a see-saw shape.
+   - Match: A - III (See-saw)
+
+2. **$$\mathrm{BrF_3}$$ (B)**: Bromine trifluoride has 3 bonding pairs and 2 lone pairs of electrons. This results in a T-shaped geometry.
+   - Match: B - IV (Bent T-Shape)
+
+3. **$$\mathrm{BrO_3^-}$$ (C)**: The bromate ion has 3 bonding pairs and no lone pairs of electrons. This results in a trigonal planar geometry.
+   - Match: C - I (Tetrahedral)
+
+4. **$$\mathrm{NH_4^+}$$ (D)**: The ammonium ion has 4 bonding pairs and no lone pairs of electrons. This results in a tetrahedral geometry.
+   - Match: D - I (Tetrahedral)
+
+So, the correct matching is:
+- A - III
+- B - IV
+- C - I
+- D - I
+
+The correct answer is:
+(A) A-III, B-IV, C-I, D-I"
+"Given below are two statements :<br/><br/>Statement I : Retardation factor (R<sub>f</sub>) can be measured in meter/centimeter.<br/><br/>Statement II : R<sub>f</sub> value of a compound remains constant in all solvents.<br/><br/>Choose the most appropriate answer from the options given below :
+
+Options:
+(A) Statement I is true but statement II is false
+(B) Statement I is false but statement II is true
+(C) Both statement I and statement II are true
+(D) Both statement I and statement II are false
+",Both statement I and statement II are false,D,False,False,44.431790590286255,"Let's analyze both statements:
+
+Statement I: Retardation factor (Rf) can be measured in meter/centimeter.
+- The retardation factor (Rf) is a dimensionless number that represents the ratio of the distance traveled by a compound to the distance traveled by the solvent front. Since it is a ratio, it does not have units. Therefore, Statement I is false.
+
+Statement II: Rf value of a compound remains constant in all solvents.
+- The Rf value of a compound can vary depending on the solvent used. Different solvents can interact differently with the compound, leading to different Rf values. Therefore, Statement II is also false.
+
+Given this analysis, the most appropriate answer is:
+
+(D) Both statement I and statement II are false."
+"What is the spin-only magnetic moment value (BM) of a divalent metal ion with atomic number 25, in it's aqueous solution?
+
+Options:
+(A) zero
+(B) 5.26
+(C) 5.0
+(D) 5.92
+",5.92,5.92,True,True,66.06858706474304,"To determine the spin-only magnetic moment value (BM) of a divalent metal ion with atomic number 25, we first need to identify the metal ion. The atomic number 25 corresponds to Manganese (Mn).
+
+In its divalent state, Mn²⁺ has the electron configuration [Ar] 3d⁵. The five d-electrons in the 3d subshell will contribute to the magnetic moment.
+
+The spin-only magnetic moment (μ) can be calculated using the formula:
+\[ \mu = \sqrt{n(n+2)} \]
+where \( n \) is the number of unpaired electrons.
+
+For Mn²⁺, there are 5 unpaired electrons (n = 5):
+\[ \mu = \sqrt{5(5+2)} = \sqrt{5 \times 7} = \sqrt{35} \approx 5.92 \, \text{BM} \]
+
+Therefore, the spin-only magnetic moment value (BM) of Mn²⁺ in its aqueous solution is approximately 5.92 BM.
+
+The correct answer is:
+(D) 5.92"
+"<p>An organic compound has $$42.1 \%$$ carbon, $$6.4 \%$$ hydrogen and remainder is oxygen. If its molecular weight is 342 , then its molecular formula is :</p>
+
+Options:
+(A) $$\mathrm{C}_{14} \mathrm{H}_{20} \mathrm{O}_{10}$$
+
+(B) $$\mathrm{C}_{12} \mathrm{H}_{22} \mathrm{O}_{11}$$
+
+(C) $$\mathrm{C}_{12} \mathrm{H}_{20} \mathrm{O}_{12}$$
+
+(D) $$\mathrm{C}_{11} \mathrm{H}_{18} \mathrm{O}_{12}$$
+",$$\mathrm{C}_{12} \mathrm{H}_{22} \mathrm{O}_{11}$$,11,False,False,145.8662669658661,"To determine the molecular formula of the compound, we need to follow these steps:
+
+1. Calculate the mass of each element in one mole of the compound.
+2. Determine the empirical formula based on the given percentages.
+3. Use the molecular weight to find the molecular formula.
+
+Given:
+- Carbon (C): 42.1%
+- Hydrogen (H): 6.4%
+- Oxygen (O): 100% - 42.1% - 6.4% = 51.5%
+
+Molecular weight of the compound = 342 g/mol
+
+First, let's find the mass of each element in one mole of the compound:
+- Mass of Carbon (C) = 342 g/mol * 0.421 = 144.102 g
+- Mass of Hydrogen (H) = 342 g/mol * 0.064 = 21.888 g
+- Mass of Oxygen (O) = 342 g/mol * 0.515 = 175.97 g
+
+Next, we convert these masses to moles:
+- Moles of Carbon (C) = 144.102 g / 12.01 g/mol = 12.00 mol
+- Moles of Hydrogen (H) = 21.888 g / 1.008 g/mol = 21.71 mol
+- Moles of Oxygen (O) = 175.97 g / 16.00 g/mol = 10.998 mol
+
+Now, we find the simplest whole number ratio of moles:
+- C: 12.00 / 10.998 ≈ 1.09 ≈ 1
+- H: 21.71 / 10.998 ≈ 1.98 ≈ 2
+- O: 10.998 / 10.998 ≈ 1
+
+So, the empirical formula is approximately \( \mathrm{CH}_{2}\mathrm{O} \).
+
+To find the molecular formula, we need to determine how many empirical units fit into the molecular weight of 342 g/mol:
+- Empirical formula weight of \( \mathrm{CH}_{2}\mathrm{O} \) = 12.01 + 2(1.008) + 16.00 = 30.026 g/mol
+- Number of empirical units in the molecular formula = 342 g/mol / 30.026 g/mol ≈ 11.39 ≈ 11
+
+Thus, the molecular formula is approximately 11 times the empirical formula:
+-"
+"<p>Number of compounds among the following which contain sulphur as heteroatom is ___________.</p>
+<p>Furan, Thiophene, Pyridine, Pyrrole, Cysteine, Tyrosine</p>",2,2,True,True,77.61929678916931,"To determine the number of compounds among the given list that contain sulfur as a heteroatom, we need to examine the structure of each compound and identify if sulfur is present.
+
+1. **Furan**: Furan is a five-membered aromatic ring with one oxygen atom. It does not contain sulfur.
+2. **Thiophene**: Thiophene is a five-membered aromatic ring with one sulfur atom. It contains sulfur as a heteroatom.
+3. **Pyridine**: Pyridine is a six-membered aromatic ring with one nitrogen atom. It does not contain sulfur.
+4. **Pyrrole**: Pyrrole is a five-membered aromatic ring with one nitrogen atom. It does not contain sulfur.
+5. **Cysteine**: Cysteine is an amino acid with the structure containing a sulfur atom in the thiol group (-SH). It contains sulfur as a heteroatom.
+6. **Tyrosine**: Tyrosine is an amino acid with a phenol group (OH) attached to the benzene ring. It does not contain sulfur.
+
+From the analysis, the compounds containing sulfur as a heteroatom are Thiophene and Cysteine.
+
+Therefore, the number of compounds among the given list that contain sulfur as a heteroatom is **2**."
+"Which of the following statements is <b>not</b> true ? 
+
+Options:
+(A) Step growth polymerisation requires a bifunctional monomer.
+(B) Nylon 6 is an example of step-growth polymerisation. 
+(C) Chain growth polymerisation includes both homopolymerisation and copylymerisation.
+(D) Chain growth polymerisation involves homopolymerisation only. 
+",Chain growth polymerisation involves homopolymerisation only.,D,False,False,25.239076137542725,"(D) Chain growth polymerisation involves homopolymerisation only.
+
+This statement is not true. Chain growth polymerisation, also known as addition polymerisation, can involve both homopolymerisation (where a single type of monomer forms a polymer) and copolymerisation (where two or more different types of monomers form a polymer). Therefore, option (D) is the correct answer as it is the statement that is not true."
+1 molal aqueous solution of an electrolyte A<sub>2</sub>B<sub>3</sub> is 60% ionised. The boiling point of the solution at 1 atm is _________ K. (Rounded off to the nearest integer)<br/><br/>[Given K<sub>b</sub> for (H<sub>2</sub>O) = 0.52 K kg mol<sup>$$-$$1</sup>],375,1.768,False,False,145.29075694084167,"To determine the boiling point of the 1 molal aqueous solution of the electrolyte \( A_2B_3 \) that is 60% ionized, we need to follow these steps:
+
+1. **Calculate the van't Hoff factor (i):**
+   The electrolyte \( A_2B_3 \) dissociates into ions as follows:
+   \[
+   A_2B_3 \rightarrow 2A^{3+} + 3B^{2-}
+   \]
+   This means that 1 mole of \( A_2B_3 \) produces 2 moles of \( A^{3+} \) and 3 moles of \( B^{2-} \), giving a total of 5 moles of ions.
+
+   Since the solution is 60% ionized, only 60% of the \( A_2B_3 \) will dissociate. Therefore, the effective van't Hoff factor \( i \) can be calculated as:
+   \[
+   i = 1 + \alpha (n - 1)
+   \]
+   where \( \alpha \) is the degree of ionization (0.60) and \( n \) is the total number of particles produced per formula unit (5).
+
+   Substituting the values:
+   \[
+   i = 1 + 0.60 \times (5 - 1) = 1 + 0.60 \times 4 = 1 + 2.4 = 3.4
+   \]
+
+2. **Calculate the boiling point elevation (\(\Delta T_b\)):**
+   The boiling point elevation is given by:
+   \[
+   \Delta T_b = i \cdot K_b \cdot m
+   \]
+   where \( K_b \) is the ebullioscopic constant (0.52 K kg mol\(^{-1}\)) and \( m \) is the molality of the solution (1 molal).
+
+   Substituting the values:
+   \[
+   \Delta T_b = 3.4 \times 0.52 \times 1 = 1.768 \, \text{K}
+   \]
+
+3. **Determine the boiling point of the solution:**
+   The normal boiling point of water is 100 K. Therefore, the boiling point of the solution is:
+   \[
+   100 \, \text{K} + 1.768 \, \text"
+"<p>Match List I with List II.</p>
+<p><style type=""text/css"">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class=""tg"">
+<thead>
+<tr>
+<th class=""tg-7btt""></th>
+<th class=""tg-7btt"">List I<br/><br/>Pollutant</th>
+<th class=""tg-7btt""></th>
+<th class=""tg-7btt"">List II<br/><br/>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class=""tg-0pky"">(A)</td>
+<td class=""tg-0pky"">Microorganisms</td>
+<td class=""tg-0pky"">(I)</td>
+<td class=""tg-0pky"">Strip mining</td>
+</tr>
+<tr>
+<td class=""tg-0pky"">(B)</td>
+<td class=""tg-0pky"">Plant nutrients</td>
+<td class=""tg-0pky"">(II)</td>
+<td class=""tg-0pky"">Domestic sewage</td>
+</tr>
+<tr>
+<td class=""tg-0pky"">(C)</td>
+<td class=""tg-0pky"">Toxic heavy metals</td>
+<td class=""tg-0pky"">(III)</td>
+<td class=""tg-0pky"">Chemical fertilizer</td>
+</tr>
+<tr>
+<td class=""tg-0pky"">(D)</td>
+<td class=""tg-0pky"">Sediment</td>
+<td class=""tg-0pky"">(IV)</td>
+<td class=""tg-0pky"">Chemical factory</td>
+</tr>
+</tbody>
+</table></p>
+<p>Choose the correct answer from the options given below :</p>
+
+Options:
+(A) A-II, B-III, C-IV, D-I
+(B) A-II, B-I, C-IV D-III
+(C) A-I, B-IV, C-II, D-III
+(D) A-I, B-IV, C-III, D-II
+","A-II, B-III, C-IV, D-I",A,False,False,50.4830105304718,"To match List I (Pollutant) with List II (Source), we need to identify which source corresponds to each pollutant.
+
+(A) Microorganisms - These are typically found in domestic sewage.
+(B) Plant nutrients - These are often found in chemical fertilizers.
+(C) Toxic heavy metals - These can be a byproduct of chemical factories.
+(D) Sediment - This can be a result of strip mining.
+
+Now, let's match them:
+
+(A) Microorganisms - (II) Domestic sewage
+(B) Plant nutrients - (III) Chemical fertilizer
+(C) Toxic heavy metals - (IV) Chemical factory
+(D) Sediment - (I) Strip mining
+
+So, the correct answer is:
+
+(A) A-II, B-III, C-IV, D-I
+
+Therefore, the correct option is:
+(A) A-II, B-III, C-IV, D-I"
+"A radioactive element gets spilled over the floor of a room. Its half-life period is 30 days. If the initial
+activity is ten times the permissible value, after how many days will it be safe to enter the room? 
+
+Options:
+(A) 1000 days
+(B) 300 days 
+(C) 10 days
+(D) 100 days
+",100 days,2,False,False,146.159982919693,"To determine after how many days it will be safe to enter the room, we need to calculate when the activity of the radioactive element will fall to the permissible value. The initial activity is ten times the permissible value.
+
+The half-life of the radioactive element is 30 days. The activity of a radioactive substance decreases by half every 30 days.
+
+Let's denote the permissible activity as \( P \). The initial activity is \( 10P \).
+
+We need to find the time \( t \) when the activity will be equal to \( P \).
+
+The formula for the activity after \( t \) days is given by:
+\[ A(t) = A_0 \left( \frac{1}{2} \right)^{\frac{t}{T}} \]
+where:
+- \( A(t) \) is the activity at time \( t \),
+- \( A_0 \) is the initial activity,
+- \( T \) is the half-life period.
+
+Given:
+- \( A_0 = 10P \),
+- \( T = 30 \) days,
+- \( A(t) = P \).
+
+Substitute these values into the formula:
+\[ P = 10P \left( \frac{1}{2} \right)^{\frac{t}{30}} \]
+
+Divide both sides by \( P \):
+\[ 1 = 10 \left( \frac{1}{2} \right)^{\frac{t}{30}} \]
+
+Divide both sides by 10:
+\[ \frac{1}{10} = \left( \frac{1}{2} \right)^{\frac{t}{30}} \]
+
+Take the natural logarithm of both sides:
+\[ \ln \left( \frac{1}{10} \right) = \ln \left( \left( \frac{1}{2} \right)^{\frac{t}{30}} \right) \]
+
+Using the property of logarithms \( \ln(a^b) = b \ln(a) \):
+\[ \ln \left( \frac{1}{10} \right) = \frac{t}{30} \ln \left( \frac{1}{2} \right) \]
+
+Solve for \( t \):
+\[ t = 30 \frac{\ln \left( \frac{1}{10} \right)}{\ln \left( \frac{1}{2} \right)} \]
+
+Calculate the logarithms:
+\["
+"Given the equilibrium constant: 
+<br/><br/>K<sub>C</sub> of the reaction : 
+<br/><br/>Cu(s) + 2Ag<sup>+</sup> (aq) $$ \to $$ Cu<sup>2+</sup> (aq) + 2Ag(s) is <br/><br/>10 $$ \times $$ 10<sup>15</sup>,  calculate the E$$_{cell}^0$$ of this reaciton at 298 K <br/><br/>[2.303 $${{RT} \over F}$$  at  298 K = 0.059V]
+
+Options:
+(A) 0.4736 mV
+(B) 0.04736 V
+(C) 0.4736 V
+(D) 0.04736 mV
+",0.4736 V,0.04736,False,False,121.02660250663757,"To calculate the standard cell potential \( E^\circ_{\text{cell}} \) for the given reaction, we can use the relationship between the equilibrium constant \( K \) and the standard cell potential:
+
+\[ E^\circ_{\text{cell}} = \frac{2.303 \cdot RT}{F} \cdot \log K \]
+
+Given:
+- \( K = 10^{15} \)
+- \( \frac{2.303 \cdot RT}{F} \) at 298 K = 0.059 V
+
+First, we need to calculate the logarithm of the equilibrium constant \( K \):
+
+\[ \log K = \log (10^{15}) = 15 \]
+
+Now, we can plug this value into the equation for \( E^\circ_{\text{cell}} \):
+
+\[ E^\circ_{\text{cell}} = 0.059 \cdot 15 \]
+
+\[ E^\circ_{\text{cell}} = 0.885 \text{ V} \]
+
+However, this value seems too high for a typical electrochemical cell. Let's re-evaluate the calculation carefully:
+
+\[ E^\circ_{\text{cell}} = 0.059 \cdot 15 \]
+
+\[ E^\circ_{\text{cell}} = 0.885 \text{ V} \]
+
+It appears there might be a misunderstanding in the calculation. Let's re-evaluate the logarithm part:
+
+\[ E^\circ_{\text{cell}} = 0.059 \cdot 15 \]
+
+\[ E^\circ_{\text{cell}} = 0.885 \text{ V} \]
+
+This value is indeed too high. Let's check the options provided:
+
+(A) 0.4736 mV
+(B) 0.04736 V
+(C) 0.4736 V
+(D) 0.04736 mV
+
+Given the options, the closest and most reasonable value is:
+
+(B) 0.04736 V
+
+Thus, the correct answer is:
+
+(B) 0.04736 V"
+"Ammonolysis of Alkyl halides followed by the treatment with NaOH solution can be used to prepare primary, secondary and tertiary amines. The purpose of NaOH in the reaction is :
+
+Options:
+(A) to remove acidic impurities
+(B) to remove basic impurities
+(C) to activate NH<sub>3</sub> used in the reaction
+(D) to increase the reactivity of alkyl halide
+",to remove acidic impurities,3,False,False,28.743000984191895,"The purpose of NaOH in the reaction is:
+
+(C) to activate NH<sub>3</sub> used in the reaction
+
+NaOH helps to deprotonate NH<sub>3</sub> to form NH<sub>2</sub><sup>-</sup>, which is a more nucleophilic species that can more readily react with the alkyl halide to form the amine. This activation of NH<sub>3</sub> facilitates the amination process."
+"<p>For a reaction at equilibrium</p>
+<p>A(g) $$\rightleftharpoons$$ B(g) + $${1 \over 2}$$ C(g)</p>
+<p>the relation between dissociation constant (K), degree of dissociation ($$\alpha$$) and equilibrium pressure (p) is given by :</p>
+
+Options:
+(A) $$K = {{{\alpha ^{{1 \over 2}}}{p^{{3 \over 2}}}} \over {{{\left( {1 + {3 \over 2}\alpha } \right)}^{{1 \over 2}}}(1 - \alpha )}}$$
+(B) $$K = {{{\alpha ^{{3 \over 2}}}{p^{{1 \over 2}}}} \over {{{\left( {2 + \alpha } \right)}^{{1 \over 2}}}(1 - \alpha )}}$$
+(C) $$K = {{{{(\alpha \,p)}^{{3 \over 2}}}} \over {{{\left( {1 + {3 \over 2}\alpha } \right)}^{{1 \over 2}}}(1 - \alpha )}}$$
+(D) $$K = {{{{(\alpha \,p)}^{{3 \over 2}}}} \over {{{\left( {1 + \alpha } \right)}}{{(1 - \alpha )}^{{1 \over 2}}}}}$$
+",$$K = {{{\alpha ^{{3 \over 2}}}{p^{{1 \over 2}}}} \over {{{\left( {2 + \alpha } \right)}^{{1 \over 2}}}(1 - \alpha )}}$$,1,False,False,150.4821846485138,"To determine the correct expression for the dissociation constant \( K \) in terms of the degree of dissociation \( \alpha \) and the equilibrium pressure \( p \) for the reaction \( A(g) \rightleftharpoons B(g) + \frac{1}{2} C(g) \), we need to consider the relationship between these variables.
+
+Given the reaction:
+\[ A(g) \rightleftharpoons B(g) + \frac{1}{2} C(g) \]
+
+Let the initial pressure of \( A \) be \( p \). At equilibrium, let \( \alpha \) be the degree of dissociation of \( A \). This means that a fraction \( \alpha \) of \( A \) has dissociated.
+
+The equilibrium pressures of the species will be:
+- Pressure of \( A \) at equilibrium: \( p(1 - \alpha) \)
+- Pressure of \( B \) at equilibrium: \( p\alpha \)
+- Pressure of \( C \) at equilibrium: \( \frac{1}{2} p\alpha \)
+
+The total equilibrium pressure \( p_{eq} \) is:
+\[ p_{eq} = p(1 - \alpha) + p\alpha + \frac{1}{2} p\alpha = p(1 + \alpha) \]
+
+The expression for the dissociation constant \( K \) is given by the ratio of the product of the equilibrium pressures of the products to the equilibrium pressure of the reactant, raised to the power of their stoichiometric coefficients:
+\[ K = \frac{(p\alpha) \left(\frac{1}{2} p\alpha\right)}{p(1 - \alpha)} \]
+
+Simplifying this expression:
+\[ K = \frac{p^2 \alpha \cdot \frac{1}{2} \alpha}{p(1 - \alpha)} = \frac{\frac{1}{2} p^2 \alpha^2}{p(1 - \alpha)} = \frac{\frac{1}{2} p \alpha^2}{1 - \alpha} \]
+
+Now, we need to express \( K \) in terms of \( \alpha \) and \( p \) in a form that matches one of the given options. We can rewrite the expression as:
+\[ K = \frac{\frac{1}{2} p \alpha^2}{1 - \alpha} = \frac{p \"
+"<p>The correct order of electron gain enthalpy ($$-$$ ve value) is :</p>
+
+Options:
+(A) O > S > Se > Te
+(B) O < S < Se < Te
+(C) O < S > Se > Te
+(D) O < S > Se < Te
+",O < S > Se > Te,16,False,False,57.674280405044556,"The electron gain enthalpy (also known as electron affinity) is the energy change that occurs when an electron is added to a neutral atom in the gaseous state to form a negative ion. Generally, the more negative the electron gain enthalpy, the more energy is released when an electron is added, indicating a more favorable process.
+
+For the elements in Group 16 (the chalcogens), the trend in electron gain enthalpy generally becomes less negative as you move down the group. This is because the added electron enters an orbital that is farther from the nucleus, experiencing less attraction due to increased shielding by inner electrons.
+
+Given the elements O (Oxygen), S (Sulfur), Se (Selenium), and Te (Tellurium), the correct order of electron gain enthalpy (in terms of increasing negativity) is:
+
+O < S < Se < Te
+
+Thus, the correct answer is:
+
+(B) O < S < Se < Te"
+"<p>What happens to freezing point of benzene when small quantity of napthalene is added to benzene?</p>
+
+Options:
+(A) Increases
+
+(B) Decreases
+
+(C) Remains unchanged
+
+(D) First decreases and then increases
+",Decreases,B,False,False,29.172470569610596,"When a small quantity of naphthalene is added to benzene, the freezing point of the solution will decrease. This is because naphthalene, being a non-volatile solute, will cause a freezing point depression in the benzene solution. Freezing point depression is a colligative property that occurs when a solute is added to a solvent, leading to a lower freezing point of the solution compared to the pure solvent.
+
+Therefore, the correct answer is:
+
+(B) Decreases"
+"<p>If the uncertainty in velocity and position of a minute particle in space are, 2.4 $$\times$$ 10<sup>$$-$$26</sup> (m s<sup>$$-$$1</sup>) and 10<sup>$$-$$7</sup> (m) respectively. The mass of the particle in g is ____________. (Nearest integer)</p>
+<p>(Given : h = 6.626 $$\times$$ 10<sup>$$-$$34</sup> Js)</p>",22,139,False,False,110.11084485054016,"To find the mass of the particle, we can use the Heisenberg Uncertainty Principle, which states that the product of the uncertainties in position and momentum (which is mass times velocity) is on the order of Planck's constant (h). The principle is given by:
+
+Δx * Δp ≥ h / 2
+
+where Δx is the uncertainty in position, Δp is the uncertainty in momentum, and h is Planck's constant.
+
+Given:
+Δx = 10^-7 m
+Δv = 2.4 × 10^-26 m/s
+h = 6.626 × 10^-34 Js
+
+First, we need to find the uncertainty in momentum (Δp). Since momentum p = m * v, the uncertainty in momentum Δp is given by:
+
+Δp = m * Δv
+
+Now, we can use the Heisenberg Uncertainty Principle to find the mass (m):
+
+Δx * Δp ≥ h / 2
+Δx * m * Δv ≥ h / 2
+m ≥ (h / (2 * Δx * Δv))
+
+Plugging in the given values:
+
+m ≥ (6.626 × 10^-34 Js) / (2 * 10^-7 m * 2.4 × 10^-26 m/s)
+m ≥ (6.626 × 10^-34) / (4.8 × 10^-33)
+m ≥ 1.385833333 × 10^-1 kg
+
+Since we want the mass in grams, we convert kilograms to grams by multiplying by 1000:
+
+m ≥ 1.385833333 × 10^-1 kg * 1000 g/kg
+m ≥ 138.5833333 g
+
+Rounding to the nearest integer, the mass of the particle is approximately 139 g."
+<p>When equal volume of $$1 \mathrm{~M} \mathrm{~HCl}$$ and $$1 \mathrm{~M} \mathrm{~H}_2 \mathrm{SO}_4$$ are separately neutralised by excess volume of $$1 \mathrm{M}$$ $$\mathrm{NaOH}$$ solution. $$x$$ and $$y \mathrm{~kJ}$$ of heat is liberated respectively. The value of $$y / x$$ is __________.</p>,2,2,True,True,144.44415879249573,"To determine the value of \( \frac{y}{x} \), we need to consider the heat released during the neutralization reactions of HCl and H\(_2\)SO\(_4\) with NaOH.
+
+1. **Neutralization of HCl with NaOH:**
+   The balanced chemical equation for the reaction is:
+   \[
+   \mathrm{HCl} + \mathrm{NaOH} \rightarrow \mathrm{NaCl} + \mathrm{H}_2\mathrm{O}
+   \]
+   The enthalpy change (\(\Delta H\)) for this reaction is typically given as \(-57.1 \, \mathrm{kJ/mol}\).
+
+2. **Neutralization of H\(_2\)SO\(_4\) with NaOH:**
+   The balanced chemical equation for the reaction is:
+   \[
+   \mathrm{H}_2\mathrm{SO}_4 + 2\mathrm{NaOH} \rightarrow \mathrm{Na}_2\mathrm{SO}_4 + 2\mathrm{H}_2\mathrm{O}
+   \]
+   The enthalpy change (\(\Delta H\)) for this reaction is typically given as \(-114.6 \, \mathrm{kJ/mol}\).
+
+Since we are dealing with equal volumes of 1 M solutions, the moles of HCl and H\(_2\)SO\(_4\) are the same. Let’s assume we have 1 mole of each for simplicity.
+
+- For HCl:
+  \[
+  \Delta H_{\text{HCl}} = -57.1 \, \mathrm{kJ}
+  \]
+
+- For H\(_2\)SO\(_4\):
+  \[
+  \Delta H_{\text{H}_2\mathrm{SO}_4} = -114.6 \, \mathrm{kJ}
+  \]
+
+Now, we need to find the ratio \( \frac{y}{x} \):
+\[
+\frac{y}{x} = \frac{\Delta H_{\text{H}_2\mathrm{SO}_4}}{\Delta H_{\text{HCl}}} = \frac{-114.6 \, \mathrm{kJ}}{-57.1 \, \mathrm{kJ}} = 2
+\]
+
+Therefore, the value of \( \frac{y}{x} \) is \( 2 \)."
+"<p>Match List I with List II</p>
+<p><style type=""text/css"">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class=""tg"" style=""undefined;table-layout: fixed; width: 523px"">
+<colgroup>
+<col style=""width: 70px""/>
+<col style=""width: 184px""/>
+<col style=""width: 94px""/>
+<col style=""width: 175px""/>
+</colgroup>
+<thead>
+<tr>
+<th class=""tg-7btt""></th>
+<th class=""tg-7btt"">List - I<br/>(Compound)</th>
+<th class=""tg-7btt""></th>
+<th class=""tg-7btt"">List - II<br/>($$\mathrm{pK_a}$$ value)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class=""tg-c3ow"">(A)</td>
+<td class=""tg-0pky"">Ethanol</td>
+<td class=""tg-c3ow"">(I)</td>
+<td class=""tg-0pky"">10.0</td>
+</tr>
+<tr>
+<td class=""tg-c3ow"">(B)</td>
+<td class=""tg-0pky"">Phenol</td>
+<td class=""tg-c3ow"">(II)</td>
+<td class=""tg-0pky"">15.9</td>
+</tr>
+<tr>
+<td class=""tg-c3ow"">(C)</td>
+<td class=""tg-0pky"">m-Nitrophenol</td>
+<td class=""tg-c3ow"">(III)</td>
+<td class=""tg-0pky"">7.1</td>
+</tr>
+<tr>
+<td class=""tg-c3ow"">(D)</td>
+<td class=""tg-0pky"">p-Nitrophenol</td>
+<td class=""tg-c3ow"">(IV)</td>
+<td class=""tg-0pky"">8.3</td>
+</tr>
+</tbody>
+</table></p>
+<p>Choose the correct answer from the options given below:</p>
+
+Options:
+(A) A-I, B-II, C-III, D-IV
+
+(B) A-IV, B-I, C-II, D-III
+
+(C) A-II, B-I, C-IV, D-III
+
+(D) A-III, B-IV, C-I, D-II
+","A-II, B-I, C-IV, D-III",8.3,False,False,72.00155901908875,"To match the compounds in List I with their corresponding \( \mathrm{pK_a} \) values in List II, we need to know the typical \( \mathrm{pK_a} \) values for each compound:
+
+- Ethanol: \( \mathrm{pK_a} \) is around 15.9
+- Phenol: \( \mathrm{pK_a} \) is around 10.0
+- m-Nitrophenol: \( \mathrm{pK_a} \) is around 7.1
+- p-Nitrophenol: \( \mathrm{pK_a} \) is around 8.3
+
+Now, let's match them:
+
+(A) Ethanol - (II) 15.9
+(B) Phenol - (I) 10.0
+(C) m-Nitrophenol - (III) 7.1
+(D) p-Nitrophenol - (IV) 8.3
+
+So, the correct answer is:
+
+(A) A-II, B-I, C-III, D-IV
+
+Therefore, the correct option is:
+
+(A) A-II, B-I, C-III, D-IV"
