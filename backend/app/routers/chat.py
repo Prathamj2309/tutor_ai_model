@@ -98,6 +98,12 @@ async def chat_stream(
     if image:
         image_bytes = await image.read()
         extracted_text = await run_in_threadpool(process_image_with_gemini, image_bytes=image_bytes)
+        
+        # Fallback to local OCR if Gemini fails
+        if extracted_text.startswith("Error:"):
+            print(f"[Chat] Gemini Vision failed, falling back to local OCR...")
+            extracted_text = await run_in_threadpool(extract_text_from_image, image_bytes=image_bytes)
+            
         full_content = f"{content}\n\n[Extracted from Image]:\n{extracted_text}" if content else extracted_text
 
     formatted_content = await run_in_threadpool(format_question_latex, question=full_content)

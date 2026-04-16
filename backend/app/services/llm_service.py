@@ -90,7 +90,7 @@ def load_models():
         ADAPTER_PATHS = {
             "physics": os.path.join(project_root, "physics_model", "jee-physics-grpo-final"),
             "chemistry": os.path.join(project_root, "chem_model", "grpo_chem", "my_chemistry_lora"),
-            "mathematics": os.path.join(project_root, "math_model", "phi-4-jee-math-lora-v2"),
+            "mathematics": os.path.join(project_root, "math_model", "grpo_final_model_updated"),
         }
         
         first_adapter_name = list(ADAPTER_PATHS.keys())[0]
@@ -172,7 +172,7 @@ def extract_topic_tags(question: str, answer: str) -> list[str]:
             "Return ONLY a comma-separated list of tags."
         )
         response = client.models.generate_content(
-            model="gemini-3-flash-preview",
+            model="gemini-1.5-flash",
             contents=prompt
         )
         if response and response.text:
@@ -198,7 +198,7 @@ def format_question_latex(question: str) -> str:
             "Simply output the formatted version of the question. Use $$ for block equations and $ for inline."
         )
         response = client.models.generate_content(
-            model="gemini-3-flash-preview",
+            model="gemini-1.5-flash",
             contents=f"{sys_prompt}\n\nUser Question to format:\n{question}"
         )
         if response and response.text:
@@ -219,7 +219,7 @@ def process_image_with_gemini(image_bytes: bytes, prompt: str = "Extract the tex
         client = google_genai.Client(api_key=api_key)
         
         response = client.models.generate_content(
-            model="gemini-3-flash-preview",
+            model="gemini-1.5-flash",
             contents=[
                 prompt,
                 types.Part.from_bytes(data=image_bytes, mime_type="image/jpeg")
@@ -253,7 +253,7 @@ def generate_answer_stream(question: str, history: list[HistoryMessage], subject
             f"Raw Unformatted Local Answer:\n{raw_answer}"
         )
         for chunk in client.models.generate_content_stream(
-            model="gemini-3-flash-preview",
+            model="gemini-1.5-flash",
             contents=prompt
         ):
             if chunk.text:

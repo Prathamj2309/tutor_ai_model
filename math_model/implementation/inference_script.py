@@ -76,9 +76,13 @@ from unsloth.chat_templates import get_chat_template
 # ==========================================
 # 1. PATHS & CONFIGURATION
 # ==========================================
-MODEL_PATH = "/kaggle/input/datasets/prathamjain2309/dataset-v3-3" 
-DATA_PATH = "/kaggle/input/datasets/prathamjain2309/dataset-v2-2/jee_augmented_dataset_v2.jsonl"
-OUTPUT_PATH = "/kaggle/working/phi-4-inference_results_v2.3.csv"
+# Using the local GRPO final model
+import os
+script_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.dirname(os.path.dirname(script_dir))
+MODEL_PATH = os.path.join(project_root, "math_model", "grpo_final_model_updated")
+DATA_PATH = os.path.join(project_root, "math_model", "data", "jee_augmented_dataset_v2.jsonl") # Updated to point to local data dir
+OUTPUT_PATH = os.path.join(script_dir, "phi-4-inference_results_v2.3.csv")
 
 # ==========================================
 # 2. LOAD MODEL & TOKENIZER
