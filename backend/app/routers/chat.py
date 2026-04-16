@@ -1,12 +1,14 @@
 from fastapi import APIRouter, Depends, UploadFile, File, Form, HTTPException
-from typing import Optional, List
+from fastapi.responses import StreamingResponse
+from typing import Optional
 from starlette.concurrency import run_in_threadpool
 from app.models.schemas import UserInfo, ChatResponse
 from app.middleware.auth import get_current_user
 from app.core.supabase_client import supabase
 from app.services.history_service import get_conversation_history, save_user_message, save_assistant_message
-from app.services.llm_service import generate_answer
+from app.services.llm_service import generate_answer, generate_answer_stream, format_question_latex, process_image_with_gemini
 from app.services.ocr_service import extract_text_from_image
+import json
 
 router = APIRouter(tags=["chat"])
 
@@ -56,18 +58,22 @@ async def chat(
     subject = conv.data[0].get("subject", "general")
     history = get_conversation_history(conversationId, limit=5)
     
+    # Process Image if present
+    full_content = content
+    if image:
+        image_bytes = await image.read()
+        extracted_text = await run_in_threadpool(process_image_with_gemini, image_bytes=image_bytes)
+        full_content = f"{content}\n\n[Extracted from Image]:\n{extracted_text}" if content else extracted_text
+
     # Process AI in threadpool to avoid blocking
-    ai_result = await run_in_threadpool(generate_answer, question=content, history=history, subject=subject)
+    ai_result = await run_in_threadpool(generate_answer, question=full_content, history=history, subject=subject)
     
-    user_msg = save_user_message(conversation_id=conversationId, user_id=user.id, content=content)
+    user_msg = save_user_message(conversation_id=conversationId, user_id=user.id, content=full_content)
     ai_msg = save_assistant_message(conversation_id=conversationId, user_id=user.id, 
                                     content=ai_result["answer"], topic_tags=ai_result.get("topic_tags", []))
     
     return ChatResponse(userMessage=user_msg, aiMessage=ai_msg)
 
-from fastapi.responses import StreamingResponse
-import json
-from app.services.llm_service import generate_answer_stream, format_question_latex, generate_answer
 
 @router.post("/chat/stream")
 async def chat_stream(
@@ -87,7 +93,14 @@ async def chat_stream(
     subject = conv.data[0].get("subject", "general")
     history = get_conversation_history(conversationId, limit=5)
     
-    formatted_content = await run_in_threadpool(format_question_latex, question=content)
+    # Process Image if present
+    full_content = content
+    if image:
+        image_bytes = await image.read()
+        extracted_text = await run_in_threadpool(process_image_with_gemini, image_bytes=image_bytes)
+        full_content = f"{content}\n\n[Extracted from Image]:\n{extracted_text}" if content else extracted_text
+
+    formatted_content = await run_in_threadpool(format_question_latex, question=full_content)
     
     save_user_message(conversation_id=conversationId, user_id=user.id, content=formatted_content)
     

@@ -3,6 +3,7 @@ import json
 import re
 import torch
 import pickle
+from google import genai as google_genai
 from app.core.config import settings
 from app.services.history_service import HistoryMessage
 from sentence_transformers import SentenceTransformer
@@ -84,11 +85,12 @@ def load_models():
         )
         
         print("[MoE] Mounting LoRA Adapters...")
-        # Exact paths based on user's local machine
+        project_root = os.path.dirname(base_dir)  # tutor_ai_model root
+        
         ADAPTER_PATHS = {
-            "physics": r"C:\Users\rishi\Downloads\tutor_ai_model\physics_model\jee-physics-grpo-final",
-            "chemistry": r"C:\Users\rishi\Downloads\tutor_ai_model\chem_model\grpo_chem\my_chemistry_lora",
-            "mathematics": r"C:\Users\rishi\Downloads\tutor_ai_model\math_model\phi-4-jee-math-lora-v2",
+            "physics": os.path.join(project_root, "physics_model", "jee-physics-grpo-final"),
+            "chemistry": os.path.join(project_root, "chem_model", "grpo_chem", "my_chemistry_lora"),
+            "mathematics": os.path.join(project_root, "math_model", "phi-4-jee-math-lora-v2"),
         }
         
         first_adapter_name = list(ADAPTER_PATHS.keys())[0]
@@ -157,21 +159,37 @@ def route_question(question: str) -> str:
     return str(pred)
 
 def extract_topic_tags(question: str, answer: str) -> list[str]:
-    # Mocking topic tags to save inference time, or can be added as a tiny fast heuristic
+    """Uses Gemini to extract relevant JEE topic tags from the question and answer."""
+    api_key = settings.gemini_api_key
+    if not api_key:
+        return ["jee-topic"]
+
+    try:
+        client = google_genai.Client(api_key=api_key)
+        prompt = (
+            f"Question: {question}\nAnswer: {answer}\n\n"
+            "Extract 2-3 specific IIT-JEE topic tags (e.g., 'Rotational Dynamics', 'Organic Chemistry', 'Calculus'). "
+            "Return ONLY a comma-separated list of tags."
+        )
+        response = client.models.generate_content(
+            model="gemini-3-flash-preview",
+            contents=prompt
+        )
+        if response and response.text:
+            return [tag.strip() for tag in response.text.split(",") if tag.strip()]
+    except Exception:
+        pass
     return ["jee-topic"]
 
-import google.generativeai as genai
 
 def format_question_latex(question: str) -> str:
     """Uses Gemini to format the raw user question into accurate LaTeX."""
-    api_key = os.environ.get("GEMINI_API_KEY")
+    api_key = settings.gemini_api_key
     if not api_key:
         return question
-        
+
     try:
-        genai.configure(api_key=api_key)
-        model = genai.GenerativeModel("gemini-2.0-flash")
-        
+        client = google_genai.Client(api_key=api_key)
         sys_prompt = (
             "You are a math and science formatting assistant. "
             "Your ONLY job is to take the provided raw user text/question and format any mathematical, "
@@ -179,52 +197,69 @@ def format_question_latex(question: str) -> str:
             "Do NOT answer the question. Do NOT add any extra conversational text. "
             "Simply output the formatted version of the question. Use $$ for block equations and $ for inline."
         )
-        
-        response = model.generate_content(
-            [{"role": "user", "parts": [f"{sys_prompt}\n\nUser Question to format:\n{question}"]}]
+        response = client.models.generate_content(
+            model="gemini-3-flash-preview",
+            contents=f"{sys_prompt}\n\nUser Question to format:\n{question}"
         )
         if response and response.text:
             return response.text.strip()
     except Exception as e:
-        print(f"Error formatting question with Gemini: {e}")
-        
+        print(f"[Gemini] Error formatting question: {e}")
+
     return question
+
+def process_image_with_gemini(image_bytes: bytes, prompt: str = "Extract the text from this image and format it as LaTeX where necessary.") -> str:
+    """Uses Gemini Vision to extract text or analyze an image."""
+    api_key = settings.gemini_api_key
+    if not api_key:
+        return "Error: Gemini API key missing."
+    
+    try:
+        from google.genai import types
+        client = google_genai.Client(api_key=api_key)
+        
+        response = client.models.generate_content(
+            model="gemini-3-flash-preview",
+            contents=[
+                prompt,
+                types.Part.from_bytes(data=image_bytes, mime_type="image/jpeg")
+            ]
+        )
+        return response.text.strip()
+    except Exception as e:
+        print(f"[Gemini Vision] Error: {e}")
+        return f"Error: {str(e)}"
 
 def generate_answer_stream(question: str, history: list[HistoryMessage], subject: str = "general", raw_answer: str = ""):
     """Stream a structured answer using Google's Gemini API based on a raw local answer."""
-    api_key = os.environ.get("GEMINI_API_KEY")
+    api_key = settings.gemini_api_key
     if not api_key:
-        yield "System Error: `GEMINI_API_KEY` is not set in your environment or `.env` file. Please add it to your `.env` (e.g. GEMINI_API_KEY=your_key) and restart the server.\n"
+        yield "System Error: `GEMINI_API_KEY` is not set in `.env`. Please add it and restart the server.\n"
         return
-        
-    genai.configure(api_key=api_key)
-    model = genai.GenerativeModel("gemini-2.0-flash")
-    
-    sys_prompt = (
-        "You are a formatting assistant. You will receive a user's question and a raw, unformatted "
-        "step-by-step answer generated by a local expert physics/chemistry/math model. "
-        "Your ONLY job is to properly format, structure, and render this raw answer using beautiful Markdown and strict LaTeX "
-        "(use $$ for block equations and $ for inline). "
-        "Clean up and trim any repetitive or redundant lines from the local model, keeping the final output concise and professional. "
-        "Do NOT change the underlying technical logic, numbers, or invent new theoretical steps."
-    )
-    
-    contents = [{
-        "role": "user", 
-        "parts": [
+
+    try:
+        client = google_genai.Client(api_key=api_key)
+        sys_prompt = (
+            "You are a formatting assistant. You will receive a user's question and a raw, unformatted "
+            "step-by-step answer generated by a local expert physics/chemistry/math model. "
+            "Your ONLY job is to properly format, structure, and render this raw answer using beautiful Markdown and strict LaTeX "
+            "(use $$ for block equations and $ for inline). "
+            "Clean up and trim any repetitive or redundant lines from the local model, keeping the final output concise and professional. "
+            "Do NOT change the underlying technical logic, numbers, or invent new theoretical steps."
+        )
+        prompt = (
             f"System Guidelines: {sys_prompt}\n\n"
             f"User Question: {question}\n\n"
             f"Raw Unformatted Local Answer:\n{raw_answer}"
-        ]
-    }]
-    
-    try:
-        response = model.generate_content(contents, stream=True)
-        for chunk in response:
+        )
+        for chunk in client.models.generate_content_stream(
+            model="gemini-3-flash-preview",
+            contents=prompt
+        ):
             if chunk.text:
                 yield chunk.text
     except Exception as e:
-        yield f"\n\nAn error occurred while communicating with Gemini API: {str(e)}"
+        yield f"\n\nError communicating with Gemini API: {str(e)}\n"
 
 def generate_answer(question: str, history: list[HistoryMessage], subject: str = "general") -> dict:
     if not load_models():
